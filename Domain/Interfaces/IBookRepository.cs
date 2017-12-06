@@ -1,18 +1,18 @@
 ﻿
 using Domain.Entities;
 using System.Collections.Generic;
+using System;
 
 namespace Domain.Interfaces
 {
-    interface IBookRepository
+    public interface IBookRepository
     {
-        IReadOnlyList<Book> GetAllEager();
-        IReadOnlyList<Book> GetAllExplicit();
-
-
+        IReadOnlyList<Book> GetAllBooks();
+        Book GetBookById(Guid id);
         void AddBook(Book book);
-        void EditStock(Book book);
-        void DeleteStock(Book book);
+        void EditBook(Book book);
+        void DeleteBook(Guid idBook);
+
 
     }
 }

@@ -1,0 +1,11 @@
+/Users/cosminacorneanu/Desktop/OnlineLibrary/Persistance/bin/Debug/netcoreapp2.0/Persistance.deps.json
+/Users/cosminacorneanu/Desktop/OnlineLibrary/Persistance/bin/Debug/netcoreapp2.0/Persistance.dll
+/Users/cosminacorneanu/Desktop/OnlineLibrary/Persistance/bin/Debug/netcoreapp2.0/Persistance.pdb
+/Users/cosminacorneanu/Desktop/OnlineLibrary/Persistance/bin/Debug/netcoreapp2.0/Domain.dll
+/Users/cosminacorneanu/Desktop/OnlineLibrary/Persistance/bin/Debug/netcoreapp2.0/Domain.pdb
+/Users/cosminacorneanu/Desktop/OnlineLibrary/Persistance/obj/Debug/netcoreapp2.0/Persistance.csprojResolveAssemblyReference.cache
+/Users/cosminacorneanu/Desktop/OnlineLibrary/Persistance/obj/Debug/netcoreapp2.0/Persistance.csproj.CoreCompileInputs.cache
+/Users/cosminacorneanu/Desktop/OnlineLibrary/Persistance/obj/Debug/netcoreapp2.0/Persistance.AssemblyInfoInputs.cache
+/Users/cosminacorneanu/Desktop/OnlineLibrary/Persistance/obj/Debug/netcoreapp2.0/Persistance.AssemblyInfo.cs
+/Users/cosminacorneanu/Desktop/OnlineLibrary/Persistance/obj/Debug/netcoreapp2.0/Persistance.dll
+/Users/cosminacorneanu/Desktop/OnlineLibrary/Persistance/obj/Debug/netcoreapp2.0/Persistance.pdb

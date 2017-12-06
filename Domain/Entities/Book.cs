@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Domain.Entities
 {
@@ -9,11 +10,11 @@ namespace Domain.Entities
         public string Type { get; set; }
         public string Author { get; set; }
         public int Downloaded { get; set; }
-
         public string Path { get; set; }
         public string PhotoPath { get; set; }
+        public List<Rating> Ratings;
 
-        public double Rating { get; set; }
+        public double Score { get; set; }
 
         public Book(string name, string type, string author)
         {

@@ -1,0 +1,24 @@
+﻿<Properties StartupConfiguration="{DAE35CDF-B5AA-4AC0-8BAB-8005978E6842}|Default">
+  <MonoDevelop.Ide.ItemProperties.Presentation_220Layer.Presentation PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Business/RatingRepository.cs">
+    <Files>
+      <File FileName="Domain/Entities/Book.cs" Line="18" Column="9" />
+      <File FileName="Domain/Entities/User.cs" Line="18" Column="33" />
+      <File FileName="Persistance/DatabaseContext.cs" Line="4" Column="11" />
+      <File FileName="Domain/Entities/Rating.cs" Line="12" Column="10" />
+      <File FileName="Domain/Interfaces/IBookRepository.cs" Line="11" Column="1" />
+      <File FileName="Domain/Interfaces/IRatingRepository.cs" Line="13" Column="30" />
+      <File FileName="Domain/Interfaces/IUserRepository.cs" Line="16" Column="2" />
+      <File FileName="Persistance/IDatabaseContext.cs" Line="5" Column="11" />
+      <File FileName="Business/BookRepository.cs" Line="12" Column="60" />
+      <File FileName="Business/UserRepository.cs" Line="22" Column="39" />
+      <File FileName="Business/RatingRepository.cs" Line="24" Column="13" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
