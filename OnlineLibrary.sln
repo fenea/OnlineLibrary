@@ -9,13 +9,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business Layer", "Business 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation Layer", "Presentation Layer", "{CB0A704A-262F-42BC-A8F8-33A6AAB25B0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{AEA9BCB0-5923-4115-9F83-5BAA63BA9534}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{AEA9BCB0-5923-4115-9F83-5BAA63BA9534}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistance", "Persistance\Persistance.csproj", "{0D83D3BC-603B-48ED-8E04-96DEEFB18B4B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistance", "Persistance\Persistance.csproj", "{0D83D3BC-603B-48ED-8E04-96DEEFB18B4B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{6D6107A3-951C-4560-AEF0-6A4B00CC4B4E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business", "Business\Business.csproj", "{6D6107A3-951C-4560-AEF0-6A4B00CC4B4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation", "Presentation\Presentation.csproj", "{DAE35CDF-B5AA-4AC0-8BAB-8005978E6842}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Presentation", "Presentation\Presentation.csproj", "{DAE35CDF-B5AA-4AC0-8BAB-8005978E6842}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A6F44487-DCA8-4372-AF70-C8C5AD167224}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
