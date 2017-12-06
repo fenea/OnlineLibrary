@@ -1,0 +1,6 @@
+﻿namespace Business
+{
+    class BookRepository
+    {
+    }
+}

@@ -1,0 +1,7 @@
+﻿
+namespace Persistance
+{
+    class DatabaseContext
+    {
+    }
+}
