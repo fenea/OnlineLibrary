@@ -6086,24 +6086,33 @@
     ]
   },
   "packageFolders": {
-    "/Users/cosminacorneanu/.nuget/packages/": {}
+    "C:\\Users\\cosmy\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
-      "projectUniqueName": "/Users/cosminacorneanu/Desktop/OnlineLibrary/Domain/Domain.csproj",
+      "projectUniqueName": "C:\\Users\\cosmy\\source\\repos\\Library\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "/Users/cosminacorneanu/Desktop/OnlineLibrary/Domain/Domain.csproj",
-      "packagesPath": "/Users/cosminacorneanu/.nuget/packages/",
-      "outputPath": "/Users/cosminacorneanu/Desktop/OnlineLibrary/Domain/obj",
+      "projectPath": "C:\\Users\\cosmy\\source\\repos\\Library\\Domain\\Domain.csproj",
+      "packagesPath": "C:\\Users\\cosmy\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cosmy\\source\\repos\\Library\\Domain\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "/Users/cosminacorneanu/.config/NuGet/NuGet.Config"
+        "C:\\Users\\cosmy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -6120,12 +6129,6 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.NETCore.App": {
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "2.0.0",
-            "autoReferenced": true
-          },
           "Microsoft.AspNetCore": {
             "target": "Package",
             "version": "2.0.1"
@@ -6134,11 +6137,17 @@
             "target": "Package",
             "version": "2.0.1"
           },
-          "Microsoft.EntityFrameworkCore.SqlServer": {
+          "Microsoft.EntityFrameworkCore.Tools": {
             "target": "Package",
             "version": "2.0.1"
           },
-          "Microsoft.EntityFrameworkCore.Tools": {
+          "Microsoft.NETCore.App": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "2.0.0",
+            "autoReferenced": true
+          },
+          "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "2.0.1"
           }

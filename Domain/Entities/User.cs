@@ -1,25 +1,25 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Identity;
+using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace Domain.Entities
 {
-    public class User  // name, email, password
+    public class User:IdentityUser  // name, email, password
     {
-        public string UserName{ get; set; }
-        public string Email { get; set; }
-        public string Password { get; set; }
-        public Guid IdUser { get; set; }
         public string PhotoPath { get; set; }
-        List<Book> Downloaded;
-        List<Book> Saved;
+        List<Book> Downloaded { get; set; }
+        List<Book> Saved { get; set; }
+        public string Role;
 
-        public User(string userName, string email, string password , string photoPath)
+        public User()
         {
-            UserName = userName;
-            Email = email;
-            Password = password;
-            PhotoPath = photoPath;
 
+        }
+
+        public User(string userName, string email, string password, string photoPath)
+        {
+               PhotoPath = photoPath;
         }
 
 

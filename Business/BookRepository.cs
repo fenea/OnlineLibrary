@@ -18,8 +18,7 @@ namespace Business
 
         public IReadOnlyList<Book> GetAllBooks()
         {
-            IEnumerable<Book> books = _databaseService.Books.Include("Book");
-            return books.ToList();
+            return _databaseService.Books.ToList();
         }
 
         public Book GetBookById(Guid id)
@@ -46,6 +45,6 @@ namespace Business
             _databaseService.SaveChanges();
         }
 
-       
+
     }
 }
