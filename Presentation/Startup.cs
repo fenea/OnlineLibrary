@@ -28,10 +28,11 @@ namespace Presentation
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var connection = @"Server = .\SQLEXPRESS; Database = Library; Trusted_Connection = true";
 
-            services.AddIdentity<User,
-            IdentityRole>(config => config.User.RequireUniqueEmail = true).AddEntityFrameworkStores<DatabaseContext>();
+
+            services.AddDbContext<DatabaseContext>(options =>options.UseSqlite("Data Source=MvcBooks.sqlite",x=>x.MigrationsAssembly(("Presentation"))));
+            services.AddIdentity<User, IdentityRole>().AddEntityFrameworkStores<DatabaseContext>().AddDefaultTokenProviders();
+
 
             //secure conn
 
@@ -52,8 +53,7 @@ namespace Presentation
                 c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
             });
 
-            services.AddDbContext<DatabaseContext>(options =>
-                options.UseSqlServer(connection));
+           
 
             services.AddTransient<IDatabaseContext, DatabaseContext>();
             services.AddTransient<IBookRepository, BookRepository>();
@@ -91,7 +91,7 @@ namespace Presentation
                 routes.MapRoute(
                     name: "default",
                     template: "{controller}/{action}/{id?}",
-                    defaults: new { controller="Home",action="Index" });
+                    defaults: new { controller="Account",action="Login" });
 
                
             });

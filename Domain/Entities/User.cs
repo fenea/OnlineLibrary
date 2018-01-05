@@ -1,25 +1,24 @@
-﻿using Microsoft.AspNetCore.Identity;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Identity;
 
 namespace Domain.Entities
 {
-    public class User:IdentityUser  // name, email, password
+    public class User : IdentityUser  // name, email, password
     {
         public string PhotoPath { get; set; }
-        List<Book> Downloaded { get; set; }
-        List<Book> Saved { get; set; }
+
+        public List<BookToReadUser> BookToReadUser { get; set; }
+        public List<BookDownloadedUser> BookDownloadedUser { get; set; }
+        public List<Rating> Ratings { get; set; }
+
+
         public string Role;
 
         public User()
         {
-
-        }
-
-        public User(string userName, string email, string password, string photoPath)
-        {
-               PhotoPath = photoPath;
+            BookDownloadedUser = new List<BookDownloadedUser>();
+            BookToReadUser = new List<BookToReadUser>();
         }
 
 

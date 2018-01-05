@@ -1,15 +1,106 @@
-C:\Users\cosmy\source\repos\Library\Business\bin\Debug\netcoreapp2.0\Business.deps.json
-C:\Users\cosmy\source\repos\Library\Business\bin\Debug\netcoreapp2.0\Business.dll
-C:\Users\cosmy\source\repos\Library\Business\bin\Debug\netcoreapp2.0\Business.pdb
-C:\Users\cosmy\source\repos\Library\Business\bin\Debug\netcoreapp2.0\Domain.dll
-C:\Users\cosmy\source\repos\Library\Business\bin\Debug\netcoreapp2.0\Persistance.dll
-C:\Users\cosmy\source\repos\Library\Business\bin\Debug\netcoreapp2.0\Domain.pdb
-C:\Users\cosmy\source\repos\Library\Business\bin\Debug\netcoreapp2.0\Persistance.pdb
-C:\Users\cosmy\source\repos\Library\Business\obj\Debug\netcoreapp2.0\Business.csprojResolveAssemblyReference.cache
-C:\Users\cosmy\source\repos\Library\Business\obj\Debug\netcoreapp2.0\Business.csproj.CoreCompileInputs.cache
-C:\Users\cosmy\source\repos\Library\Business\obj\Debug\netcoreapp2.0\Business.AssemblyInfoInputs.cache
-C:\Users\cosmy\source\repos\Library\Business\obj\Debug\netcoreapp2.0\Business.AssemblyInfo.cs
-C:\Users\cosmy\source\repos\Library\Business\obj\Debug\netcoreapp2.0\Business.dll
-C:\Users\cosmy\source\repos\Library\Business\obj\Debug\netcoreapp2.0\Business.pdb
-C:\Users\cosmy\source\repos\Library\Business\bin\Debug\netcoreapp2.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-C:\Users\cosmy\source\repos\Library\Business\bin\Debug\netcoreapp2.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.xml
+C:/Users/cosmy/source/repos/Library/Business/bin/Debug/netcoreapp2.0/Business.deps.json
+C:/Users/cosmy/source/repos/Library/Business/bin/Debug/netcoreapp2.0/Business.dll
+C:/Users/cosmy/source/repos/Library/Business/bin/Debug/netcoreapp2.0/Business.pdb
+C:/Users/cosmy/source/repos/Library/Business/bin/Debug/netcoreapp2.0/Domain.dll
+C:/Users/cosmy/source/repos/Library/Business/bin/Debug/netcoreapp2.0/Persistance.dll
+C:/Users/cosmy/source/repos/Library/Business/bin/Debug/netcoreapp2.0/Domain.pdb
+C:/Users/cosmy/source/repos/Library/Business/bin/Debug/netcoreapp2.0/Persistance.pdb
+C:/Users/cosmy/source/repos/Library/Business/obj/Debug/netcoreapp2.0/Business.csprojResolveAssemblyReference.cache
+C:/Users/cosmy/source/repos/Library/Business/obj/Debug/netcoreapp2.0/Business.csproj.CoreCompileInputs.cache
+C:/Users/cosmy/source/repos/Library/Business/obj/Debug/netcoreapp2.0/Business.AssemblyInfoInputs.cache
+C:/Users/cosmy/source/repos/Library/Business/obj/Debug/netcoreapp2.0/Business.AssemblyInfo.cs
+C:/Users/cosmy/source/repos/Library/Business/obj/Debug/netcoreapp2.0/Business.dll
+C:/Users/cosmy/source/repos/Library/Business/obj/Debug/netcoreapp2.0/Business.pdb
+C:/Users/cosmy/source/repos/Library/Business/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:/Users/cosmy/source/repos/Library/Business/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.xml
+/Users/cosminacorneanu/Desktop/Library-1/Business/bin/Debug/netcoreapp2.0/Business.deps.json
+/Users/cosminacorneanu/Desktop/Library-1/Business/bin/Debug/netcoreapp2.0/Business.dll
+/Users/cosminacorneanu/Desktop/Library-1/Business/bin/Debug/netcoreapp2.0/Business.pdb
+/Users/cosminacorneanu/Desktop/Library-1/Business/bin/Debug/netcoreapp2.0/Domain.dll
+/Users/cosminacorneanu/Desktop/Library-1/Business/bin/Debug/netcoreapp2.0/Persistance.dll
+/Users/cosminacorneanu/Desktop/Library-1/Business/bin/Debug/netcoreapp2.0/Domain.pdb
+/Users/cosminacorneanu/Desktop/Library-1/Business/bin/Debug/netcoreapp2.0/Persistance.pdb
+/Users/cosminacorneanu/Desktop/Library-1/Business/obj/Debug/netcoreapp2.0/Business.csprojResolveAssemblyReference.cache
+/Users/cosminacorneanu/Desktop/Library-1/Business/obj/Debug/netcoreapp2.0/Business.csproj.CoreCompileInputs.cache
+/Users/cosminacorneanu/Desktop/Library-1/Business/obj/Debug/netcoreapp2.0/Business.AssemblyInfoInputs.cache
+/Users/cosminacorneanu/Desktop/Library-1/Business/obj/Debug/netcoreapp2.0/Business.AssemblyInfo.cs
+/Users/cosminacorneanu/Desktop/Library-1/Business/obj/Debug/netcoreapp2.0/Business.dll
+/Users/cosminacorneanu/Desktop/Library-1/Business/obj/Debug/netcoreapp2.0/Business.pdb
+/Users/cosminacorneanu/Desktop/Library-1-2/Business/bin/Debug/netcoreapp2.0/Business.deps.json
+/Users/cosminacorneanu/Desktop/Library-1-2/Business/bin/Debug/netcoreapp2.0/Business.dll
+/Users/cosminacorneanu/Desktop/Library-1-2/Business/bin/Debug/netcoreapp2.0/Business.pdb
+/Users/cosminacorneanu/Desktop/Library-1-2/Business/bin/Debug/netcoreapp2.0/Domain.dll
+/Users/cosminacorneanu/Desktop/Library-1-2/Business/bin/Debug/netcoreapp2.0/Persistance.dll
+/Users/cosminacorneanu/Desktop/Library-1-2/Business/bin/Debug/netcoreapp2.0/Domain.pdb
+/Users/cosminacorneanu/Desktop/Library-1-2/Business/bin/Debug/netcoreapp2.0/Persistance.pdb
+/Users/cosminacorneanu/Desktop/Library-1-2/Business/obj/Debug/netcoreapp2.0/Business.csprojResolveAssemblyReference.cache
+/Users/cosminacorneanu/Desktop/Library-1-2/Business/obj/Debug/netcoreapp2.0/Business.csproj.CoreCompileInputs.cache
+/Users/cosminacorneanu/Desktop/Library-1-2/Business/obj/Debug/netcoreapp2.0/Business.AssemblyInfoInputs.cache
+/Users/cosminacorneanu/Desktop/Library-1-2/Business/obj/Debug/netcoreapp2.0/Business.AssemblyInfo.cs
+/Users/cosminacorneanu/Desktop/Library-1-2/Business/obj/Debug/netcoreapp2.0/Business.dll
+/Users/cosminacorneanu/Desktop/Library-1-2/Business/obj/Debug/netcoreapp2.0/Business.pdb
+/Users/cosminacorneanu/Desktop/Library-1-2-2/Business/bin/Debug/netcoreapp2.0/Business.deps.json
+/Users/cosminacorneanu/Desktop/Library-1-2-2/Business/bin/Debug/netcoreapp2.0/Business.dll
+/Users/cosminacorneanu/Desktop/Library-1-2-2/Business/bin/Debug/netcoreapp2.0/Business.pdb
+/Users/cosminacorneanu/Desktop/Library-1-2-2/Business/bin/Debug/netcoreapp2.0/Domain.dll
+/Users/cosminacorneanu/Desktop/Library-1-2-2/Business/bin/Debug/netcoreapp2.0/Persistance.dll
+/Users/cosminacorneanu/Desktop/Library-1-2-2/Business/bin/Debug/netcoreapp2.0/Domain.pdb
+/Users/cosminacorneanu/Desktop/Library-1-2-2/Business/bin/Debug/netcoreapp2.0/Persistance.pdb
+/Users/cosminacorneanu/Desktop/Library-1-2-2/Business/obj/Debug/netcoreapp2.0/Business.csprojResolveAssemblyReference.cache
+/Users/cosminacorneanu/Desktop/Library-1-2-2/Business/obj/Debug/netcoreapp2.0/Business.csproj.CoreCompileInputs.cache
+/Users/cosminacorneanu/Desktop/Library-1-2-2/Business/obj/Debug/netcoreapp2.0/Business.AssemblyInfoInputs.cache
+/Users/cosminacorneanu/Desktop/Library-1-2-2/Business/obj/Debug/netcoreapp2.0/Business.AssemblyInfo.cs
+/Users/cosminacorneanu/Desktop/Library-1-2-2/Business/obj/Debug/netcoreapp2.0/Business.dll
+/Users/cosminacorneanu/Desktop/Library-1-2-2/Business/obj/Debug/netcoreapp2.0/Business.pdb
+/Users/cosminacorneanu/Downloads/Library-1-2-2/Business/bin/Debug/netcoreapp2.0/Business.deps.json
+/Users/cosminacorneanu/Downloads/Library-1-2-2/Business/bin/Debug/netcoreapp2.0/Business.dll
+/Users/cosminacorneanu/Downloads/Library-1-2-2/Business/bin/Debug/netcoreapp2.0/Business.pdb
+/Users/cosminacorneanu/Downloads/Library-1-2-2/Business/bin/Debug/netcoreapp2.0/Domain.dll
+/Users/cosminacorneanu/Downloads/Library-1-2-2/Business/bin/Debug/netcoreapp2.0/Persistance.dll
+/Users/cosminacorneanu/Downloads/Library-1-2-2/Business/bin/Debug/netcoreapp2.0/Domain.pdb
+/Users/cosminacorneanu/Downloads/Library-1-2-2/Business/bin/Debug/netcoreapp2.0/Persistance.pdb
+/Users/cosminacorneanu/Downloads/Library-1-2-2/Business/obj/Debug/netcoreapp2.0/Business.csprojResolveAssemblyReference.cache
+/Users/cosminacorneanu/Downloads/Library-1-2-2/Business/obj/Debug/netcoreapp2.0/Business.csproj.CoreCompileInputs.cache
+/Users/cosminacorneanu/Downloads/Library-1-2-2/Business/obj/Debug/netcoreapp2.0/Business.AssemblyInfoInputs.cache
+/Users/cosminacorneanu/Downloads/Library-1-2-2/Business/obj/Debug/netcoreapp2.0/Business.AssemblyInfo.cs
+/Users/cosminacorneanu/Downloads/Library-1-2-2/Business/obj/Debug/netcoreapp2.0/Business.dll
+/Users/cosminacorneanu/Downloads/Library-1-2-2/Business/obj/Debug/netcoreapp2.0/Business.pdb
+/Users/cosminacorneanu/Downloads/Library-1-2-2-6/Business/bin/Debug/netcoreapp2.0/Business.deps.json
+/Users/cosminacorneanu/Downloads/Library-1-2-2-6/Business/bin/Debug/netcoreapp2.0/Business.dll
+/Users/cosminacorneanu/Downloads/Library-1-2-2-6/Business/bin/Debug/netcoreapp2.0/Business.pdb
+/Users/cosminacorneanu/Downloads/Library-1-2-2-6/Business/bin/Debug/netcoreapp2.0/Domain.dll
+/Users/cosminacorneanu/Downloads/Library-1-2-2-6/Business/bin/Debug/netcoreapp2.0/Persistance.dll
+/Users/cosminacorneanu/Downloads/Library-1-2-2-6/Business/bin/Debug/netcoreapp2.0/Domain.pdb
+/Users/cosminacorneanu/Downloads/Library-1-2-2-6/Business/bin/Debug/netcoreapp2.0/Persistance.pdb
+/Users/cosminacorneanu/Downloads/Library-1-2-2-6/Business/obj/Debug/netcoreapp2.0/Business.csprojResolveAssemblyReference.cache
+/Users/cosminacorneanu/Downloads/Library-1-2-2-6/Business/obj/Debug/netcoreapp2.0/Business.csproj.CoreCompileInputs.cache
+/Users/cosminacorneanu/Downloads/Library-1-2-2-6/Business/obj/Debug/netcoreapp2.0/Business.AssemblyInfoInputs.cache
+/Users/cosminacorneanu/Downloads/Library-1-2-2-6/Business/obj/Debug/netcoreapp2.0/Business.AssemblyInfo.cs
+/Users/cosminacorneanu/Downloads/Library-1-2-2-6/Business/obj/Debug/netcoreapp2.0/Business.dll
+/Users/cosminacorneanu/Downloads/Library-1-2-2-6/Business/obj/Debug/netcoreapp2.0/Business.pdb
+/Users/cosminacorneanu/Desktop/last version/Business/bin/Debug/netcoreapp2.0/Business.deps.json
+/Users/cosminacorneanu/Desktop/last version/Business/bin/Debug/netcoreapp2.0/Business.dll
+/Users/cosminacorneanu/Desktop/last version/Business/bin/Debug/netcoreapp2.0/Business.pdb
+/Users/cosminacorneanu/Desktop/last version/Business/bin/Debug/netcoreapp2.0/Domain.dll
+/Users/cosminacorneanu/Desktop/last version/Business/bin/Debug/netcoreapp2.0/Persistance.dll
+/Users/cosminacorneanu/Desktop/last version/Business/bin/Debug/netcoreapp2.0/Domain.pdb
+/Users/cosminacorneanu/Desktop/last version/Business/bin/Debug/netcoreapp2.0/Persistance.pdb
+/Users/cosminacorneanu/Desktop/last version/Business/obj/Debug/netcoreapp2.0/Business.csprojResolveAssemblyReference.cache
+/Users/cosminacorneanu/Desktop/last version/Business/obj/Debug/netcoreapp2.0/Business.csproj.CoreCompileInputs.cache
+/Users/cosminacorneanu/Desktop/last version/Business/obj/Debug/netcoreapp2.0/Business.AssemblyInfoInputs.cache
+/Users/cosminacorneanu/Desktop/last version/Business/obj/Debug/netcoreapp2.0/Business.AssemblyInfo.cs
+/Users/cosminacorneanu/Desktop/last version/Business/obj/Debug/netcoreapp2.0/Business.dll
+/Users/cosminacorneanu/Desktop/last version/Business/obj/Debug/netcoreapp2.0/Business.pdb
+/Users/cosminacorneanu/Desktop/untitled folder/last version/Business/bin/Debug/netcoreapp2.0/Business.deps.json
+/Users/cosminacorneanu/Desktop/untitled folder/last version/Business/bin/Debug/netcoreapp2.0/Business.dll
+/Users/cosminacorneanu/Desktop/untitled folder/last version/Business/bin/Debug/netcoreapp2.0/Business.pdb
+/Users/cosminacorneanu/Desktop/untitled folder/last version/Business/bin/Debug/netcoreapp2.0/Domain.dll
+/Users/cosminacorneanu/Desktop/untitled folder/last version/Business/bin/Debug/netcoreapp2.0/Persistance.dll
+/Users/cosminacorneanu/Desktop/untitled folder/last version/Business/bin/Debug/netcoreapp2.0/Domain.pdb
+/Users/cosminacorneanu/Desktop/untitled folder/last version/Business/bin/Debug/netcoreapp2.0/Persistance.pdb
+/Users/cosminacorneanu/Desktop/untitled folder/last version/Business/obj/Debug/netcoreapp2.0/Business.csprojResolveAssemblyReference.cache
+/Users/cosminacorneanu/Desktop/untitled folder/last version/Business/obj/Debug/netcoreapp2.0/Business.csproj.CoreCompileInputs.cache
+/Users/cosminacorneanu/Desktop/untitled folder/last version/Business/obj/Debug/netcoreapp2.0/Business.AssemblyInfoInputs.cache
+/Users/cosminacorneanu/Desktop/untitled folder/last version/Business/obj/Debug/netcoreapp2.0/Business.AssemblyInfo.cs
+/Users/cosminacorneanu/Desktop/untitled folder/last version/Business/obj/Debug/netcoreapp2.0/Business.dll
+/Users/cosminacorneanu/Desktop/untitled folder/last version/Business/obj/Debug/netcoreapp2.0/Business.pdb

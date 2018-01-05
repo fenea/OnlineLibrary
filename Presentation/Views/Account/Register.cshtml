@@ -2,36 +2,44 @@
 @{
     ViewData["Title"] = "Register";
 }
-<h2>Login</h2>
-<div class="row">
-    <div class="col-md-4">
-        <form method="post">
+
+<main role="main" class="inner cover">
+    <div class="container">
+        <form method="post" class="form-signin">
             <div asp-validation-summary="ModelOnly"></div>
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-            <div class="form-group">
-                <label asp-for="Username" class="control-label"></label>
-                <input asp-for="Username" class="form-control" />
-                <span asp-validation-for="Username" class="text-danger"></span>
+             <h2 class="form-signin-heading">Please register </h2>
+
+
+             <div class="form-group1">
+                <label asp-for="Username" class="control-label" ></label>
+                <input asp-for="Username" class="form-control" placeholder="Username"  />
+                <span  asp-validation-for="Username" class="text-danger"></span>
             </div>
 
-            <div class="form-group">
+            
+            <div class="form-group2">
                 <label asp-for="Password" class="control-label"></label>
-                <input asp-for="Password" type="password" class="form-control" />
+                <input asp-for="Password" type="password" class="form-control" placeholder="Password"  />
                 <span asp-validation-for="Password" class="text-danger"></span>
             </div>
 
-            <div class="form-group">
+             <div class="form-group3">
                 <label asp-for="Email" class="control-label"></label>
-                <input asp-for="Email"class="form-control" />
+                <input asp-for="Email" class="form-control" placeholder="Email" />
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
 
             <div class="form-group">
-                <input type="submit" value="Register" class="btn btn-default" />
+                <input type="submit" value="Signup" class="btn btn-lg btn-primary btn-block" />
             </div>
+
+
+         
+
 
         </form>
     </div>
-</div>
+</main>
 

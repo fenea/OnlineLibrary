@@ -7,27 +7,23 @@ namespace Domain.Entities
     public class Rating
     {
 
-        [Key]
-        public Guid Id { get; set; }
+        public Rating()
+        {
 
-        [ForeignKey("User")]
-        [Column(Order = 1)]
-        public Guid UserId { get; set; }
+        }
 
-        [ForeignKey("Book")]
-        [Column(Order = 2)]
+
+
+        public String UserId { get; set; }
         public Guid BookId { get; set; }
+
+        public Book Book { get; set; }
+        public User User { get; set; }
 
         public int Grade { get; set; }
         public string Review { get; set; }
 
-        public Rating(Guid bookId, Guid userId, int grade, string review)
-        {
-            BookId = bookId;
-            UserId = userId;
-            Grade = grade;
-            Review = review;
 
-        }
+
     }
 }

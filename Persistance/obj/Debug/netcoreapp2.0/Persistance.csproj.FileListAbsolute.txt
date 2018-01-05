@@ -1,13 +1,90 @@
-C:\Users\cosmy\source\repos\Library\Persistance\bin\Debug\netcoreapp2.0\Persistance.deps.json
-C:\Users\cosmy\source\repos\Library\Persistance\bin\Debug\netcoreapp2.0\Persistance.dll
-C:\Users\cosmy\source\repos\Library\Persistance\bin\Debug\netcoreapp2.0\Persistance.pdb
-C:\Users\cosmy\source\repos\Library\Persistance\bin\Debug\netcoreapp2.0\Domain.dll
-C:\Users\cosmy\source\repos\Library\Persistance\bin\Debug\netcoreapp2.0\Domain.pdb
-C:\Users\cosmy\source\repos\Library\Persistance\obj\Debug\netcoreapp2.0\Persistance.csprojResolveAssemblyReference.cache
-C:\Users\cosmy\source\repos\Library\Persistance\obj\Debug\netcoreapp2.0\Persistance.csproj.CoreCompileInputs.cache
-C:\Users\cosmy\source\repos\Library\Persistance\obj\Debug\netcoreapp2.0\Persistance.AssemblyInfoInputs.cache
-C:\Users\cosmy\source\repos\Library\Persistance\obj\Debug\netcoreapp2.0\Persistance.AssemblyInfo.cs
-C:\Users\cosmy\source\repos\Library\Persistance\obj\Debug\netcoreapp2.0\Persistance.dll
-C:\Users\cosmy\source\repos\Library\Persistance\obj\Debug\netcoreapp2.0\Persistance.pdb
-C:\Users\cosmy\source\repos\Library\Persistance\bin\Debug\netcoreapp2.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-C:\Users\cosmy\source\repos\Library\Persistance\bin\Debug\netcoreapp2.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.xml
+C:/Users/cosmy/source/repos/Library/Persistance/bin/Debug/netcoreapp2.0/Persistance.deps.json
+C:/Users/cosmy/source/repos/Library/Persistance/bin/Debug/netcoreapp2.0/Persistance.dll
+C:/Users/cosmy/source/repos/Library/Persistance/bin/Debug/netcoreapp2.0/Persistance.pdb
+C:/Users/cosmy/source/repos/Library/Persistance/bin/Debug/netcoreapp2.0/Domain.dll
+C:/Users/cosmy/source/repos/Library/Persistance/bin/Debug/netcoreapp2.0/Domain.pdb
+C:/Users/cosmy/source/repos/Library/Persistance/obj/Debug/netcoreapp2.0/Persistance.csprojResolveAssemblyReference.cache
+C:/Users/cosmy/source/repos/Library/Persistance/obj/Debug/netcoreapp2.0/Persistance.csproj.CoreCompileInputs.cache
+C:/Users/cosmy/source/repos/Library/Persistance/obj/Debug/netcoreapp2.0/Persistance.AssemblyInfoInputs.cache
+C:/Users/cosmy/source/repos/Library/Persistance/obj/Debug/netcoreapp2.0/Persistance.AssemblyInfo.cs
+C:/Users/cosmy/source/repos/Library/Persistance/obj/Debug/netcoreapp2.0/Persistance.dll
+C:/Users/cosmy/source/repos/Library/Persistance/obj/Debug/netcoreapp2.0/Persistance.pdb
+C:/Users/cosmy/source/repos/Library/Persistance/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:/Users/cosmy/source/repos/Library/Persistance/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.xml
+/Users/cosminacorneanu/Desktop/Library-1/Persistance/obj/Debug/netcoreapp2.0/Persistance.csprojResolveAssemblyReference.cache
+/Users/cosminacorneanu/Desktop/Library-1/Persistance/obj/Debug/netcoreapp2.0/Persistance.csproj.CoreCompileInputs.cache
+/Users/cosminacorneanu/Desktop/Library-1/Persistance/obj/Debug/netcoreapp2.0/Persistance.AssemblyInfoInputs.cache
+/Users/cosminacorneanu/Desktop/Library-1/Persistance/obj/Debug/netcoreapp2.0/Persistance.AssemblyInfo.cs
+/Users/cosminacorneanu/Desktop/Library-1/Persistance/obj/Debug/netcoreapp2.0/Persistance.dll
+/Users/cosminacorneanu/Desktop/Library-1/Persistance/obj/Debug/netcoreapp2.0/Persistance.pdb
+/Users/cosminacorneanu/Desktop/Library-1/Persistance/bin/Debug/netcoreapp2.0/Persistance.deps.json
+/Users/cosminacorneanu/Desktop/Library-1/Persistance/bin/Debug/netcoreapp2.0/Persistance.dll
+/Users/cosminacorneanu/Desktop/Library-1/Persistance/bin/Debug/netcoreapp2.0/Persistance.pdb
+/Users/cosminacorneanu/Desktop/Library-1/Persistance/bin/Debug/netcoreapp2.0/Domain.dll
+/Users/cosminacorneanu/Desktop/Library-1/Persistance/bin/Debug/netcoreapp2.0/Domain.pdb
+/Users/cosminacorneanu/Desktop/Library-1-2/Persistance/bin/Debug/netcoreapp2.0/Persistance.deps.json
+/Users/cosminacorneanu/Desktop/Library-1-2/Persistance/bin/Debug/netcoreapp2.0/Persistance.dll
+/Users/cosminacorneanu/Desktop/Library-1-2/Persistance/bin/Debug/netcoreapp2.0/Persistance.pdb
+/Users/cosminacorneanu/Desktop/Library-1-2/Persistance/bin/Debug/netcoreapp2.0/Domain.dll
+/Users/cosminacorneanu/Desktop/Library-1-2/Persistance/bin/Debug/netcoreapp2.0/Domain.pdb
+/Users/cosminacorneanu/Desktop/Library-1-2/Persistance/obj/Debug/netcoreapp2.0/Persistance.csprojResolveAssemblyReference.cache
+/Users/cosminacorneanu/Desktop/Library-1-2/Persistance/obj/Debug/netcoreapp2.0/Persistance.csproj.CoreCompileInputs.cache
+/Users/cosminacorneanu/Desktop/Library-1-2/Persistance/obj/Debug/netcoreapp2.0/Persistance.AssemblyInfoInputs.cache
+/Users/cosminacorneanu/Desktop/Library-1-2/Persistance/obj/Debug/netcoreapp2.0/Persistance.AssemblyInfo.cs
+/Users/cosminacorneanu/Desktop/Library-1-2/Persistance/obj/Debug/netcoreapp2.0/Persistance.dll
+/Users/cosminacorneanu/Desktop/Library-1-2/Persistance/obj/Debug/netcoreapp2.0/Persistance.pdb
+/Users/cosminacorneanu/Desktop/Library-1-2-2/Persistance/bin/Debug/netcoreapp2.0/Persistance.deps.json
+/Users/cosminacorneanu/Desktop/Library-1-2-2/Persistance/bin/Debug/netcoreapp2.0/Persistance.dll
+/Users/cosminacorneanu/Desktop/Library-1-2-2/Persistance/bin/Debug/netcoreapp2.0/Persistance.pdb
+/Users/cosminacorneanu/Desktop/Library-1-2-2/Persistance/bin/Debug/netcoreapp2.0/Domain.dll
+/Users/cosminacorneanu/Desktop/Library-1-2-2/Persistance/bin/Debug/netcoreapp2.0/Domain.pdb
+/Users/cosminacorneanu/Desktop/Library-1-2-2/Persistance/obj/Debug/netcoreapp2.0/Persistance.csprojResolveAssemblyReference.cache
+/Users/cosminacorneanu/Desktop/Library-1-2-2/Persistance/obj/Debug/netcoreapp2.0/Persistance.csproj.CoreCompileInputs.cache
+/Users/cosminacorneanu/Desktop/Library-1-2-2/Persistance/obj/Debug/netcoreapp2.0/Persistance.AssemblyInfoInputs.cache
+/Users/cosminacorneanu/Desktop/Library-1-2-2/Persistance/obj/Debug/netcoreapp2.0/Persistance.AssemblyInfo.cs
+/Users/cosminacorneanu/Desktop/Library-1-2-2/Persistance/obj/Debug/netcoreapp2.0/Persistance.dll
+/Users/cosminacorneanu/Desktop/Library-1-2-2/Persistance/obj/Debug/netcoreapp2.0/Persistance.pdb
+/Users/cosminacorneanu/Downloads/Library-1-2-2/Persistance/bin/Debug/netcoreapp2.0/Persistance.deps.json
+/Users/cosminacorneanu/Downloads/Library-1-2-2/Persistance/bin/Debug/netcoreapp2.0/Persistance.dll
+/Users/cosminacorneanu/Downloads/Library-1-2-2/Persistance/bin/Debug/netcoreapp2.0/Persistance.pdb
+/Users/cosminacorneanu/Downloads/Library-1-2-2/Persistance/bin/Debug/netcoreapp2.0/Domain.dll
+/Users/cosminacorneanu/Downloads/Library-1-2-2/Persistance/bin/Debug/netcoreapp2.0/Domain.pdb
+/Users/cosminacorneanu/Downloads/Library-1-2-2/Persistance/obj/Debug/netcoreapp2.0/Persistance.csprojResolveAssemblyReference.cache
+/Users/cosminacorneanu/Downloads/Library-1-2-2/Persistance/obj/Debug/netcoreapp2.0/Persistance.csproj.CoreCompileInputs.cache
+/Users/cosminacorneanu/Downloads/Library-1-2-2/Persistance/obj/Debug/netcoreapp2.0/Persistance.AssemblyInfoInputs.cache
+/Users/cosminacorneanu/Downloads/Library-1-2-2/Persistance/obj/Debug/netcoreapp2.0/Persistance.AssemblyInfo.cs
+/Users/cosminacorneanu/Downloads/Library-1-2-2/Persistance/obj/Debug/netcoreapp2.0/Persistance.dll
+/Users/cosminacorneanu/Downloads/Library-1-2-2/Persistance/obj/Debug/netcoreapp2.0/Persistance.pdb
+/Users/cosminacorneanu/Downloads/Library-1-2-2-6/Persistance/bin/Debug/netcoreapp2.0/Persistance.deps.json
+/Users/cosminacorneanu/Downloads/Library-1-2-2-6/Persistance/bin/Debug/netcoreapp2.0/Persistance.dll
+/Users/cosminacorneanu/Downloads/Library-1-2-2-6/Persistance/bin/Debug/netcoreapp2.0/Persistance.pdb
+/Users/cosminacorneanu/Downloads/Library-1-2-2-6/Persistance/bin/Debug/netcoreapp2.0/Domain.dll
+/Users/cosminacorneanu/Downloads/Library-1-2-2-6/Persistance/bin/Debug/netcoreapp2.0/Domain.pdb
+/Users/cosminacorneanu/Downloads/Library-1-2-2-6/Persistance/obj/Debug/netcoreapp2.0/Persistance.csprojResolveAssemblyReference.cache
+/Users/cosminacorneanu/Downloads/Library-1-2-2-6/Persistance/obj/Debug/netcoreapp2.0/Persistance.csproj.CoreCompileInputs.cache
+/Users/cosminacorneanu/Downloads/Library-1-2-2-6/Persistance/obj/Debug/netcoreapp2.0/Persistance.AssemblyInfoInputs.cache
+/Users/cosminacorneanu/Downloads/Library-1-2-2-6/Persistance/obj/Debug/netcoreapp2.0/Persistance.AssemblyInfo.cs
+/Users/cosminacorneanu/Downloads/Library-1-2-2-6/Persistance/obj/Debug/netcoreapp2.0/Persistance.dll
+/Users/cosminacorneanu/Downloads/Library-1-2-2-6/Persistance/obj/Debug/netcoreapp2.0/Persistance.pdb
+/Users/cosminacorneanu/Desktop/last version/Persistance/bin/Debug/netcoreapp2.0/Persistance.deps.json
+/Users/cosminacorneanu/Desktop/last version/Persistance/bin/Debug/netcoreapp2.0/Persistance.dll
+/Users/cosminacorneanu/Desktop/last version/Persistance/bin/Debug/netcoreapp2.0/Persistance.pdb
+/Users/cosminacorneanu/Desktop/last version/Persistance/bin/Debug/netcoreapp2.0/Domain.dll
+/Users/cosminacorneanu/Desktop/last version/Persistance/bin/Debug/netcoreapp2.0/Domain.pdb
+/Users/cosminacorneanu/Desktop/last version/Persistance/obj/Debug/netcoreapp2.0/Persistance.csprojResolveAssemblyReference.cache
+/Users/cosminacorneanu/Desktop/last version/Persistance/obj/Debug/netcoreapp2.0/Persistance.csproj.CoreCompileInputs.cache
+/Users/cosminacorneanu/Desktop/last version/Persistance/obj/Debug/netcoreapp2.0/Persistance.AssemblyInfoInputs.cache
+/Users/cosminacorneanu/Desktop/last version/Persistance/obj/Debug/netcoreapp2.0/Persistance.AssemblyInfo.cs
+/Users/cosminacorneanu/Desktop/last version/Persistance/obj/Debug/netcoreapp2.0/Persistance.dll
+/Users/cosminacorneanu/Desktop/last version/Persistance/obj/Debug/netcoreapp2.0/Persistance.pdb
+/Users/cosminacorneanu/Desktop/untitled folder/last version/Persistance/bin/Debug/netcoreapp2.0/Persistance.deps.json
+/Users/cosminacorneanu/Desktop/untitled folder/last version/Persistance/bin/Debug/netcoreapp2.0/Persistance.dll
+/Users/cosminacorneanu/Desktop/untitled folder/last version/Persistance/bin/Debug/netcoreapp2.0/Persistance.pdb
+/Users/cosminacorneanu/Desktop/untitled folder/last version/Persistance/bin/Debug/netcoreapp2.0/Domain.dll
+/Users/cosminacorneanu/Desktop/untitled folder/last version/Persistance/bin/Debug/netcoreapp2.0/Domain.pdb
+/Users/cosminacorneanu/Desktop/untitled folder/last version/Persistance/obj/Debug/netcoreapp2.0/Persistance.csprojResolveAssemblyReference.cache
+/Users/cosminacorneanu/Desktop/untitled folder/last version/Persistance/obj/Debug/netcoreapp2.0/Persistance.csproj.CoreCompileInputs.cache
+/Users/cosminacorneanu/Desktop/untitled folder/last version/Persistance/obj/Debug/netcoreapp2.0/Persistance.AssemblyInfoInputs.cache
+/Users/cosminacorneanu/Desktop/untitled folder/last version/Persistance/obj/Debug/netcoreapp2.0/Persistance.AssemblyInfo.cs
+/Users/cosminacorneanu/Desktop/untitled folder/last version/Persistance/obj/Debug/netcoreapp2.0/Persistance.dll
+/Users/cosminacorneanu/Desktop/untitled folder/last version/Persistance/obj/Debug/netcoreapp2.0/Persistance.pdb

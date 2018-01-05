@@ -5,9 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="1.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.0.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -27,4 +31,11 @@
  </ItemGroup>
   
 
+ <ItemGroup>
+   <Content Remove="wwwroot\css\materialdesignicons.min.css" />
+ </ItemGroup>
+ <ItemGroup>
+   <Folder Include="wwwroot\images\books\" />
+   <Folder Include="wwwroot\images\books\action\" />
+ </ItemGroup>
 </Project>

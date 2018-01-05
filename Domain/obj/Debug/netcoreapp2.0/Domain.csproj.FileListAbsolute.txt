@@ -1,11 +1,74 @@
-C:\Users\cosmy\source\repos\Library\Domain\bin\Debug\netcoreapp2.0\Domain.deps.json
-C:\Users\cosmy\source\repos\Library\Domain\bin\Debug\netcoreapp2.0\Domain.dll
-C:\Users\cosmy\source\repos\Library\Domain\obj\Debug\netcoreapp2.0\Domain.csprojResolveAssemblyReference.cache
-C:\Users\cosmy\source\repos\Library\Domain\obj\Debug\netcoreapp2.0\Domain.csproj.CoreCompileInputs.cache
-C:\Users\cosmy\source\repos\Library\Domain\obj\Debug\netcoreapp2.0\Domain.AssemblyInfoInputs.cache
-C:\Users\cosmy\source\repos\Library\Domain\obj\Debug\netcoreapp2.0\Domain.AssemblyInfo.cs
-C:\Users\cosmy\source\repos\Library\Domain\bin\Debug\netcoreapp2.0\Domain.pdb
-C:\Users\cosmy\source\repos\Library\Domain\obj\Debug\netcoreapp2.0\Domain.dll
-C:\Users\cosmy\source\repos\Library\Domain\obj\Debug\netcoreapp2.0\Domain.pdb
-C:\Users\cosmy\source\repos\Library\Domain\bin\Debug\netcoreapp2.0\Microsoft.Extensions.Identity.Stores.dll
-C:\Users\cosmy\source\repos\Library\Domain\bin\Debug\netcoreapp2.0\Microsoft.Extensions.Identity.Stores.xml
+C:/Users/cosmy/source/repos/Library/Domain/bin/Debug/netcoreapp2.0/Domain.deps.json
+C:/Users/cosmy/source/repos/Library/Domain/bin/Debug/netcoreapp2.0/Domain.dll
+C:/Users/cosmy/source/repos/Library/Domain/obj/Debug/netcoreapp2.0/Domain.csprojResolveAssemblyReference.cache
+C:/Users/cosmy/source/repos/Library/Domain/obj/Debug/netcoreapp2.0/Domain.csproj.CoreCompileInputs.cache
+C:/Users/cosmy/source/repos/Library/Domain/obj/Debug/netcoreapp2.0/Domain.AssemblyInfoInputs.cache
+C:/Users/cosmy/source/repos/Library/Domain/obj/Debug/netcoreapp2.0/Domain.AssemblyInfo.cs
+C:/Users/cosmy/source/repos/Library/Domain/bin/Debug/netcoreapp2.0/Domain.pdb
+C:/Users/cosmy/source/repos/Library/Domain/obj/Debug/netcoreapp2.0/Domain.dll
+C:/Users/cosmy/source/repos/Library/Domain/obj/Debug/netcoreapp2.0/Domain.pdb
+C:/Users/cosmy/source/repos/Library/Domain/bin/Debug/netcoreapp2.0/Microsoft.Extensions.Identity.Stores.dll
+C:/Users/cosmy/source/repos/Library/Domain/bin/Debug/netcoreapp2.0/Microsoft.Extensions.Identity.Stores.xml
+/Users/cosminacorneanu/Desktop/Library-1/Domain/obj/Debug/netcoreapp2.0/Domain.csprojResolveAssemblyReference.cache
+/Users/cosminacorneanu/Desktop/Library-1/Domain/obj/Debug/netcoreapp2.0/Domain.csproj.CoreCompileInputs.cache
+/Users/cosminacorneanu/Desktop/Library-1/Domain/obj/Debug/netcoreapp2.0/Domain.AssemblyInfoInputs.cache
+/Users/cosminacorneanu/Desktop/Library-1/Domain/obj/Debug/netcoreapp2.0/Domain.AssemblyInfo.cs
+/Users/cosminacorneanu/Desktop/Library-1/Domain/obj/Debug/netcoreapp2.0/Domain.dll
+/Users/cosminacorneanu/Desktop/Library-1/Domain/obj/Debug/netcoreapp2.0/Domain.pdb
+/Users/cosminacorneanu/Desktop/Library-1/Domain/bin/Debug/netcoreapp2.0/Domain.deps.json
+/Users/cosminacorneanu/Desktop/Library-1/Domain/bin/Debug/netcoreapp2.0/Domain.dll
+/Users/cosminacorneanu/Desktop/Library-1/Domain/bin/Debug/netcoreapp2.0/Domain.pdb
+/Users/cosminacorneanu/Desktop/Library-1-2/Domain/bin/Debug/netcoreapp2.0/Domain.deps.json
+/Users/cosminacorneanu/Desktop/Library-1-2/Domain/bin/Debug/netcoreapp2.0/Domain.dll
+/Users/cosminacorneanu/Desktop/Library-1-2/Domain/bin/Debug/netcoreapp2.0/Domain.pdb
+/Users/cosminacorneanu/Desktop/Library-1-2/Domain/obj/Debug/netcoreapp2.0/Domain.csprojResolveAssemblyReference.cache
+/Users/cosminacorneanu/Desktop/Library-1-2/Domain/obj/Debug/netcoreapp2.0/Domain.csproj.CoreCompileInputs.cache
+/Users/cosminacorneanu/Desktop/Library-1-2/Domain/obj/Debug/netcoreapp2.0/Domain.AssemblyInfoInputs.cache
+/Users/cosminacorneanu/Desktop/Library-1-2/Domain/obj/Debug/netcoreapp2.0/Domain.AssemblyInfo.cs
+/Users/cosminacorneanu/Desktop/Library-1-2/Domain/obj/Debug/netcoreapp2.0/Domain.dll
+/Users/cosminacorneanu/Desktop/Library-1-2/Domain/obj/Debug/netcoreapp2.0/Domain.pdb
+/Users/cosminacorneanu/Desktop/Library-1-2-2/Domain/bin/Debug/netcoreapp2.0/Domain.deps.json
+/Users/cosminacorneanu/Desktop/Library-1-2-2/Domain/bin/Debug/netcoreapp2.0/Domain.dll
+/Users/cosminacorneanu/Desktop/Library-1-2-2/Domain/bin/Debug/netcoreapp2.0/Domain.pdb
+/Users/cosminacorneanu/Desktop/Library-1-2-2/Domain/obj/Debug/netcoreapp2.0/Domain.csprojResolveAssemblyReference.cache
+/Users/cosminacorneanu/Desktop/Library-1-2-2/Domain/obj/Debug/netcoreapp2.0/Domain.csproj.CoreCompileInputs.cache
+/Users/cosminacorneanu/Desktop/Library-1-2-2/Domain/obj/Debug/netcoreapp2.0/Domain.AssemblyInfoInputs.cache
+/Users/cosminacorneanu/Desktop/Library-1-2-2/Domain/obj/Debug/netcoreapp2.0/Domain.AssemblyInfo.cs
+/Users/cosminacorneanu/Desktop/Library-1-2-2/Domain/obj/Debug/netcoreapp2.0/Domain.dll
+/Users/cosminacorneanu/Desktop/Library-1-2-2/Domain/obj/Debug/netcoreapp2.0/Domain.pdb
+/Users/cosminacorneanu/Downloads/Library-1-2-2/Domain/bin/Debug/netcoreapp2.0/Domain.deps.json
+/Users/cosminacorneanu/Downloads/Library-1-2-2/Domain/bin/Debug/netcoreapp2.0/Domain.dll
+/Users/cosminacorneanu/Downloads/Library-1-2-2/Domain/bin/Debug/netcoreapp2.0/Domain.pdb
+/Users/cosminacorneanu/Downloads/Library-1-2-2/Domain/obj/Debug/netcoreapp2.0/Domain.csprojResolveAssemblyReference.cache
+/Users/cosminacorneanu/Downloads/Library-1-2-2/Domain/obj/Debug/netcoreapp2.0/Domain.csproj.CoreCompileInputs.cache
+/Users/cosminacorneanu/Downloads/Library-1-2-2/Domain/obj/Debug/netcoreapp2.0/Domain.AssemblyInfoInputs.cache
+/Users/cosminacorneanu/Downloads/Library-1-2-2/Domain/obj/Debug/netcoreapp2.0/Domain.AssemblyInfo.cs
+/Users/cosminacorneanu/Downloads/Library-1-2-2/Domain/obj/Debug/netcoreapp2.0/Domain.dll
+/Users/cosminacorneanu/Downloads/Library-1-2-2/Domain/obj/Debug/netcoreapp2.0/Domain.pdb
+/Users/cosminacorneanu/Downloads/Library-1-2-2-6/Domain/bin/Debug/netcoreapp2.0/Domain.deps.json
+/Users/cosminacorneanu/Downloads/Library-1-2-2-6/Domain/bin/Debug/netcoreapp2.0/Domain.dll
+/Users/cosminacorneanu/Downloads/Library-1-2-2-6/Domain/bin/Debug/netcoreapp2.0/Domain.pdb
+/Users/cosminacorneanu/Downloads/Library-1-2-2-6/Domain/obj/Debug/netcoreapp2.0/Domain.csprojResolveAssemblyReference.cache
+/Users/cosminacorneanu/Downloads/Library-1-2-2-6/Domain/obj/Debug/netcoreapp2.0/Domain.csproj.CoreCompileInputs.cache
+/Users/cosminacorneanu/Downloads/Library-1-2-2-6/Domain/obj/Debug/netcoreapp2.0/Domain.AssemblyInfoInputs.cache
+/Users/cosminacorneanu/Downloads/Library-1-2-2-6/Domain/obj/Debug/netcoreapp2.0/Domain.AssemblyInfo.cs
+/Users/cosminacorneanu/Downloads/Library-1-2-2-6/Domain/obj/Debug/netcoreapp2.0/Domain.dll
+/Users/cosminacorneanu/Downloads/Library-1-2-2-6/Domain/obj/Debug/netcoreapp2.0/Domain.pdb
+/Users/cosminacorneanu/Desktop/last version/Domain/bin/Debug/netcoreapp2.0/Domain.deps.json
+/Users/cosminacorneanu/Desktop/last version/Domain/bin/Debug/netcoreapp2.0/Domain.dll
+/Users/cosminacorneanu/Desktop/last version/Domain/bin/Debug/netcoreapp2.0/Domain.pdb
+/Users/cosminacorneanu/Desktop/last version/Domain/obj/Debug/netcoreapp2.0/Domain.csprojResolveAssemblyReference.cache
+/Users/cosminacorneanu/Desktop/last version/Domain/obj/Debug/netcoreapp2.0/Domain.csproj.CoreCompileInputs.cache
+/Users/cosminacorneanu/Desktop/last version/Domain/obj/Debug/netcoreapp2.0/Domain.AssemblyInfoInputs.cache
+/Users/cosminacorneanu/Desktop/last version/Domain/obj/Debug/netcoreapp2.0/Domain.AssemblyInfo.cs
+/Users/cosminacorneanu/Desktop/last version/Domain/obj/Debug/netcoreapp2.0/Domain.dll
+/Users/cosminacorneanu/Desktop/last version/Domain/obj/Debug/netcoreapp2.0/Domain.pdb
+/Users/cosminacorneanu/Desktop/untitled folder/last version/Domain/bin/Debug/netcoreapp2.0/Domain.deps.json
+/Users/cosminacorneanu/Desktop/untitled folder/last version/Domain/bin/Debug/netcoreapp2.0/Domain.dll
+/Users/cosminacorneanu/Desktop/untitled folder/last version/Domain/bin/Debug/netcoreapp2.0/Domain.pdb
+/Users/cosminacorneanu/Desktop/untitled folder/last version/Domain/obj/Debug/netcoreapp2.0/Domain.csprojResolveAssemblyReference.cache
+/Users/cosminacorneanu/Desktop/untitled folder/last version/Domain/obj/Debug/netcoreapp2.0/Domain.csproj.CoreCompileInputs.cache
+/Users/cosminacorneanu/Desktop/untitled folder/last version/Domain/obj/Debug/netcoreapp2.0/Domain.AssemblyInfoInputs.cache
+/Users/cosminacorneanu/Desktop/untitled folder/last version/Domain/obj/Debug/netcoreapp2.0/Domain.AssemblyInfo.cs
+/Users/cosminacorneanu/Desktop/untitled folder/last version/Domain/obj/Debug/netcoreapp2.0/Domain.dll
+/Users/cosminacorneanu/Desktop/untitled folder/last version/Domain/obj/Debug/netcoreapp2.0/Domain.pdb

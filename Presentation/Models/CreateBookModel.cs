@@ -17,6 +17,8 @@ namespace Presentation.Models
 
         public string PhotoPath { get; set; }
 
+        public string Description { get; set; }
+
 
     }
 }

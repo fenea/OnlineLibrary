@@ -8,8 +8,7 @@ namespace Persistance
     {
         EntityEntry Entry(object entity);
         DbSet<Book> Books { get; set; }
-     //   DbSet<User> Users { get; set; }
-        // DbSet<Rating> Ratings { get; set; }
+        DbSet<Rating> Ratings { get; set; }
         int SaveChanges();
     }
 }

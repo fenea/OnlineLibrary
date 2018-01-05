@@ -12,6 +12,7 @@ namespace Presentation.Controllers
     {
         private IBookRepository _bookRepository;
 
+
         public BooksController(IBookRepository bookRepository)
         {
             _bookRepository = bookRepository;
@@ -45,32 +46,28 @@ namespace Presentation.Controllers
 
 
         [HttpPost]
-        public IActionResult AdBook(Book model)
+        public IActionResult AddBook(CreateBookModel model)
         {
+
             if(ModelState.IsValid)
             {
-                _bookRepository.AddBook(model);
+
+                Book book = Book.Create(model.Name, model.Type, model.Author, model.Path, model.PhotoPath, model.Description,DateTime.Now);
+                _bookRepository.AddBook(book);
             }
-          
-                return View("ListBooks");
-            
+
+            return RedirectToAction("ListBooks");
+
         }
 
         
-        // POST api/values
-        [HttpPost("/post/BooksController")]
-        public void Post([FromBody]CreateBookModel book)
-        {
-            var entity = Book.Create(book.Name, book.Type , book.Path ,book.PhotoPath , book.Author);
-            _bookRepository.AddBook(entity);
-           
-        }
+
 
         [HttpPut("{id}")]
         public void Put(Guid id, [FromBody]UpdateBookModel book)
         {
             var entity = _bookRepository.GetBookById(id);
-            entity.Update(book.Name, book.Type, book.Path, book.PhotoPath, book.Author);
+            entity.Update(book.Name, book.Type, book.Path, book.PhotoPath, book.Author, book.Description,DateTime.Now);
             _bookRepository.EditBook(entity);
         }
 

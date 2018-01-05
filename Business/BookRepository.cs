@@ -23,7 +23,7 @@ namespace Business
 
         public Book GetBookById(Guid id)
         {
-            return _databaseService.Books.FirstOrDefault(t => t.Id == id);
+            return _databaseService.Books.FirstOrDefault(t => t.BookId == id);
         }
 
         public void AddBook(Book book)

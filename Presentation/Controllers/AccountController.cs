@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -7,94 +7,57 @@ using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Identity;
 using Domain.Entities;
 using Presentation.Models;
-
-namespace Presentation.Controllers
-{
-    public class AccountController : Controller
-    {
-        private readonly ILogger<AccountController> _logger;
-        private readonly SignInManager<User> _signInManager;
-        private readonly UserManager<User> _userManager;
+using Persistance;
 
 
-        public AccountController(ILogger<AccountController> logger,SignInManager<User>signInManager,UserManager<User> userManager)
-        {
-            _logger = logger;
-            _signInManager = signInManager;
-            _userManager = userManager;
-        }
+namespace Presentation.Controllers {     public class AccountController : Controller     {         private readonly ILogger<AccountController> _logger;         private readonly SignInManager<User> _signInManager;         private readonly UserManager<User> _userManager;         private DatabaseContext _db;
 
-        private void AddErrors(IdentityResult result)
-        {
-            foreach (var error in result.Errors)
-            {
-                ModelState.AddModelError("", error.Description);
-            }
-        }
+         public AccountController(ILogger<AccountController> logger, SignInManager<User> signInManager, UserManager<User> userManager, DatabaseContext db)         {             _logger = logger;
+            _signInManager = signInManager;             _userManager = userManager;
+            _db = db;         }          private void AddErrors(IdentityResult result)         {             foreach (var error in result.Errors)             {                 ModelState.AddModelError("", error.Description);             }         }          public IActionResult Login()         {             if (this.User.Identity.IsAuthenticated)             {                 return RedirectToAction("Index");             }              return View();         }
 
-        public IActionResult Login()
-        {
-            if(this.User.Identity.IsAuthenticated)
-            {
-                return RedirectToAction("Index", "Home");
-            }
-
-            return View();
-        }
-
-        [HttpPost]
-        public async Task<IActionResult>  Login(LoginViewModel model)
-        {
-            if(ModelState.IsValid)
-            {
+        [HttpPost]         public async Task<IActionResult> Login(LoginViewModel model)         {             if (ModelState.IsValid)             {
                 //allow to signin only with username+password
-                var result = await _signInManager.PasswordSignInAsync(model.Username, model.Password,
-                model.RememberMe,false );
+                var result = await _signInManager.PasswordSignInAsync(model.Username, model.Password, model.RememberMe, false);
 
-                if(result.Succeeded)
-                {
 
-                    return RedirectToAction("Index", "Home");
-                }
 
-            }
+                if (result.Succeeded)                 {
+                    TempData["userId"] = model.Username;
+                    return RedirectToAction("Index");
+                }              }              ModelState.AddModelError("", "Failed to login ");              return View();         }          [HttpGet]         public async Task<IActionResult> Logout()         {             await _signInManager.SignOutAsync();             return RedirectToAction("Login");         }          public IActionResult Register()         {             return View();         }
 
-            ModelState.AddModelError("", "Failed to login ");
-
-            return View();
-        }
-
-        [HttpGet]
-        public async Task<IActionResult> Logout()
+        public IActionResult Index()
         {
-            await _signInManager.SignOutAsync();
+            var currentUserId = _userManager.GetUserId(User);           
+            TempData["userId"] = currentUserId;//currentUser.Id;
             return RedirectToAction("Index", "Home");
         }
 
-        public IActionResult Register()
+
+        public JsonResult AddToReadBooks(string id)
         {
-            return View();
+            var idUser = _userManager.GetUserId(User);
+            var currentUser = _db.Users.Find(idUser);
+            Book book = _db.Books.Find(new Guid(id));  
+            currentUser.BookToReadUser.Add(new BookToReadUser(currentUser, book));
+
+            return Json(new { added=true, message = "Success" });
         }
 
+   
 
-        [HttpPost]
-        public async Task<IActionResult> Register(RegisterViewModel model)
-        {
-            if (ModelState.IsValid)
-            {
-                var user = new User { UserName = model.Username, Email = model.Email };
+
+        [HttpPost]         public async Task<IActionResult> Register(RegisterViewModel model)         {             if (ModelState.IsValid)             {
+                 var user = new User { UserName = model.Username, Email = model.Email };
+
+
+
                 var result = await _userManager.CreateAsync(user, model.Password);
-                if (result.Succeeded)
-                {
-                    
-                    await _signInManager.SignInAsync(user, isPersistent: false);
-                    return RedirectToAction("Index", "Home");
-                }
-                  AddErrors(result);
-            }
 
-           
-            return View();
-        }
-    }
-}
+              
+                if (result.Succeeded)                 {                     await _signInManager.SignInAsync(user, isPersistent: false);                     return RedirectToAction("Index");                 }
+                AddErrors(result);             }
+
+
+            return View();         }     } } 
