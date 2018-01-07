@@ -1,0 +1,12 @@
+﻿@using Domain.Entities;
+@model IEnumerable<BookToReadUser>
+@{ 
+    ViewBag.Title = "List";
+}
+
+<p>Number of added books : @Model.Count()</p>
+
+@foreach (var b in Model)
+{
+   <h3>"dfcgvh" @b.Book.BookId</h3>
+}

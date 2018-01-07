@@ -72,3 +72,12 @@ C:/Users/cosmy/source/repos/Library/Domain/bin/Debug/netcoreapp2.0/Microsoft.Ext
 /Users/cosminacorneanu/Desktop/untitled folder/last version/Domain/obj/Debug/netcoreapp2.0/Domain.AssemblyInfo.cs
 /Users/cosminacorneanu/Desktop/untitled folder/last version/Domain/obj/Debug/netcoreapp2.0/Domain.dll
 /Users/cosminacorneanu/Desktop/untitled folder/last version/Domain/obj/Debug/netcoreapp2.0/Domain.pdb
+/Users/cosminacorneanu/Desktop/untitled folder 2/last version/Domain/bin/Debug/netcoreapp2.0/Domain.deps.json
+/Users/cosminacorneanu/Desktop/untitled folder 2/last version/Domain/bin/Debug/netcoreapp2.0/Domain.dll
+/Users/cosminacorneanu/Desktop/untitled folder 2/last version/Domain/bin/Debug/netcoreapp2.0/Domain.pdb
+/Users/cosminacorneanu/Desktop/untitled folder 2/last version/Domain/obj/Debug/netcoreapp2.0/Domain.csprojResolveAssemblyReference.cache
+/Users/cosminacorneanu/Desktop/untitled folder 2/last version/Domain/obj/Debug/netcoreapp2.0/Domain.csproj.CoreCompileInputs.cache
+/Users/cosminacorneanu/Desktop/untitled folder 2/last version/Domain/obj/Debug/netcoreapp2.0/Domain.AssemblyInfoInputs.cache
+/Users/cosminacorneanu/Desktop/untitled folder 2/last version/Domain/obj/Debug/netcoreapp2.0/Domain.AssemblyInfo.cs
+/Users/cosminacorneanu/Desktop/untitled folder 2/last version/Domain/obj/Debug/netcoreapp2.0/Domain.dll
+/Users/cosminacorneanu/Desktop/untitled folder 2/last version/Domain/obj/Debug/netcoreapp2.0/Domain.pdb

@@ -27,7 +27,9 @@ namespace Domain.Entities
 
         public Book()
         {
-
+            Ratings = new List<Rating>();
+            BookDownloadedUser = new List<BookDownloadedUser>();
+            BookToReadUser = new List<BookToReadUser>();
         }
 
         public static Book Create(string name, string type, string author, string path, string photoPath, string description, DateTime added)

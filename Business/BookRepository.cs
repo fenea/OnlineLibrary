@@ -9,9 +9,9 @@ namespace Business
 {
     public class BookRepository : Domain.Interfaces.IBookRepository
     {
-        private readonly IDatabaseContext _databaseService;
+        private readonly DatabaseContext _databaseService;
 
-        public BookRepository(IDatabaseContext databaseService)
+        public BookRepository(DatabaseContext databaseService)
         {
             _databaseService = databaseService;
         }
@@ -44,6 +44,9 @@ namespace Business
             _databaseService.Books.Remove(book);
             _databaseService.SaveChanges();
         }
+
+   
+
 
 
     }

@@ -7,7 +7,7 @@ using Persistance;
 
 namespace Business
 {
-    
+
     public class RatingRepository : Domain.Interfaces.IRatingRepository
     {
         private readonly IDatabaseContext _databaseService;
@@ -46,7 +46,6 @@ namespace Business
             _databaseService.Ratings.Remove(user);
             _databaseService.SaveChanges();
         }
-
 
     }
 }

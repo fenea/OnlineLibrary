@@ -88,3 +88,14 @@ C:/Users/cosmy/source/repos/Library/Persistance/bin/Debug/netcoreapp2.0/Microsof
 /Users/cosminacorneanu/Desktop/untitled folder/last version/Persistance/obj/Debug/netcoreapp2.0/Persistance.AssemblyInfo.cs
 /Users/cosminacorneanu/Desktop/untitled folder/last version/Persistance/obj/Debug/netcoreapp2.0/Persistance.dll
 /Users/cosminacorneanu/Desktop/untitled folder/last version/Persistance/obj/Debug/netcoreapp2.0/Persistance.pdb
+/Users/cosminacorneanu/Desktop/untitled folder 2/last version/Persistance/bin/Debug/netcoreapp2.0/Persistance.deps.json
+/Users/cosminacorneanu/Desktop/untitled folder 2/last version/Persistance/bin/Debug/netcoreapp2.0/Persistance.dll
+/Users/cosminacorneanu/Desktop/untitled folder 2/last version/Persistance/bin/Debug/netcoreapp2.0/Persistance.pdb
+/Users/cosminacorneanu/Desktop/untitled folder 2/last version/Persistance/bin/Debug/netcoreapp2.0/Domain.dll
+/Users/cosminacorneanu/Desktop/untitled folder 2/last version/Persistance/bin/Debug/netcoreapp2.0/Domain.pdb
+/Users/cosminacorneanu/Desktop/untitled folder 2/last version/Persistance/obj/Debug/netcoreapp2.0/Persistance.csprojResolveAssemblyReference.cache
+/Users/cosminacorneanu/Desktop/untitled folder 2/last version/Persistance/obj/Debug/netcoreapp2.0/Persistance.csproj.CoreCompileInputs.cache
+/Users/cosminacorneanu/Desktop/untitled folder 2/last version/Persistance/obj/Debug/netcoreapp2.0/Persistance.AssemblyInfoInputs.cache
+/Users/cosminacorneanu/Desktop/untitled folder 2/last version/Persistance/obj/Debug/netcoreapp2.0/Persistance.AssemblyInfo.cs
+/Users/cosminacorneanu/Desktop/untitled folder 2/last version/Persistance/obj/Debug/netcoreapp2.0/Persistance.dll
+/Users/cosminacorneanu/Desktop/untitled folder 2/last version/Persistance/obj/Debug/netcoreapp2.0/Persistance.pdb

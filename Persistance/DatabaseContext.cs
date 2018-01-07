@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.ChangeTracking;
 namespace Persistance
 {
 
-    public class DatabaseContext : IdentityDbContext<User>, IDatabaseContext
+    public class DatabaseContext : IdentityDbContext<User>//, IDatabaseContext
     {
         public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options)
         {

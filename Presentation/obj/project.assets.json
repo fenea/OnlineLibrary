@@ -30471,11 +30471,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/cosminacorneanu/Desktop/untitled folder/last version/Presentation/Presentation.csproj",
+      "projectUniqueName": "/Users/cosminacorneanu/Desktop/untitled folder 2/last version/Presentation/Presentation.csproj",
       "projectName": "Presentation",
-      "projectPath": "/Users/cosminacorneanu/Desktop/untitled folder/last version/Presentation/Presentation.csproj",
+      "projectPath": "/Users/cosminacorneanu/Desktop/untitled folder 2/last version/Presentation/Presentation.csproj",
       "packagesPath": "/Users/cosminacorneanu/.nuget/packages/",
-      "outputPath": "/Users/cosminacorneanu/Desktop/untitled folder/last version/Presentation/obj",
+      "outputPath": "/Users/cosminacorneanu/Desktop/untitled folder 2/last version/Presentation/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -30492,14 +30492,14 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "/Users/cosminacorneanu/Desktop/untitled folder/last version/Business/Business.csproj": {
-              "projectPath": "/Users/cosminacorneanu/Desktop/untitled folder/last version/Business/Business.csproj"
+            "/Users/cosminacorneanu/Desktop/untitled folder 2/last version/Business/Business.csproj": {
+              "projectPath": "/Users/cosminacorneanu/Desktop/untitled folder 2/last version/Business/Business.csproj"
             },
-            "/Users/cosminacorneanu/Desktop/untitled folder/last version/Domain/Domain.csproj": {
-              "projectPath": "/Users/cosminacorneanu/Desktop/untitled folder/last version/Domain/Domain.csproj"
+            "/Users/cosminacorneanu/Desktop/untitled folder 2/last version/Domain/Domain.csproj": {
+              "projectPath": "/Users/cosminacorneanu/Desktop/untitled folder 2/last version/Domain/Domain.csproj"
             },
-            "/Users/cosminacorneanu/Desktop/untitled folder/last version/Persistance/Persistance.csproj": {
-              "projectPath": "/Users/cosminacorneanu/Desktop/untitled folder/last version/Persistance/Persistance.csproj"
+            "/Users/cosminacorneanu/Desktop/untitled folder 2/last version/Persistance/Persistance.csproj": {
+              "projectPath": "/Users/cosminacorneanu/Desktop/untitled folder 2/last version/Persistance/Persistance.csproj"
             }
           }
         }

@@ -6394,11 +6394,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/cosminacorneanu/Desktop/untitled folder/last version/Domain/Domain.csproj",
+      "projectUniqueName": "/Users/cosminacorneanu/Desktop/untitled folder 2/last version/Domain/Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "/Users/cosminacorneanu/Desktop/untitled folder/last version/Domain/Domain.csproj",
+      "projectPath": "/Users/cosminacorneanu/Desktop/untitled folder 2/last version/Domain/Domain.csproj",
       "packagesPath": "/Users/cosminacorneanu/.nuget/packages/",
-      "outputPath": "/Users/cosminacorneanu/Desktop/untitled folder/last version/Domain/obj",
+      "outputPath": "/Users/cosminacorneanu/Desktop/untitled folder 2/last version/Domain/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

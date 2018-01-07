@@ -17,6 +17,7 @@ namespace Domain.Entities
 
         public User()
         {
+            Ratings = new List<Rating>();
             BookDownloadedUser = new List<BookDownloadedUser>();
             BookToReadUser = new List<BookToReadUser>();
         }

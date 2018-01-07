@@ -8,9 +8,10 @@ using Microsoft.AspNetCore.Identity;
 using Domain.Entities;
 using Presentation.Models;
 using Persistance;
-
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace Presentation.Controllers {     public class AccountController : Controller     {         private readonly ILogger<AccountController> _logger;         private readonly SignInManager<User> _signInManager;         private readonly UserManager<User> _userManager;         private DatabaseContext _db;
+
 
          public AccountController(ILogger<AccountController> logger, SignInManager<User> signInManager, UserManager<User> userManager, DatabaseContext db)         {             _logger = logger;
             _signInManager = signInManager;             _userManager = userManager;
@@ -37,15 +38,36 @@ namespace Presentation.Controllers {     public class AccountController : Co
 
         public JsonResult AddToReadBooks(string id)
         {
-            var idUser = _userManager.GetUserId(User);
-            var currentUser = _db.Users.Find(idUser);
-            Book book = _db.Books.Find(new Guid(id));  
-            currentUser.BookToReadUser.Add(new BookToReadUser(currentUser, book));
 
-            return Json(new { added=true, message = "Success" });
+            var idUser = _userManager.GetUserId(User);
+            var user =_db.Users.Find(idUser);
+            Book book = _db.Books.Find(new Guid(id));
+            user.BookToReadUser.Add(new BookToReadUser(user, book));
+           
+           try
+            {
+                _userManager.UpdateAsync(user);
+                _db.SaveChanges();
+
+            }
+            catch
+            {
+                return Json(new { isAdded = id ,numar=user.BookToReadUser.Count() });
+            }
+            return Json(new { isAdded = "success"});
+
         }
 
-   
+        public IActionResult SeeAddedBooks()
+        {
+            var idUser = _userManager.GetUserId(User);
+            var res = _db.Users.Find(idUser).BookToReadUser.ToList();
+
+
+
+            return View(res);
+        } 
+
 
 
         [HttpPost]         public async Task<IActionResult> Register(RegisterViewModel model)         {             if (ModelState.IsValid)             {

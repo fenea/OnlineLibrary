@@ -1,0 +1,154 @@
+﻿
+<section id="happyClient">
+        <div class="container" style="padding:50px;">
+            <h2 class="sectionHeading">
+                <span class="subHeading">Review </span>
+                What people say
+            </h2>
+                        
+                        <img style="height:15%;width: 20%;max-width:20%; display: block;margin-left: auto;margin-right: auto" src= "@Model.Book.PhotoPath">
+                            <div class="info" style=" text-align: center; ">
+                                <h4 class="name">@Model.Book.Name</h4>
+                                <span class="regency">by @Model.Book.Author / @Model.Book.Type</span>
+                                <p class="desc" style="margin-left:15% margin-right:15%;">
+                                    @Model.Book.Description
+            </p>
+                            </div>
+                          
+
+                    
+<div class="containerp">
+                
+            <div class="col-sm-3"  style="margin-right:30px; margin-left:200px;width:40%;" >
+                <div class="rating-block" style="background-color:#fff;">
+                    <h4>Average user rating</h4>
+                    <h2 class="bold padding-bottom-7">@Model.Book.Score <small>/ 5</small></h2>
+
+                    @for (var i=0; i<Model.Book.Score;i++)
+                    {
+                        <button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
+                          <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                        </button>
+                    }
+
+                    @for (var i=Model.Book.Score; i<5;i++)
+                    {
+                    <button type="button" class="btn btn-default btn-grey btn-sm" aria-label="Left Align">
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    </button>
+               
+                    }
+
+                </div>
+            </div>
+            <div class="col-sm-3 ">
+                <h4>Rating breakdown</h4>
+                <div class="pull-left">
+                    <div class="pull-left" style="width:35px; line-height:1;">
+                        <div style="height:9px; margin:5px 0;">5 <span class="glyphicon glyphicon-star"></span></div>
+                    </div>
+                    <div class="pull-left" style="width:180px;">
+                        <div class="progress" style="height:9px; margin:8px 0;">
+                          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="5" style="width: 1000%">
+                            <span class="sr-only">80% Complete (danger)</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="pull-right" style="margin-left:10px;">1</div>
+                </div>
+                <div class="pull-left">
+                    <div class="pull-left" style="width:35px; line-height:1;">
+                        <div style="height:9px; margin:5px 0;">4 <span class="glyphicon glyphicon-star"></span></div>
+                    </div>
+                    <div class="pull-left" style="width:180px;">
+                        <div class="progress" style="height:9px; margin:8px 0;">
+                          <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="4" aria-valuemin="0" aria-valuemax="5" style="width: 80%">
+                            <span class="sr-only">80% Complete (danger)</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="pull-right" style="margin-left:10px;">1</div>
+                </div>
+                <div class="pull-left">
+                    <div class="pull-left" style="width:35px; line-height:1;">
+                        <div style="height:9px; margin:5px 0;">3 <span class="glyphicon glyphicon-star"></span></div>
+                    </div>
+                    <div class="pull-left" style="width:180px;">
+                        <div class="progress" style="height:9px; margin:8px 0;">
+                          <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="3" aria-valuemin="0" aria-valuemax="5" style="width: 60%">
+                            <span class="sr-only">80% Complete (danger)</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="pull-right" style="margin-left:10px;">0</div>
+                </div>
+                <div class="pull-left">
+                    <div class="pull-left" style="width:35px; line-height:1;">
+                        <div style="height:9px; margin:5px 0;">2 <span class="glyphicon glyphicon-star"></span></div>
+                    </div>
+                    <div class="pull-left" style="width:180px;">
+                        <div class="progress" style="height:9px; margin:8px 0;">
+                          <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="5" style="width: 40%">
+                            <span class="sr-only">80% Complete (danger)</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="pull-right" style="margin-left:10px;">0</div>
+                </div>
+                <div class="pull-left">
+                    <div class="pull-left" style="width:35px; line-height:1;">
+                        <div style="height:9px; margin:5px 0;">1 <span class="glyphicon glyphicon-star"></span></div>
+                    </div>
+                    <div class="pull-left" style="width:180px;">
+                        <div class="progress" style="height:9px; margin:8px 0;">
+                          <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="5" style="width: 20%">
+                            <span class="sr-only">80% Complete (danger)</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="pull-right" style="margin-left:10px;">0</div>
+                </div>
+            </div>          
+        </div>          
+        
+        </div>
+
+
+    
+@{
+    int counter=2;
+
+    foreach(var r in Model.Rating)
+    {
+        if (counter%2==0)
+        {
+             @:<div class="row"> 
+        }
+
+         <div class="col-md-6">
+                        <div layout="row" class="item">
+                            <div class="avatar fsr">
+                                <img class="img-circle" src="../images/profile_pic/1.png" alt="">
+                            </div>
+                            <div class="info">
+                                <h4 class="name">Namw</h4>
+                                <span class="regency">Grade</span>
+                                <p class="desc">
+                                            @r.Review
+                                 </p>
+                            </div>
+                        </div>
+                    </div>
+
+            if(counter%2==1)
+        {
+             @:</div>
+        }
+        counter++;
+    }
+
+    }
+     </div>
+        </div>
+    </section><!--/#happyClient-->
+  </section>
