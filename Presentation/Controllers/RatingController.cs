@@ -53,8 +53,26 @@ namespace Presentation.Controllers
             string id = (string)TempData["Book"];
             Book _book = _db.Books.Find(new Guid(id));
             var ratings = _db.Ratings.Where(book => book.Book == _book);
-            var model = new SeeReviewModel { Rating = ratings.ToList(), Book = _book };
+
+            List<User> users = new List<User>();
+
+            foreach(Rating r in ratings)
+            {
+                string idUser = r.UserId;
+                var user = _db.Users.Find(idUser);
+                users.Add(user);
+
+            }
+            var model = new SeeReviewModel { Rating = ratings.ToList(), User=users.ToList(),Book = _book };
            
+            model.NrOfGradesOneProcent = 100*(ratings.Where(rating => rating.Grade == 1)).Count()/ratings.Count();
+            model.NrOfGradesTwoProcent = 100*(ratings.Where(rating => rating.Grade == 2)).Count()/ ratings.Count();
+            model.NrOfGradesThreeProcent = 100*(ratings.Where(rating => rating.Grade == 3)).Count()/ ratings.Count();
+            model.NrOfGradesFourProcent = 100*(ratings.Where(rating => rating.Grade == 4)).Count()/ ratings.Count();
+            model.NrOfGradesFiveProcent = 100*(ratings.Where(rating => rating.Grade == 5)).Count()/ ratings.Count();
+
+               
+
             return View(model);
         }
 

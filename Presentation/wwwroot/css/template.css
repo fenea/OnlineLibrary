@@ -994,109 +994,33 @@ footer .subscribeForm .input-group .btn {
     }
 }
 
-.btn-grey {
-    background-color: #D8D8D8;
-    color: #FFF
+.glyphicon {
+    margin-right: 5px
 }
 
-.rating-block {
-    background-color: #FAFAFA;
-    border: 1px solid #EFEFEF;
-    padding: 15px 15px 20px 15px;
-    border-radius: 3px
+.rating .glyphicon {
+    font-size: 22px
 }
 
-.bold {
-    font-weight: 700
+.rating-num {
+    margin-top: 0px;
+    font-size: 54px
 }
 
-.padding-bottom-7 {
-    padding-bottom: 7px
+.progress {
+    margin-bottom: 5px
 }
 
-.review-block {
-    background-color: #FAFAFA;
-    border: 1px solid #EFEFEF;
-    padding: 15px;
-    border-radius: 3px;
-    margin-bottom: 15px
+.progress-bar {
+    text-align: left
 }
 
-.review-block-name {
-    font-size: 12px;
-    margin: 10px 0
+.rating-desc .col-md-3 {
+    padding-right: 0px
 }
 
-.review-block-date {
-    font-size: 12px
-}
-
-.review-block-rate {
-    font-size: 13px;
-    margin-bottom: 15px
-}
-
-.review-block-title {
-    font-size: 15px;
-    font-weight: 700;
-    margin-bottom: 10px
-}
-
-.review-block-description{
-	font-size:13px;
-}
-
-
-
-.buttoform {
-    width: 150px;
-    padding: 10px;
-    background-color: #FF8C00;
-    box-shadow: -8px 8px 10px 3px rgba(0,0,0,0.2);
-    font-weight: bold;
-    text-decoration: none
-}
-
-#cover {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgba(0,0,0,0.6);
-    z-index: 5;
-    width: 100%;
-    height: 100%;
-    display: none
-}
-
-#loginScreen {
-    height: 380px;
-    width: 340px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 10;
-    display: none;
-    background: url(login.png) no-repeat;
-    border: 5px solid #cccccc;
-    border-radius: 10px
-}
-
-    #loginScreen:target, #loginScreen:target + #cover {
-        display: block;
-        opacity: 2
-    }
-
-.cancel {
-    display: block;
-    position: absolute;
-    top: 3px;
-    right: 2px;
-    background: rgb(245,245,245);
-    color: black;
-    height: 30px;
-    width: 35px;
-    font-size: 30px;
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold
-
+.sr-only {
+    margin-left: 5px;
+    overflow: visible;
+    clip: auto
 }
