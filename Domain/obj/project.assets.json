@@ -6388,28 +6388,33 @@
     ]
   },
   "packageFolders": {
-    "/Users/cosminacorneanu/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\Gtk1337\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
-      "projectUniqueName": "/Users/cosminacorneanu/Desktop/untitled folder 2/last version/Domain/Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Gtk1337\\Desktop\\OnlineLibrary\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "/Users/cosminacorneanu/Desktop/untitled folder 2/last version/Domain/Domain.csproj",
-      "packagesPath": "/Users/cosminacorneanu/.nuget/packages/",
-      "outputPath": "/Users/cosminacorneanu/Desktop/untitled folder 2/last version/Domain/obj",
+      "projectPath": "C:\\Users\\Gtk1337\\Desktop\\OnlineLibrary\\Domain\\Domain.csproj",
+      "packagesPath": "C:\\Users\\Gtk1337\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Gtk1337\\Desktop\\OnlineLibrary\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/cosminacorneanu/.config/NuGet/NuGet.Config"
+        "C:\\Users\\Gtk1337\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -6426,11 +6431,9 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.NETCore.App": {
-            "suppressParent": "All",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
             "target": "Package",
-            "version": "2.0.0",
-            "autoReferenced": true
+            "version": "2.0.1"
           },
           "Microsoft.AspNetCore": {
             "target": "Package",
@@ -6440,19 +6443,21 @@
             "target": "Package",
             "version": "2.0.1"
           },
-          "Microsoft.EntityFrameworkCore.SqlServer": {
-            "target": "Package",
-            "version": "2.0.1"
-          },
           "Microsoft.EntityFrameworkCore.Tools": {
             "target": "Package",
             "version": "2.0.1"
           },
-          "Microsoft.AspNetCore.Identity": {
+          "Microsoft.NETCore.App": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "2.0.0",
+            "autoReferenced": true
+          },
+          "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "2.0.1"
           },
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+          "Microsoft.AspNetCore.Identity": {
             "target": "Package",
             "version": "2.0.1"
           }
