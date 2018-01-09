@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<title>See Reviews</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+      <environment include="Development">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+            <link rel="stylesheet" href="../css/template.css" />
+        </environment>
+
+
+    
+<body>
+
+
+        @RenderBody()
+       
+  <footer id="footer">
+            <div class="container">
+                <div class="row">
+                        <div class="col-md-4">
+                        <div class="colInfo">
+                            <div class="footerLogo">
+                                <a href="#" >OnlineLibrary</a>   
+                            </div>
+                            <p>
+                                    If you want to be the first to download the newest books please subscribe
+                                </p>
+                           
+                            <form action="" class="subscribeForm">
+                                <div class="input-group input-group-lg">
+                                    <input type="email" class="form-control" placeholder="Your Email" >
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-success" type="submit">Subscribe</button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+    
+                    </div>
+            </div>
+        </footer><!--/#footer-->
+
+        
+         <environment include="Development">
+            <script src="../lib/jquery/dist/jquery.min.js"></script>
+            <script src="../wwwroot/js/functions.js"></script>
+            <script src="../lib/bootstrap/dist/js/bootstrap.min.js"></script>
+        </environment>
+       
+    
+        @RenderSection("Scripts", required: false)
+</body>
+</html>

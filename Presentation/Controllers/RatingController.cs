@@ -63,15 +63,16 @@ namespace Presentation.Controllers
                 users.Add(user);
 
             }
-            var model = new SeeReviewModel { Rating = ratings.ToList(), User=users.ToList(),Book = _book };
-           
-            model.NrOfGradesOneProcent = 100*(ratings.Where(rating => rating.Grade == 1)).Count()/ratings.Count();
-            model.NrOfGradesTwoProcent = 100*(ratings.Where(rating => rating.Grade == 2)).Count()/ ratings.Count();
-            model.NrOfGradesThreeProcent = 100*(ratings.Where(rating => rating.Grade == 3)).Count()/ ratings.Count();
-            model.NrOfGradesFourProcent = 100*(ratings.Where(rating => rating.Grade == 4)).Count()/ ratings.Count();
-            model.NrOfGradesFiveProcent = 100*(ratings.Where(rating => rating.Grade == 5)).Count()/ ratings.Count();
 
-               
+            var model = new SeeReviewModel { Rating = ratings.ToList(), User=users.ToList(),Book = _book };
+     
+                model.NrOfGradesOneProcent = 100 * (ratings.Where(rating => rating.Grade == 1)).Count() / ratings.Count();
+                model.NrOfGradesTwoProcent = 100 * (ratings.Where(rating => rating.Grade == 2)).Count() / ratings.Count();
+                model.NrOfGradesThreeProcent = 100 * (ratings.Where(rating => rating.Grade == 3)).Count() / ratings.Count();
+                model.NrOfGradesFourProcent = 100 * (ratings.Where(rating => rating.Grade == 4)).Count() / ratings.Count();
+                model.NrOfGradesFiveProcent = 100 * (ratings.Where(rating => rating.Grade == 5)).Count() / ratings.Count();
+
+             
 
             return View(model);
         }

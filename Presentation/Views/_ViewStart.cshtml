@@ -6,21 +6,34 @@
 
     if(pageName.Equals("Account"))
     {
-    if(action.Equals("Login"))
-         {
-            Layout = "Signin";
-         }
+        if(action.Equals("Login"))
+             {
+                Layout = "Signin";
+             }
 
-     if(action.Equals("Register"))
-         {
-            Layout = "Reg";
-         }
+         if(action.Equals("Register"))
+             {
+                Layout = "Reg";
+             }
     }
 
-    else
-    {
-         Layout = "_Layout";
+         if(pageName.Equals("Rating"))
+         {
+                if(action.Equals("SeeRatings"))
+                 {
+                    Layout = "Review";
+                 }
+                 else
+                 {
+                     Layout = "_Layout";
 
-    }
+                 }
+          }
+   
+     else
+     {
+          Layout = "_Layout";
+
+      }
 }
 
