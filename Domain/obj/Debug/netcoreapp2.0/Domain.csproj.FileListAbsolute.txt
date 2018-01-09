@@ -99,3 +99,12 @@ C:/Users/Gtk1337/Desktop/OnlineLibrary/Domain/obj/Debug/netcoreapp2.0/Domain.csp
 /Users/cosminacorneanu/Desktop/untitled folder 2/last version 3/Domain/obj/Debug/netcoreapp2.0/Domain.AssemblyInfo.cs
 /Users/cosminacorneanu/Desktop/untitled folder 2/last version 3/Domain/obj/Debug/netcoreapp2.0/Domain.dll
 /Users/cosminacorneanu/Desktop/untitled folder 2/last version 3/Domain/obj/Debug/netcoreapp2.0/Domain.pdb
+/Users/cosminacorneanu/Desktop/OnlineLibrary/Domain/bin/Debug/netcoreapp2.0/Domain.deps.json
+/Users/cosminacorneanu/Desktop/OnlineLibrary/Domain/bin/Debug/netcoreapp2.0/Domain.dll
+/Users/cosminacorneanu/Desktop/OnlineLibrary/Domain/bin/Debug/netcoreapp2.0/Domain.pdb
+/Users/cosminacorneanu/Desktop/OnlineLibrary/Domain/obj/Debug/netcoreapp2.0/Domain.csprojResolveAssemblyReference.cache
+/Users/cosminacorneanu/Desktop/OnlineLibrary/Domain/obj/Debug/netcoreapp2.0/Domain.csproj.CoreCompileInputs.cache
+/Users/cosminacorneanu/Desktop/OnlineLibrary/Domain/obj/Debug/netcoreapp2.0/Domain.AssemblyInfoInputs.cache
+/Users/cosminacorneanu/Desktop/OnlineLibrary/Domain/obj/Debug/netcoreapp2.0/Domain.AssemblyInfo.cs
+/Users/cosminacorneanu/Desktop/OnlineLibrary/Domain/obj/Debug/netcoreapp2.0/Domain.dll
+/Users/cosminacorneanu/Desktop/OnlineLibrary/Domain/obj/Debug/netcoreapp2.0/Domain.pdb

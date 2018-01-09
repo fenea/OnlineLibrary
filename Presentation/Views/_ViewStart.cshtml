@@ -4,20 +4,7 @@
     string pageName = ViewContext.RouteData.Values["controller"].ToString();
     string action = ViewContext.RouteData.Values["action"].ToString();
 
-    if(pageName.Equals("Account"))
-    {
-        if(action.Equals("Login"))
-             {
-                Layout = "Signin";
-             }
-
-         if(action.Equals("Register"))
-             {
-                Layout = "Reg";
-             }
-    }
-
-         if(pageName.Equals("Rating"))
+     if(pageName.Equals("Rating"))
          {
                 if(action.Equals("SeeRatings"))
                  {
@@ -29,7 +16,20 @@
 
                  }
           }
-   
+   else
+       if(pageName.Equals("Account"))
+    {
+        if(action.Equals("Login"))
+             {
+                Layout = "Signin";
+             }
+
+         if(action.Equals("Register"))
+             {
+                Layout = "Reg";
+             }
+    }
+    
      else
      {
           Layout = "_Layout";

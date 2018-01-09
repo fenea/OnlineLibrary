@@ -6432,11 +6432,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/cosminacorneanu/Desktop/untitled folder 2/last version 3/Business/Business.csproj",
+      "projectUniqueName": "/Users/cosminacorneanu/Desktop/OnlineLibrary/Business/Business.csproj",
       "projectName": "Business",
-      "projectPath": "/Users/cosminacorneanu/Desktop/untitled folder 2/last version 3/Business/Business.csproj",
+      "projectPath": "/Users/cosminacorneanu/Desktop/OnlineLibrary/Business/Business.csproj",
       "packagesPath": "/Users/cosminacorneanu/.nuget/packages/",
-      "outputPath": "/Users/cosminacorneanu/Desktop/untitled folder 2/last version 3/Business/obj",
+      "outputPath": "/Users/cosminacorneanu/Desktop/OnlineLibrary/Business/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -6453,11 +6453,11 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "/Users/cosminacorneanu/Desktop/untitled folder 2/last version 3/Domain/Domain.csproj": {
-              "projectPath": "/Users/cosminacorneanu/Desktop/untitled folder 2/last version 3/Domain/Domain.csproj"
+            "/Users/cosminacorneanu/Desktop/OnlineLibrary/Domain/Domain.csproj": {
+              "projectPath": "/Users/cosminacorneanu/Desktop/OnlineLibrary/Domain/Domain.csproj"
             },
-            "/Users/cosminacorneanu/Desktop/untitled folder 2/last version 3/Persistance/Persistance.csproj": {
-              "projectPath": "/Users/cosminacorneanu/Desktop/untitled folder 2/last version 3/Persistance/Persistance.csproj"
+            "/Users/cosminacorneanu/Desktop/OnlineLibrary/Persistance/Persistance.csproj": {
+              "projectPath": "/Users/cosminacorneanu/Desktop/OnlineLibrary/Persistance/Persistance.csproj"
             }
           }
         }
