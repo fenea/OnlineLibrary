@@ -10,6 +10,13 @@
                  {
                     Layout = "Review";
                  }
+
+                 else
+
+                 if(action.Equals("AddRating"))
+                 {
+                    Layout = "Review";
+                 }
                  else
                  {
                      Layout = "_Layout";
@@ -17,6 +24,7 @@
                  }
           }
    else
+
        if(pageName.Equals("Account"))
     {
         if(action.Equals("Login"))
@@ -28,12 +36,30 @@
              {
                 Layout = "Reg";
              }
+         if(action.Equals("SeeAddedBooks"))
+             {
+                Layout = "_Layout";
+
+             }
     }
-    
+    else
+
+     if(pageName.Equals("Books"))
+         {
+                if(action.Equals("AddBook"))
+                 {
+                    Layout = "Review";
+                 }
+                 else
+                 {
+                     Layout = "_Layout";
+
+                 }
+          }
      else
      {
           Layout = "_Layout";
 
-      }
+     }
 }
 

@@ -30471,11 +30471,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/cosminacorneanu/Desktop/OnlineLibrary/Presentation/Presentation.csproj",
+      "projectUniqueName": "/Users/cosminacorneanu/Desktop/proiect/proiect/Presentation/Presentation.csproj",
       "projectName": "Presentation",
-      "projectPath": "/Users/cosminacorneanu/Desktop/OnlineLibrary/Presentation/Presentation.csproj",
+      "projectPath": "/Users/cosminacorneanu/Desktop/proiect/proiect/Presentation/Presentation.csproj",
       "packagesPath": "/Users/cosminacorneanu/.nuget/packages/",
-      "outputPath": "/Users/cosminacorneanu/Desktop/OnlineLibrary/Presentation/obj",
+      "outputPath": "/Users/cosminacorneanu/Desktop/proiect/proiect/Presentation/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -30492,14 +30492,14 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "/Users/cosminacorneanu/Desktop/OnlineLibrary/Business/Business.csproj": {
-              "projectPath": "/Users/cosminacorneanu/Desktop/OnlineLibrary/Business/Business.csproj"
+            "/Users/cosminacorneanu/Desktop/proiect/proiect/Business/Business.csproj": {
+              "projectPath": "/Users/cosminacorneanu/Desktop/proiect/proiect/Business/Business.csproj"
             },
-            "/Users/cosminacorneanu/Desktop/OnlineLibrary/Domain/Domain.csproj": {
-              "projectPath": "/Users/cosminacorneanu/Desktop/OnlineLibrary/Domain/Domain.csproj"
+            "/Users/cosminacorneanu/Desktop/proiect/proiect/Domain/Domain.csproj": {
+              "projectPath": "/Users/cosminacorneanu/Desktop/proiect/proiect/Domain/Domain.csproj"
             },
-            "/Users/cosminacorneanu/Desktop/OnlineLibrary/Persistance/Persistance.csproj": {
-              "projectPath": "/Users/cosminacorneanu/Desktop/OnlineLibrary/Persistance/Persistance.csproj"
+            "/Users/cosminacorneanu/Desktop/proiect/proiect/Persistance/Persistance.csproj": {
+              "projectPath": "/Users/cosminacorneanu/Desktop/proiect/proiect/Persistance/Persistance.csproj"
             }
           }
         }

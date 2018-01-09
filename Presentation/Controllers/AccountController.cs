@@ -61,11 +61,20 @@ namespace Presentation.Controllers {     public class AccountController : Co
         public IActionResult SeeAddedBooks()
         {
             var idUser = _userManager.GetUserId(User);
-            var res = _db.Users.Find(idUser).BookToReadUser.ToList();
+            var books = _db.BooksToReadUser.Where(user => user.Id == idUser);
 
+            List<Book> booksToReadUser = new List<Book>();
 
+            foreach (var b in books)
+            {
+                Book book = _db.Books.Find(b.BookId);
+                booksToReadUser.Add(book);
 
-            return View(res);
+            }
+
+            var model = new SeeAddedBooks { BooksToReadUser = booksToReadUser.ToList() };
+
+            return View(model);
         } 
 
 

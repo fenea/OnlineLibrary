@@ -1,58 +1,28 @@
 ﻿<Properties StartupConfiguration="{9BC46C3F-1D6E-4D56-BC81-C8D86554959C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Presentation/Views/Rating/SeeRatings.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Presentation/Controllers/AccountController.cs">
     <Files>
-      <File FileName="Domain/Entities/Book.cs" Line="11" Column="27" />
-      <File FileName="Domain/Entities/Rating.cs" Line="18" Column="25" />
-      <File FileName="Domain/Entities/User.cs" Line="20" Column="42" />
-      <File FileName="Domain/Entities/BookToReadUser.cs" Line="4" Column="32" />
-      <File FileName="Presentation/Views/Home/Index.cshtml" Line="15" Column="59" />
-      <File FileName="Domain/Entities/BookDownloadedUser.cs" Line="13" Column="7" />
-      <File FileName="Persistance/DatabaseContext.cs" Line="9" Column="61" />
-      <File FileName="Presentation/Controllers/AccountController.cs" Line="98" Column="44" />
-      <File FileName="Business/BookRepository.cs" Line="9" Column="2" />
-      <File FileName="Business/RatingRepository.cs" Line="51" Column="2" />
-      <File FileName="Presentation/Views/_ViewImports.cshtml" Line="1" Column="1" />
-      <File FileName="Presentation/Views/Home/About.cshtml" Line="2" Column="22" />
-      <File FileName="Presentation/Controllers/BooksController.cs" Line="59" Column="36" />
-      <File FileName="Presentation/wwwroot/js/functions.js" Line="8" Column="1" />
-      <File FileName="Presentation/Views/Shared/_Layout.cshtml" Line="148" Column="51" />
-      <File FileName="Presentation/wwwroot/js/site.js" Line="1" Column="1" />
-      <File FileName="Presentation/wwwroot/js/site.min.js" Line="1" Column="1" />
-      <File FileName="Presentation/wwwroot/lib/jquery/dist/jquery.js" Line="15" Column="31" />
-      <File FileName="Presentation/wwwroot/lib/jquery/.bower.json" Line="1" Column="1" />
-      <File FileName="Presentation/wwwroot/lib/bootstrap/dist/js/bootstrap.js" Line="1" Column="1" />
-      <File FileName="Presentation/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" Line="1" Column="1" />
-      <File FileName="Presentation/Views/_ViewStart.cshtml" Line="1" Column="1" />
-      <File FileName="Presentation/Views/Account/Register.cshtml" Line="11" Column="1" />
-      <File FileName="Presentation/Views/Account/Login.cshtml" Line="9" Column="47" />
-      <File FileName="Presentation/Views/Shared/Reg.cshtml" Line="1" Column="1" />
-      <File FileName="Presentation/Views/Shared/Signin.cshtml" Line="30" Column="7" />
-      <File FileName="Presentation/Views/Books/AddBook.cshtml" Line="4" Column="10" />
-      <File FileName="Presentation/wwwroot/css/template.css" Line="635" Column="1" />
-      <File FileName="Presentation/wwwroot/css/firstPage.css" Line="1" Column="1" />
-      <File FileName="Presentation/wwwroot/css/site.css" Line="7" Column="49" />
-      <File FileName="Presentation/wwwroot/css/site.min.css" Line="1" Column="1" />
-      <File FileName="Presentation/Views/Books/ListBooks.cshtml" Line="8" Column="1" />
-      <File FileName="Presentation/Models/UpdateBookModel.cs" Line="1" Column="1" />
-      <File FileName="Presentation/Models/CreateBookModel.cs" Line="1" Column="1" />
-      <File FileName="Presentation/wwwroot/lib/bootstrap/dist/css/bootstrap.css" Line="606" Column="18" />
-      <File FileName="Presentation/Views/Shared/_ValidationScriptsPartial.cshtml" Line="1" Column="1" />
-      <File FileName="Presentation/appsettings.json" Line="12" Column="4" />
-      <File FileName="Presentation/Controllers/HomeController.cs" Line="41" Column="30" />
-      <File FileName="Presentation/Views/Account/SeeAddedBooks.cshtml" Line="9" Column="9" />
-      <File FileName="Presentation/Views/Home/Contact.cshtml" Line="4" Column="14" />
-      <File FileName="Persistance/IDatabaseContext.cs" Line="1" Column="1" />
-      <File FileName="Presentation/Startup.cs" Line="91" Column="33" />
-      <File FileName="Presentation/Controllers/RatingController.cs" Line="105" Column="31" />
-      <File FileName="Presentation/Models/RatingModel.cs" Line="11" Column="20" />
-      <File FileName="Presentation/Models/LoginViewModel.cs" Line="15" Column="45" />
-      <File FileName="Presentation/Migrations/DatabaseContextModelSnapshot.cs" Line="63" Column="60" />
-      <File FileName="Presentation/Views/Rating/AddRating.cshtml" Line="23" Column="19" />
-      <File FileName="Presentation/Views/Rating/SeeRatings.cshtml" Line="1" Column="47" />
-      <File FileName="Presentation/Models/RegisterViewModel.cs" Line="1" Column="1" />
-      <File FileName="Presentation/Models/ErrorViewModel.cs" Line="1" Column="1" />
       <File FileName="Presentation/Models/SeeReviewModel.cs" Line="1" Column="1" />
-      <File FileName="Presentation/Views/Shared/Review.cshtml" Line="20" Column="1" />
+      <File FileName="Presentation/Models/SeeAddedBooks.cs" Line="9" Column="53" />
+      <File FileName="Presentation/Controllers/AccountController.cs" Line="116" Column="43" />
+      <File FileName="Presentation/Controllers/RatingController.cs" Line="123" Column="13" />
+      <File FileName="Presentation/Models/UpdateBookModel.cs" Line="1" Column="1" />
+      <File FileName="Presentation/Controllers/HomeController.cs" Line="31" Column="31" />
+      <File FileName="Presentation/Controllers/BooksController.cs" Line="60" Column="1" />
+      <File FileName="Presentation/Views/Account/SeeAddedBooks.cshtml" Line="51" Column="143" />
+      <File FileName="Presentation/Views/Account/Register.cshtml" Line="1" Column="1" />
+      <File FileName="Presentation/Views/Books/ListBooks.cshtml" Line="1" Column="1" />
+      <File FileName="Presentation/Views/Books/AddBook.cshtml" Line="45" Column="64" />
+      <File FileName="Presentation/Views/Account/Login.cshtml" Line="1" Column="1" />
+      <File FileName="Presentation/Startup.cs" Line="1" Column="1" />
+      <File FileName="Presentation/Views/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="Presentation/Views/Home/Index.cshtml" Line="29" Column="148" />
+      <File FileName="Presentation/Models/HomePageModel.cs" Line="7" Column="1" />
+      <File FileName="Presentation/Views/Rating/SeeRatings.cshtml" Line="1" Column="1" />
+      <File FileName="Presentation/Views/Rating/AddRating.cshtml" Line="24" Column="65" />
+      <File FileName="Presentation/wwwroot/css/signin.css" Line="70" Column="42" />
+      <File FileName="Presentation/wwwroot/css/template.css" Line="224" Column="54" />
+      <File FileName="Presentation/Views/Shared/_Layout.cshtml" Line="1" Column="1" />
+      <File FileName="Presentation/Views/Home/About.cshtml" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

@@ -11,8 +11,8 @@ using System;
 namespace Presentation.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20171229223718_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20180109121616_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -71,7 +71,7 @@ namespace Presentation.Migrations
 
                     b.HasIndex("BookId");
 
-                    b.ToTable("BookToReadUser");
+                    b.ToTable("BooksToReadUser");
                 });
 
             modelBuilder.Entity("Domain.Entities.Rating", b =>

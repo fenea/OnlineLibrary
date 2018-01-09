@@ -56,7 +56,7 @@ namespace Presentation.Controllers
                 _bookRepository.AddBook(book);
             }
 
-            return RedirectToAction("ListBooks");
+            return RedirectToAction("Index", "Home");
 
         }
 

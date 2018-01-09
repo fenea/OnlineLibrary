@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.Linq;
 using Domain.Entities;
 using Domain.Interfaces;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Persistance;
 using Presentation.Models;
@@ -18,27 +19,26 @@ namespace Presentation.Controllers
     {
         private IBookRepository _bookRepository;
         private DatabaseContext _db;
+        private readonly UserManager<User> _userManager;
 
-        public HomeController(IBookRepository bookRepository,DatabaseContext db)
+        public HomeController(IBookRepository bookRepository,DatabaseContext db,UserManager<User> userManager)
         {
             _bookRepository = bookRepository;
             _db = db;
+            _userManager = userManager;
         }
 
         public IActionResult Index()
         {
-            
-            var id = TempData["userId"];
-            TempData.Keep("userId");
-            var currentUser = _db.Users.Find(id);
-          
-            ViewData["DownloadedBooks"]=currentUser.BookDownloadedUser.Count();
-            ViewData["BooksToRead"] = currentUser.BookToReadUser.Count();
-            ViewData["AllBooks"] = _bookRepository.GetAllBooks().Count();
+            var idUser = _userManager.GetUserId(User);
+            var currentUser = _db.Users.Find(idUser);
 
-            var res = _bookRepository.GetAllBooks();
+            int totalBooksToReadUser = (_db.BooksToReadUser.Where(user => user.Id == idUser)).Count();
+            int totalBooks = _bookRepository.GetAllBooks().Count();
+            var books = _bookRepository.GetAllBooks();
 
-            return View(res);
+            var model = new HomePageModel { BooksToReadNumber = totalBooksToReadUser, AllBooksNumber = totalBooks, AllBooks = books.ToList() };
+            return View(model);
         }
 
         public IActionResult About()

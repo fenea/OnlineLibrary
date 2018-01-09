@@ -1,4 +1,6 @@
-﻿
+﻿@model HomePageModel
+
+
 <section id="options">
     <div class="container">
         <h2 class="sectionHeading"><span class="subHeading">What we do</span>
@@ -20,11 +22,12 @@
                     </div>
                 </div>
 
+
             <div class="col-md-4 col-sm-4">
                     <div class="item">
-                        <a class="overlay" href="#">
+                        <a class="overlay" asp-area="" asp-controller="Account" asp-action="SeeAddedBooks">
                             <span class="content">
-                                <i class="fa fa-bookmark"></i>
+                                <button  class="icon" style="color: white;background: transparent;padding: 0;border: none;" onclick="seeBooksToRead()" > <i class="fa fa-bookmark"></i></button>
                                 To read
                             </span>
                             <img src="../images/user account/img2.jpg" alt="">
@@ -59,17 +62,17 @@
         <div layout="row" class="verticalStretch">
 
            <div class="item">
-                <div class="number">@ViewData["AllBooks"]</div>
+                <div class="number">@Model.AllBooksNumber</div>
                 <div class="text">Books</div>
             </div>
 
             <div class="item">
-                <div class="number">@ViewData["DownloadedBooks"]</div>
+                <div class="number">0</div>
                 <div class="text">Downloaded books</div>
             </div>
 
             <div class="item">
-                <div class="number"> @ViewData["BooksToRead"]</div>
+                <div class="number"> @Model.BooksToReadNumber</div>
                 <div class="text">Books to read</div>
              </div>
     </div>
@@ -89,7 +92,7 @@
             <div class="row hoverEffect">
    
 
-@foreach (var b in Model)
+@foreach (var b in Model.AllBooks)
 {
                 
                 <div class="col-md-4 col-sm-4">
@@ -126,7 +129,7 @@
 
                              <div class="point-of-reference">
                                 <div class="imgwrap">
-                                <button  class="icon" style="color: white;background: transparent;padding: 0;border: none;" onclick="addbook('@b.BookId')" ><i class="mdi fa fa-edit"></i></button>
+                                <button  class="icon" style="color: white;background: transparent;padding: 0;border: none;" onclick="addReview('@b.BookId')" ><i class="mdi fa fa-edit"></i></button>
                                 <div class="rollover">
                                         <div class="roll-inner">
                                         <div class="roll-content">
@@ -157,7 +160,6 @@
                     <div class="info">
                         <h4 class="name">@b.Name </h4>
                         <span class="regency">by @b.Author  / @b.Type</span>
-                        <span class="regency">by @b.BookId</span>
 
                     </div>
                 </div>
@@ -190,6 +192,13 @@
 
     }
 
+    function addReview(id)
+    {
+         location.href = '@Url.Action("UpdateBookId", "Rating" , new {id = "ID"})'.replace("ID",id);
+
+    }
+    
+  
     
 </script>
 

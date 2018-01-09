@@ -15,6 +15,7 @@ namespace Persistance
         }
         public DbSet<Domain.Entities.Book> Books { get; set; }
         public DbSet<Domain.Entities.Rating> Ratings { get; set; }
+        public DbSet<Domain.Entities.BookToReadUser> BooksToReadUser { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

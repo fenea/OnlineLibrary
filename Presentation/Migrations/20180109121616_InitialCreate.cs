@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Presentation.Migrations
 {
-    public partial class InitialMigration : Migration
+    public partial class InitialCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -199,7 +199,7 @@ namespace Presentation.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "BookToReadUser",
+                name: "BooksToReadUser",
                 columns: table => new
                 {
                     Id = table.Column<string>(nullable: false),
@@ -207,15 +207,15 @@ namespace Presentation.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_BookToReadUser", x => new { x.Id, x.BookId });
+                    table.PrimaryKey("PK_BooksToReadUser", x => new { x.Id, x.BookId });
                     table.ForeignKey(
-                        name: "FK_BookToReadUser_Books_BookId",
+                        name: "FK_BooksToReadUser_Books_BookId",
                         column: x => x.BookId,
                         principalTable: "Books",
                         principalColumn: "BookId",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_BookToReadUser_AspNetUsers_Id",
+                        name: "FK_BooksToReadUser_AspNetUsers_Id",
                         column: x => x.Id,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
@@ -291,8 +291,8 @@ namespace Presentation.Migrations
                 column: "BookId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_BookToReadUser_BookId",
-                table: "BookToReadUser",
+                name: "IX_BooksToReadUser_BookId",
+                table: "BooksToReadUser",
                 column: "BookId");
 
             migrationBuilder.CreateIndex(
@@ -322,7 +322,7 @@ namespace Presentation.Migrations
                 name: "BookDownloadedUser");
 
             migrationBuilder.DropTable(
-                name: "BookToReadUser");
+                name: "BooksToReadUser");
 
             migrationBuilder.DropTable(
                 name: "Ratings");

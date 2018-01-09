@@ -70,7 +70,7 @@ namespace Presentation.Migrations
 
                     b.HasIndex("BookId");
 
-                    b.ToTable("BookToReadUser");
+                    b.ToTable("BooksToReadUser");
                 });
 
             modelBuilder.Entity("Domain.Entities.Rating", b =>

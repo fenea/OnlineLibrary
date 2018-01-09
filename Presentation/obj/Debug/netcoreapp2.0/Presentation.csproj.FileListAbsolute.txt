@@ -185,20 +185,20 @@ C:/Users/Gtk1337/Desktop/OnlineLibrary/Presentation/obj/Debug/netcoreapp2.0/Pres
 /Users/cosminacorneanu/Desktop/untitled folder 2/last version 3/Presentation/obj/Debug/netcoreapp2.0/Presentation.AssemblyInfo.cs
 /Users/cosminacorneanu/Desktop/untitled folder 2/last version 3/Presentation/obj/Debug/netcoreapp2.0/Presentation.dll
 /Users/cosminacorneanu/Desktop/untitled folder 2/last version 3/Presentation/obj/Debug/netcoreapp2.0/Presentation.pdb
-/Users/cosminacorneanu/Desktop/OnlineLibrary/Presentation/bin/Debug/netcoreapp2.0/Presentation.deps.json
-/Users/cosminacorneanu/Desktop/OnlineLibrary/Presentation/bin/Debug/netcoreapp2.0/Presentation.runtimeconfig.json
-/Users/cosminacorneanu/Desktop/OnlineLibrary/Presentation/bin/Debug/netcoreapp2.0/Presentation.runtimeconfig.dev.json
-/Users/cosminacorneanu/Desktop/OnlineLibrary/Presentation/bin/Debug/netcoreapp2.0/Presentation.dll
-/Users/cosminacorneanu/Desktop/OnlineLibrary/Presentation/bin/Debug/netcoreapp2.0/Presentation.pdb
-/Users/cosminacorneanu/Desktop/OnlineLibrary/Presentation/bin/Debug/netcoreapp2.0/Business.dll
-/Users/cosminacorneanu/Desktop/OnlineLibrary/Presentation/bin/Debug/netcoreapp2.0/Domain.dll
-/Users/cosminacorneanu/Desktop/OnlineLibrary/Presentation/bin/Debug/netcoreapp2.0/Persistance.dll
-/Users/cosminacorneanu/Desktop/OnlineLibrary/Presentation/bin/Debug/netcoreapp2.0/Business.pdb
-/Users/cosminacorneanu/Desktop/OnlineLibrary/Presentation/bin/Debug/netcoreapp2.0/Domain.pdb
-/Users/cosminacorneanu/Desktop/OnlineLibrary/Presentation/bin/Debug/netcoreapp2.0/Persistance.pdb
-/Users/cosminacorneanu/Desktop/OnlineLibrary/Presentation/obj/Debug/netcoreapp2.0/Presentation.csprojResolveAssemblyReference.cache
-/Users/cosminacorneanu/Desktop/OnlineLibrary/Presentation/obj/Debug/netcoreapp2.0/Presentation.csproj.CoreCompileInputs.cache
-/Users/cosminacorneanu/Desktop/OnlineLibrary/Presentation/obj/Debug/netcoreapp2.0/Presentation.AssemblyInfoInputs.cache
-/Users/cosminacorneanu/Desktop/OnlineLibrary/Presentation/obj/Debug/netcoreapp2.0/Presentation.AssemblyInfo.cs
-/Users/cosminacorneanu/Desktop/OnlineLibrary/Presentation/obj/Debug/netcoreapp2.0/Presentation.dll
-/Users/cosminacorneanu/Desktop/OnlineLibrary/Presentation/obj/Debug/netcoreapp2.0/Presentation.pdb
+/Users/cosminacorneanu/Desktop/proiect/proiect/Presentation/bin/Debug/netcoreapp2.0/Presentation.deps.json
+/Users/cosminacorneanu/Desktop/proiect/proiect/Presentation/bin/Debug/netcoreapp2.0/Presentation.runtimeconfig.json
+/Users/cosminacorneanu/Desktop/proiect/proiect/Presentation/bin/Debug/netcoreapp2.0/Presentation.runtimeconfig.dev.json
+/Users/cosminacorneanu/Desktop/proiect/proiect/Presentation/bin/Debug/netcoreapp2.0/Presentation.dll
+/Users/cosminacorneanu/Desktop/proiect/proiect/Presentation/bin/Debug/netcoreapp2.0/Presentation.pdb
+/Users/cosminacorneanu/Desktop/proiect/proiect/Presentation/bin/Debug/netcoreapp2.0/Business.dll
+/Users/cosminacorneanu/Desktop/proiect/proiect/Presentation/bin/Debug/netcoreapp2.0/Domain.dll
+/Users/cosminacorneanu/Desktop/proiect/proiect/Presentation/bin/Debug/netcoreapp2.0/Persistance.dll
+/Users/cosminacorneanu/Desktop/proiect/proiect/Presentation/bin/Debug/netcoreapp2.0/Business.pdb
+/Users/cosminacorneanu/Desktop/proiect/proiect/Presentation/bin/Debug/netcoreapp2.0/Domain.pdb
+/Users/cosminacorneanu/Desktop/proiect/proiect/Presentation/bin/Debug/netcoreapp2.0/Persistance.pdb
+/Users/cosminacorneanu/Desktop/proiect/proiect/Presentation/obj/Debug/netcoreapp2.0/Presentation.csprojResolveAssemblyReference.cache
+/Users/cosminacorneanu/Desktop/proiect/proiect/Presentation/obj/Debug/netcoreapp2.0/Presentation.csproj.CoreCompileInputs.cache
+/Users/cosminacorneanu/Desktop/proiect/proiect/Presentation/obj/Debug/netcoreapp2.0/Presentation.AssemblyInfoInputs.cache
+/Users/cosminacorneanu/Desktop/proiect/proiect/Presentation/obj/Debug/netcoreapp2.0/Presentation.AssemblyInfo.cs
+/Users/cosminacorneanu/Desktop/proiect/proiect/Presentation/obj/Debug/netcoreapp2.0/Presentation.dll
+/Users/cosminacorneanu/Desktop/proiect/proiect/Presentation/obj/Debug/netcoreapp2.0/Presentation.pdb
