@@ -6426,38 +6426,43 @@
     ]
   },
   "packageFolders": {
-    "/Users/cosminacorneanu/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\Gtk1337\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
-      "projectUniqueName": "/Users/cosminacorneanu/Desktop/OnlineLibrary/Business/Business.csproj",
+      "projectUniqueName": "C:\\Users\\Gtk1337\\Desktop\\OnlineLibrary\\Business\\Business.csproj",
       "projectName": "Business",
-      "projectPath": "/Users/cosminacorneanu/Desktop/OnlineLibrary/Business/Business.csproj",
-      "packagesPath": "/Users/cosminacorneanu/.nuget/packages/",
-      "outputPath": "/Users/cosminacorneanu/Desktop/OnlineLibrary/Business/obj",
+      "projectPath": "C:\\Users\\Gtk1337\\Desktop\\OnlineLibrary\\Business\\Business.csproj",
+      "packagesPath": "C:\\Users\\Gtk1337\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Gtk1337\\Desktop\\OnlineLibrary\\Business\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/cosminacorneanu/.config/NuGet/NuGet.Config"
+        "C:\\Users\\Gtk1337\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "/Users/cosminacorneanu/Desktop/OnlineLibrary/Domain/Domain.csproj": {
-              "projectPath": "/Users/cosminacorneanu/Desktop/OnlineLibrary/Domain/Domain.csproj"
+            "C:\\Users\\Gtk1337\\Desktop\\OnlineLibrary\\Persistance\\Persistance.csproj": {
+              "projectPath": "C:\\Users\\Gtk1337\\Desktop\\OnlineLibrary\\Persistance\\Persistance.csproj"
             },
-            "/Users/cosminacorneanu/Desktop/OnlineLibrary/Persistance/Persistance.csproj": {
-              "projectPath": "/Users/cosminacorneanu/Desktop/OnlineLibrary/Persistance/Persistance.csproj"
+            "C:\\Users\\Gtk1337\\Desktop\\OnlineLibrary\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Gtk1337\\Desktop\\OnlineLibrary\\Domain\\Domain.csproj"
             }
           }
         }

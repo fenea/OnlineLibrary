@@ -7,6 +7,7 @@ using Presentation.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting.Server;
 using System.Web;
+using System.IO;
 
 namespace Presentation.Controllers
 {
@@ -99,5 +100,20 @@ namespace Presentation.Controllers
                 throw new System.IO.IOException(s);
             return data;
         }
+
+
+        public ActionResult ReadPdf(string name)
+        {
+            string path = "Books\\" + name + ".pdf";
+            string fileName = name + ".pdf";
+            var fileStream = new FileStream(path,
+                                             FileMode.Open,
+                                             FileAccess.Read
+                                           );
+            var fsResult = new FileStreamResult(fileStream, "application/pdf");
+            return fsResult;
+
+        }
+
     }
 }
