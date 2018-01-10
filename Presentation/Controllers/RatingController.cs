@@ -141,7 +141,7 @@ namespace Presentation.Controllers
 
                 _db.Books.Update(_book);
                 _db.SaveChanges();
-
+                return RedirectToAction("UpdateBook", new { id = id });
             }
             return RedirectToAction("Index", "Home");
 

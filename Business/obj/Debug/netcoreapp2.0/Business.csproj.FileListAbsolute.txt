@@ -117,19 +117,6 @@ C:/Users/cosmy/source/repos/Library/Business/bin/Debug/netcoreapp2.0/Microsoft.A
 /Users/cosminacorneanu/Desktop/untitled folder 2/last version/Business/obj/Debug/netcoreapp2.0/Business.AssemblyInfo.cs
 /Users/cosminacorneanu/Desktop/untitled folder 2/last version/Business/obj/Debug/netcoreapp2.0/Business.dll
 /Users/cosminacorneanu/Desktop/untitled folder 2/last version/Business/obj/Debug/netcoreapp2.0/Business.pdb
-C:/Users/Gtk1337/Desktop/OnlineLibrary/Business/bin/Debug/netcoreapp2.0/Business.deps.json
-C:/Users/Gtk1337/Desktop/OnlineLibrary/Business/bin/Debug/netcoreapp2.0/Business.dll
-C:/Users/Gtk1337/Desktop/OnlineLibrary/Business/bin/Debug/netcoreapp2.0/Business.pdb
-C:/Users/Gtk1337/Desktop/OnlineLibrary/Business/bin/Debug/netcoreapp2.0/Domain.dll
-C:/Users/Gtk1337/Desktop/OnlineLibrary/Business/bin/Debug/netcoreapp2.0/Persistance.dll
-C:/Users/Gtk1337/Desktop/OnlineLibrary/Business/bin/Debug/netcoreapp2.0/Domain.pdb
-C:/Users/Gtk1337/Desktop/OnlineLibrary/Business/bin/Debug/netcoreapp2.0/Persistance.pdb
-C:/Users/Gtk1337/Desktop/OnlineLibrary/Business/obj/Debug/netcoreapp2.0/Business.csproj.CoreCompileInputs.cache
-C:/Users/Gtk1337/Desktop/OnlineLibrary/Business/obj/Debug/netcoreapp2.0/Business.AssemblyInfoInputs.cache
-C:/Users/Gtk1337/Desktop/OnlineLibrary/Business/obj/Debug/netcoreapp2.0/Business.AssemblyInfo.cs
-C:/Users/Gtk1337/Desktop/OnlineLibrary/Business/obj/Debug/netcoreapp2.0/Business.dll
-C:/Users/Gtk1337/Desktop/OnlineLibrary/Business/obj/Debug/netcoreapp2.0/Business.pdb
-C:/Users/Gtk1337/Desktop/OnlineLibrary/Business/obj/Debug/netcoreapp2.0/Business.csprojResolveAssemblyReference.cache
 /Users/cosminacorneanu/Desktop/untitled folder 2/last version 3/Business/bin/Debug/netcoreapp2.0/Business.deps.json
 /Users/cosminacorneanu/Desktop/untitled folder 2/last version 3/Business/bin/Debug/netcoreapp2.0/Business.dll
 /Users/cosminacorneanu/Desktop/untitled folder 2/last version 3/Business/bin/Debug/netcoreapp2.0/Business.pdb
@@ -156,3 +143,16 @@ C:/Users/Gtk1337/Desktop/OnlineLibrary/Business/obj/Debug/netcoreapp2.0/Business
 /Users/cosminacorneanu/Desktop/proiect/proiect/Business/obj/Debug/netcoreapp2.0/Business.AssemblyInfo.cs
 /Users/cosminacorneanu/Desktop/proiect/proiect/Business/obj/Debug/netcoreapp2.0/Business.dll
 /Users/cosminacorneanu/Desktop/proiect/proiect/Business/obj/Debug/netcoreapp2.0/Business.pdb
+C:\Users\Gtk1337\Desktop\OnlineLibrary\Business\obj\Debug\netcoreapp2.0\Business.csprojResolveAssemblyReference.cache
+C:\Users\Gtk1337\Desktop\OnlineLibrary\Business\obj\Debug\netcoreapp2.0\Business.csproj.CoreCompileInputs.cache
+C:\Users\Gtk1337\Desktop\OnlineLibrary\Business\obj\Debug\netcoreapp2.0\Business.AssemblyInfoInputs.cache
+C:\Users\Gtk1337\Desktop\OnlineLibrary\Business\obj\Debug\netcoreapp2.0\Business.AssemblyInfo.cs
+C:\Users\Gtk1337\Desktop\OnlineLibrary\Business\obj\Debug\netcoreapp2.0\Business.dll
+C:\Users\Gtk1337\Desktop\OnlineLibrary\Business\obj\Debug\netcoreapp2.0\Business.pdb
+C:\Users\Gtk1337\Desktop\OnlineLibrary\Business\bin\Debug\netcoreapp2.0\Business.deps.json
+C:\Users\Gtk1337\Desktop\OnlineLibrary\Business\bin\Debug\netcoreapp2.0\Business.dll
+C:\Users\Gtk1337\Desktop\OnlineLibrary\Business\bin\Debug\netcoreapp2.0\Business.pdb
+C:\Users\Gtk1337\Desktop\OnlineLibrary\Business\bin\Debug\netcoreapp2.0\Domain.dll
+C:\Users\Gtk1337\Desktop\OnlineLibrary\Business\bin\Debug\netcoreapp2.0\Persistance.dll
+C:\Users\Gtk1337\Desktop\OnlineLibrary\Business\bin\Debug\netcoreapp2.0\Domain.pdb
+C:\Users\Gtk1337\Desktop\OnlineLibrary\Business\bin\Debug\netcoreapp2.0\Persistance.pdb

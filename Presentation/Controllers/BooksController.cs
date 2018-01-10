@@ -5,6 +5,8 @@ using Domain.Interfaces;
 using Domain.Entities;
 using Presentation.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting.Server;
+using System.Web;
 
 namespace Presentation.Controllers
 {
@@ -76,6 +78,26 @@ namespace Presentation.Controllers
         public void Delete(Guid id)
         {
             _bookRepository.DeleteBook(id);
+        }
+
+        public IActionResult Download(string name)
+        {
+            string fileName = name + ".pdf";
+
+            string fullName ="Books\\" + fileName;
+            byte[] fileBytes = GetFile(fullName);
+            return File(
+                fileBytes, System.Net.Mime.MediaTypeNames.Application.Octet, fileName);
+        }
+
+        byte[] GetFile(string s)
+        {
+            System.IO.FileStream fs = System.IO.File.OpenRead(s);
+            byte[] data = new byte[fs.Length];
+            int br = fs.Read(data, 0, data.Length);
+            if (br != fs.Length)
+                throw new System.IO.IOException(s);
+            return data;
         }
     }
 }
