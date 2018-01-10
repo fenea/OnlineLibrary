@@ -7,6 +7,7 @@ namespace Presentation.Models
     {
         public  List<Rating> Rating { get;set;}
         public  List<User> User { get; set; }
+        public List<int> Grades { get; set; }
         public  Book Book { get;set;}
         public int NrOfGradesOneProcent { get; set; }
         public int NrOfGradesTwoProcent { get; set; }

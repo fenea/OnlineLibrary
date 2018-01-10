@@ -55,39 +55,42 @@ namespace Presentation.Controllers
             Book _book = _db.Books.Find(new Guid(id));
             var ratings = _db.Ratings.Where(book => book.Book == _book);
 
-            List<User> users = new List<User>();
-
-            foreach(Rating r in ratings)
+            if(_db.Ratings.Where(book => book.Book == _book)==null)
             {
-                string idUser = r.UserId;
-                var user = _db.Users.Find(idUser);
-                users.Add(user);
-
-            }
-
-            var model = new SeeReviewModel { Rating = ratings.ToList(), User=users.ToList(),Book = _book };
-
-            if (ratings != null)
-            {
-                model.NrOfGradesOneProcent = 100 * (ratings.Where(rating => rating.Grade == 1)).Count() / ratings.Count();
-                model.NrOfGradesTwoProcent = 100 * (ratings.Where(rating => rating.Grade == 2)).Count() / ratings.Count();
-                model.NrOfGradesThreeProcent = 100 * (ratings.Where(rating => rating.Grade == 3)).Count() / ratings.Count();
-                model.NrOfGradesFourProcent = 100 * (ratings.Where(rating => rating.Grade == 4)).Count() / ratings.Count();
-                model.NrOfGradesFiveProcent = 100 * (ratings.Where(rating => rating.Grade == 5)).Count() / ratings.Count();
-            }
-            if (ratings == null)
-            {
+                var model = new SeeReviewModel { Rating = new List<Rating>(), User = new List<User>(), Book = _book };
                 model.NrOfGradesOneProcent = 0;
                 model.NrOfGradesTwoProcent = 0;
                 model.NrOfGradesThreeProcent = 0;
                 model.NrOfGradesFourProcent = 0;
                 model.NrOfGradesFiveProcent = 0;
-              
-            }
-             
+                return View(model);
 
-            return View(model);
-        }
+            }
+            else
+            {
+                List<User> users = new List<User>();
+                List<int> grades = new List<int>();
+                foreach (Rating r in ratings)
+                {
+                    string idUser = r.UserId;
+                    var user = _db.Users.Find(idUser);
+                    users.Add(user);
+                    grades.Add(r.Grade);
+
+                }
+
+                var model = new SeeReviewModel { Rating = ratings.ToList(), User = users.ToList(), Book = _book,Grades=grades };
+                model.NrOfGradesOneProcent = 100 * (ratings.Where(rating => rating.Grade == 1)).Count() / ratings.Count();
+                model.NrOfGradesTwoProcent = 100 * (ratings.Where(rating => rating.Grade == 2)).Count() / ratings.Count();
+                model.NrOfGradesThreeProcent = 100 * (ratings.Where(rating => rating.Grade == 3)).Count() / ratings.Count();
+                model.NrOfGradesFourProcent = 100 * (ratings.Where(rating => rating.Grade == 4)).Count() / ratings.Count();
+                model.NrOfGradesFiveProcent = 100 * (ratings.Where(rating => rating.Grade == 5)).Count() / ratings.Count();
+                return View(model);
+
+            }
+
+
+            }
 
         /*
         public IActionResult SeeRatings(string id)

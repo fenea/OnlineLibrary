@@ -1,13 +1,13 @@
 ﻿<Properties StartupConfiguration="{9BC46C3F-1D6E-4D56-BC81-C8D86554959C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Presentation/Views/Home/Index.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Presentation/Models/SeeReviewModel.cs">
     <Files>
       <File FileName="Presentation/Models/SeeReviewModel.cs" Line="1" Column="1" />
       <File FileName="Presentation/Models/SeeAddedBooks.cs" Line="9" Column="53" />
       <File FileName="Presentation/Controllers/AccountController.cs" Line="116" Column="43" />
-      <File FileName="Presentation/Controllers/RatingController.cs" Line="85" Column="11" />
+      <File FileName="Presentation/Controllers/RatingController.cs" Line="58" Column="16" />
       <File FileName="Presentation/Models/UpdateBookModel.cs" Line="1" Column="1" />
       <File FileName="Presentation/Controllers/HomeController.cs" Line="31" Column="31" />
-      <File FileName="Presentation/Controllers/BooksController.cs" Line="42" Column="37" />
+      <File FileName="Presentation/Controllers/BooksController.cs" Line="57" Column="34" />
       <File FileName="Presentation/Views/Account/SeeAddedBooks.cshtml" Line="51" Column="143" />
       <File FileName="Presentation/Views/Account/Register.cshtml" Line="1" Column="1" />
       <File FileName="Presentation/Views/Books/ListBooks.cshtml" Line="1" Column="1" />
@@ -15,14 +15,17 @@
       <File FileName="Presentation/Views/Account/Login.cshtml" Line="1" Column="1" />
       <File FileName="Presentation/Startup.cs" Line="1" Column="1" />
       <File FileName="Presentation/Views/_ViewStart.cshtml" Line="1" Column="1" />
-      <File FileName="Presentation/Views/Home/Index.cshtml" Line="42" Column="141" />
+      <File FileName="Presentation/Views/Home/Index.cshtml" Line="43" Column="1" />
       <File FileName="Presentation/Models/HomePageModel.cs" Line="7" Column="1" />
-      <File FileName="Presentation/Views/Rating/SeeRatings.cshtml" Line="1" Column="1" />
+      <File FileName="Presentation/Views/Rating/SeeRatings.cshtml" Line="128" Column="32" />
       <File FileName="Presentation/Views/Rating/AddRating.cshtml" Line="24" Column="65" />
       <File FileName="Presentation/wwwroot/css/signin.css" Line="70" Column="42" />
       <File FileName="Presentation/wwwroot/css/template.css" Line="224" Column="54" />
       <File FileName="Presentation/Views/Shared/_Layout.cshtml" Line="1" Column="1" />
       <File FileName="Presentation/Views/Home/About.cshtml" Line="1" Column="1" />
+      <File FileName="Presentation/Models/CreateBookModel.cs" Line="1" Column="1" />
+      <File FileName="Presentation/Models/LoginViewModel.cs" Line="1" Column="1" />
+      <File FileName="Presentation/Models/RatingModel.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

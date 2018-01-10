@@ -128,7 +128,7 @@
              @:<div class="row"> 
         }
 
-         <div class="col-md-6" style="margin-top:20px; margin-left:20px;" >
+         <div class="col-md-6"  >
                         <div layout="row" class="item" >
                             <div class="avatar fsr">
                                 <img class="img-circle" src="@Model.User[counter].PhotoPath" alt="">
@@ -137,12 +137,12 @@
                                 <h4 class="name">@Model.User[counter].UserName</h4>
                                 <span class="regency">
 
-                        @for (var i=0;i<Model.Book.Score;i++)     
+                        @for (var i=0;i<@Model.Grades[counter];i++)     
                         { 
                              <span class="glyphicon glyphicon-star"></span>
                         }
                                 
-                        @for (var i=Model.Book.Score; i<5;i++)
+                        @for (var i=@Model.Grades[counter]; i<5;i++)
                         { 
                              <span class="glyphicon glyphicon-star-empty"></span>
                         }
