@@ -104,7 +104,7 @@ namespace Presentation.Controllers
 
         public ActionResult ReadPdf(string name)
         {
-            string path = "Books\\" + name + ".pdf";
+            string path = "Books/" + name + ".pdf";
             string fileName = name + ".pdf";
             var fileStream = new FileStream(path,
                                              FileMode.Open,
