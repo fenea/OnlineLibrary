@@ -66,17 +66,24 @@ namespace Presentation.Controllers
             }
 
             var model = new SeeReviewModel { Rating = ratings.ToList(), User=users.ToList(),Book = _book };
-            int total = 1;
-            if(ratings!=null)
-            {
-                total = ratings.Count();
-            }
-            model.NrOfGradesOneProcent = 100 * (ratings.Where(rating => rating.Grade == 1)).Count() / total;
-            model.NrOfGradesTwoProcent = 100 * (ratings.Where(rating => rating.Grade == 2)).Count() / total;
-            model.NrOfGradesThreeProcent = 100 * (ratings.Where(rating => rating.Grade == 3)).Count() / total;
-            model.NrOfGradesFourProcent = 100 * (ratings.Where(rating => rating.Grade == 4)).Count() / total;
-            model.NrOfGradesFiveProcent = 100 * (ratings.Where(rating => rating.Grade == 5)).Count() / total;
 
+            if (ratings != null)
+            {
+                model.NrOfGradesOneProcent = 100 * (ratings.Where(rating => rating.Grade == 1)).Count() / ratings.Count();
+                model.NrOfGradesTwoProcent = 100 * (ratings.Where(rating => rating.Grade == 2)).Count() / ratings.Count();
+                model.NrOfGradesThreeProcent = 100 * (ratings.Where(rating => rating.Grade == 3)).Count() / ratings.Count();
+                model.NrOfGradesFourProcent = 100 * (ratings.Where(rating => rating.Grade == 4)).Count() / ratings.Count();
+                model.NrOfGradesFiveProcent = 100 * (ratings.Where(rating => rating.Grade == 5)).Count() / ratings.Count();
+            }
+            if (ratings == null)
+            {
+                model.NrOfGradesOneProcent = 0;
+                model.NrOfGradesTwoProcent = 0;
+                model.NrOfGradesThreeProcent = 0;
+                model.NrOfGradesFourProcent = 0;
+                model.NrOfGradesFiveProcent = 0;
+              
+            }
              
 
             return View(model);

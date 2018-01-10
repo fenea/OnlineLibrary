@@ -84,7 +84,7 @@ namespace Presentation.Controllers
         {
             string fileName = name + ".pdf";
 
-            string fullName ="Books\\" + fileName;
+            string fullName ="Books/" + fileName;
             byte[] fileBytes = GetFile(fullName);
             return File(
                 fileBytes, System.Net.Mime.MediaTypeNames.Application.Octet, fileName);

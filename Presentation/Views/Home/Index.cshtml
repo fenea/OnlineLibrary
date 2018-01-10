@@ -27,7 +27,7 @@
                     <div class="item">
                         <a class="overlay" asp-area="" asp-controller="Account" asp-action="SeeAddedBooks">
                             <span class="content">
-                                <button  class="icon" style="color: white;background: transparent;padding: 0;border: none;" onclick="seeBooksToRead()" > <i class="fa fa-bookmark"></i></button>
+                                <i class="fa fa-bookmark"></i>
                                 To read
                             </span>
                             <img src="../images/user account/img2.jpg" alt="">
@@ -37,10 +37,10 @@
 
             <div class="col-md-4 col-sm-4">
                     <div class="item">
-                        <a class="overlay" href="#">
+                        <a class="overlay" asp-area="" asp-controller="Books" asp-action="AddBook">
                             <span class="content">
-                                <i class="fa fa-envelope"></i>
-                                Request a book
+                                <i class="fa fa-book"></i>
+                                Add book
                             </span>
                             <img src="../images/user account/imagine3.jpg" alt="">
                         </a>
@@ -203,7 +203,7 @@
         location.href = '@Url.Action("Download", "Books" , new {name = "_name"})'.replace("_name",_name);
     }
 
-
+   
 
 </script>
 
