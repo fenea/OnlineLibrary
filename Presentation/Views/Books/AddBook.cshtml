@@ -1,4 +1,4 @@
-﻿@model Domain.Entities.Book
+﻿@model Presentation.Models.CreateBookModel
 
 <section id="books">
     <div class="container">
@@ -9,12 +9,13 @@
 
         <div class="row" style="margin-left:25%;">
             <div class="col-md-8">
-                <form method="post">
+                <form method="post" enctype="multipart/form-data">
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
                     <div class="form-group" style="margin-bottom:-5px;">
                         <label asp-for="Name" class="control-label" style=" visibility: hidden !important"></label>
                         <input asp-for="Name" class="form-control" placeholder="Name" />
+
                         <span asp-validation-for="Name" class="text-danger"></span>
                     </div>
 
@@ -31,15 +32,19 @@
                     </div>
 
                     <div class="form-group" style="margin-bottom:10px;">
-                        <label asp-for="Path" class="control-label" style="margin-left: 2% ">Upload Book</label>
-                        <input asp-for="Path" class="form-control" type="file" placeholder="Path" />
-                        <span asp-validation-for="Path" class="text-danger"></span>
+                        <label asp-for="BookFile" class="control-label" style="margin-left: 2% ">Upload Book</label>
+
+                        <input asp-for="BookFile" id="fileUpload" class="form-control" type="file" placeholder="Path" />
+
+                        <span asp-validation-for="BookFile" class="text-danger"></span>
                     </div>
 
                     <div class="form-group" style="margin-bottom:-5px;">
                         <label asp-for="PhotoPath" class="control-label" style="margin-left: 2% ">Upload Book Cover</label>
+
                         <input asp-for="PhotoPath" class="form-control" type="file" placeholder="PhotoPath" id="photoUpload" />
                         <span asp-validation-for="PhotoPath" class="text-danger"></span>
+
                     </div>
 
                     <div class="form-group" style="margin-bottom:-5px;">
@@ -49,13 +54,14 @@
                     </div>
 
                     <div class="form-group" style="margin-top:20px;">
-                        <input type="submit" value="Add Book" class="btn btn-lg btn-primary btn-block" style="background-color:rgba(206, 193, 193, 0.856" />
+                        <input type="submit" id="btnSubmit" value="Add Book" class="btn btn-lg btn-primary btn-block" style="background-color:rgba(206, 193, 193, 0.856)" />
                     </div>
                 </form>
             </div>
         </div>
     </div>
 </section>
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
