@@ -325,6 +325,7 @@
 
     function addReview(id)
     {
+     data: '{person: ' + JSON.stringify(person) + '}',
          location.href = '@Url.Action("UpdateBookId", "Rating" , new {id = "ID"})'.replace("ID",id);
 
     }

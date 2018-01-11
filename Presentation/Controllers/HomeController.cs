@@ -35,11 +35,12 @@ namespace Presentation.Controllers
 
             int totalBooksToReadUser = (_db.BooksToReadUser.Where(user => user.Id == idUser)).Count();
             int totalBooks = _bookRepository.GetAllBooks().Count();
-            var topBooks = _bookRepository.GetAllBooks().OrderBy(b => b.Score).Take(6);
+            var topBooks = _bookRepository.GetAllBooks().OrderByDescending(b => b.Score).Take(6);
             var latesteBooks = _bookRepository.GetAllBooks().OrderByDescending(b => b.Added).Take(3);
 
 
             var model = new HomePageModel { BooksToReadNumber = totalBooksToReadUser, AllBooksNumber = totalBooks, TopBooks = topBooks.ToList(),LatestBooks=latesteBooks.ToList() };
+
             return View(model);
         }
 

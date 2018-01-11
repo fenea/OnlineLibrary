@@ -1,4 +1,6 @@
-﻿<section id="happyClient" style="margin-top:-70px;">
+﻿@model SeeReviewModel
+
+<section id="happyClient" style="margin-top:-70px;">
 
       <div class="container" style="padding:50px;">
             <h2 class="sectionHeading">
@@ -158,34 +160,44 @@
                     }
                     
                 </div>
-                <div class="tab-pane" id="add-comment">
-                    <form action="#" method="post" class="form-horizontal" id="commentForm" role="form"> 
-                        
+        
+     
+                 <div class="tab-pane" id="add-comment" style="margin-bottom:10px">
+             <div class="form-horizontal" id="commentForm" > 
+
+                     @using (@Html.BeginForm("AddRatings", "Rating"))
+                {
+                       @Html.HiddenFor(t=>t.Book.BookId)
                         <div class="form-group">
-                            <label for="email" class="col-sm-2 control-label">Comment</label>
+                            <label class="col-sm-2 control-label">Review</label>
+                            <div class="col-lg-6">
                             <div class="col-sm-10">
-                              <textarea class="form-control" name="addComment" id="addComment" rows="5"></textarea>
+                                @Html.TextBoxFor(t => t._rating.Review, new { @class = "form-control  " })
+                                @Html.ValidationMessageFor(t=> t._rating.Review, "", new {@class = "red"})
+                            </div>
                             </div>
                         </div>
                        
                         <div class="form-group">
-                            <label for="uploadMedia" class="col-sm-2 control-label">Grade</label>
+                            <label class="col-sm-2 control-label">Grade</label>
+                             <div class="col-lg-6">
                             <div class="col-sm-10">                    
-                                <div class="input-group">
-                                  <div class="input-group-addon"></div>
-                                  <input type="text" class="form-control" name="uploadMedia" id="uploadMedia">
+                                @Html.TextBoxFor(t => t._rating.Grade, new { @class = "form-control" })
+                                 @Html.ValidationMessageFor(t=> t._rating.Review, "", new {@class = "red"})
+
                                 </div>
-                            </div>
+                                </div>
                         </div>
-                      
+
                         <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-10">                    
-                                <button class="btn btn-success btn-circle text-uppercase" type="submit" id="submitComment"><span class="glyphicon glyphicon-send"></span> Summit comment</button>
+                            <div class="col-sm-offset-2 col-sm-10">
+                <button class="btn btn-info btn-circle text-uppercase"><span class="glyphicon glyphicon-share-alt"></span> Reply</button>
                             </div>
                        
                         </div>            
-                    </form>
+                }         
                 </div>
+
             </div>
         </div>
     </div>
@@ -193,4 +205,4 @@
 </div>
 
 
-  
+         

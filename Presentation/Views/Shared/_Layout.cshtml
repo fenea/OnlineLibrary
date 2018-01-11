@@ -30,13 +30,17 @@
     
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                            <button type="button" class="navbar-toggle collapsed" >
                                 <span class="sr-only">Toggle navigation</span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="btn" asp-area="" asp-controller="Account" asp-action="Logout"><i>Logout</i></a>
+                           <div class="logout" style="">
+                <a class="btn btn-default btn-circle text-uppercase"  asp-area="" asp-controller="Account" asp-action="Logout">
+                    <span class="glyphicon glyphicon-off"></span> Logout                    
+                </a>                
+            </div>
                         </div>
     
                         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -50,54 +54,48 @@
                     <div class="carousel-inner" role="listbox">
                         <div class="item active">
                             <h2 class="sectionHeading">
-                                <span class="subHeading">Free E-Books</span>
+                                <a asp-area="" asp-controller="Home" asp-action="Index" style="color:#fff">
+                               <span class="subHeading">Free E-Books</span>
                                 Welcome to <br>Online Library
+                                </a>
                             </h2>
-                            <a href="#" class="btn">Learn more</a>
                         </div>
                         <div class="item">
                             <h2 class="sectionHeading">
                                 <span class="subHeading">Free E-Books</span>
                                 Welcome to <br>Online Library
                             </h2>
-                            <a href="#" class="btn">Learn more</a>
-                        </div>
-                        <div class="item">
-                            <h2 class="sectionHeading">
-                                <span class="subHeading">Free E-Books</span>
-                                Welcome to <br>Online Library
-                            </h2>
-                            <a href="#" class="btn">Learn more</a>
-                        </div>
-                        <div class="item">
-                            <h2 class="sectionHeading">
-                                <span class="subHeading">Free E-Books</span>
-                                Welcome to <br>Online Library
-                            </h2>
-                            <a href="#" class="btn">Learn more</a>
-                        </div>
                     </div>
-    
+                    </div>
+                  
+                      
+
                     <!-- Indicators -->
                     <ol class="carousel-indicators clearfix">
-                        <li data-target="#slider" data-slide-to="0" class="active">
+                        <li data-target="#slider"  >
                             <div class="inner">
-                                <span class="number">01</span> Action   
+                         <a asp-area="" asp-controller="Books" asp-action="ActionBooks" style="color:#fff"><span class="number">01</span> Action  </a>
                             </div>
                         </li>
-                        <li data-target="#slider" data-slide-to="1">
+                        <li data-target="#slider" >
                             <div class="inner">
+                                <a  asp-area="" asp-controller="Books" asp-action="ThrillerBooks" style="color:#fff">
                                 <span class="number">02</span> Thriller
+                                </a>
                             </div>
                         </li>
-                        <li data-target="#slider" data-slide-to="2">
+                        <li data-target="#slider" >
                             <div class="inner">
+                                <a  asp-area="" asp-controller="Books" asp-action="DramaBooks" style="color:#fff">
                                 <span class="number">03</span> Drama
+                                </a>
                             </div>
                         </li>
-                        <li data-target="#slider" data-slide-to="3">
+                        <li data-target="#slider" >
                             <div class="inner">
+                                <a  asp-area="" asp-controller="Books" asp-action="RomanceBooks" style="color:#fff">
                                 <span class="number">04</span> Romance
+                                </a>
                             </div>
                         </li>
                     </ol>

@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting.Server;
 using System.Web;
 using System.IO;
+using System.Linq;
 
 namespace Presentation.Controllers
 {
@@ -45,6 +46,46 @@ namespace Presentation.Controllers
             return View();
 
         }
+
+        public IActionResult ThrillerBooks()
+        {
+
+            var model = new SeeAddedBooks { BooksToReadUser = _bookRepository.GetAllBooks().Where(b => b.Type == "Thriller").ToList() };
+
+            return View(model);
+
+        }
+
+        public IActionResult RomanceBooks()
+        {
+
+            var model = new SeeAddedBooks { BooksToReadUser = _bookRepository.GetAllBooks().Where(b => b.Type == "Romance").ToList() };
+
+            return View(model);
+
+        }
+
+
+        public IActionResult DramaBooks()
+        {
+
+            var model = new SeeAddedBooks { BooksToReadUser = _bookRepository.GetAllBooks().Where(b => b.Type == "Drama").ToList() };
+
+            return View(model);
+        }
+
+
+        public IActionResult ActionBooks()
+        {
+
+            var model = new SeeAddedBooks { BooksToReadUser = _bookRepository.GetAllBooks().Where(b => b.Type == "Action").ToList() };
+
+            return View(model);
+
+        }
+
+     
+
 
       
 

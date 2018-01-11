@@ -25,21 +25,6 @@ namespace Presentation.Controllers
         }
 
 
-        //apelez UpdateBookId prima
-        public IActionResult UpdateBookId(string id)
-        {
-            TempData["id"]  = id;
-            return RedirectToAction("AddRating");
-
-        }
-
-      
-        public IActionResult AddRating()
-        {
-            return View();
-
-
-        }
 
         public IActionResult UpdateBook(string id)
         {
@@ -55,16 +40,15 @@ namespace Presentation.Controllers
             Book _book = _db.Books.Find(new Guid(id));
             var ratings = _db.Ratings.Where(book => book.Book == _book);
 
-            if(_db.Ratings.Where(book => book.Book == _book)==null)
+            if(ratings.Count()==0)
             {
-                var model = new SeeReviewModel { Rating = new List<Rating>(), User = new List<User>(), Book = _book };
+                var model = new SeeReviewModel { Rating = new List<Rating>(), User = new List<User>(), Book = _book, Grades = new List<int>() };
                 model.NrOfGradesOneProcent = 0;
                 model.NrOfGradesTwoProcent = 0;
                 model.NrOfGradesThreeProcent = 0;
                 model.NrOfGradesFourProcent = 0;
                 model.NrOfGradesFiveProcent = 0;
                 return View(model);
-
             }
             else
             {
@@ -127,15 +111,16 @@ namespace Presentation.Controllers
         }
 */
      [HttpPost]
-        public IActionResult AddRating(RatingModel model)
+        public IActionResult AddRatings(SeeReviewModel model)
         {
             if (ModelState.IsValid)
             {
-                string id = (string)TempData["id"];
                 var idUser = _userManager.GetUserId(User);
                 var user = _db.Users.Find(idUser);
-                Book _book = _db.Books.Find(new Guid(id));
-                Rating rating = Rating.Create(_book, user, model.Review, model.Grade);
+                Book _book = _db.Books.Find(model.Book.BookId);
+                Rating rating = Rating.Create(_book, user, model._rating.Review, model._rating.Grade);
+          
+
                 _book.Ratings.Add(rating);
                 _db.Books.Update(_book);
                 _db.SaveChanges();
@@ -151,7 +136,7 @@ namespace Presentation.Controllers
 
                 _db.Books.Update(_book);
                 _db.SaveChanges();
-                return RedirectToAction("UpdateBook", new { id = id });
+                return RedirectToAction("UpdateBook", new { id = model.Book.BookId });
             }
             return RedirectToAction("Index", "Home");
 

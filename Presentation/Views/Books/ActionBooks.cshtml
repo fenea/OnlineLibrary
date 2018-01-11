@@ -1,0 +1,119 @@
+﻿@model SeeAddedBooks
+
+
+<section id="books">
+    <div class="container">
+        <h2 class="sectionHeading">
+            <span class="subHeading">Books</span>
+            Action
+        </h2>
+        <div class="sectionContent">
+            <div class="row hoverEffect">
+   
+
+@foreach (var b in @Model.BooksToReadUser)
+{
+                
+                <div class="col-md-4 col-sm-4">
+                    <div class="item">
+                        <div class="overlay" href="#">
+                            <div class="content">
+                                
+
+                             <div class="point-of-reference">
+                                <div class="imgwrap">
+                                <button  class="icon" style="color: white;background: transparent;padding: 0;border: none;" onclick="addbook('@b.BookId')" ><i class="mdi fa fa-download"></i></button>
+                                <div class="rollover">
+                                        <div class="roll-inner">
+                                        <div class="roll-content">
+                                                <p>Download</p>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        </div>
+
+                             <div class="point-of-reference">
+                                <div class="imgwrap">
+                                <button  class="icon" style="color: white;background: transparent;padding: 0;border: none;" onclick="seeBook('@b.BookId')" ><i class="mdi fa fa-book"></i></button>
+                                <div class="rollover">
+                                        <div class="roll-inner">
+                                        <div class="roll-content">
+                                            <p>Description</p>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        </div>
+
+                             <div class="point-of-reference">
+                                <div class="imgwrap">
+                                <button  class="icon" style="color: white;background: transparent;padding: 0;border: none;" onclick="addReview('@b.BookId')" ><i class="mdi fa fa-edit"></i></button>
+                                <div class="rollover">
+                                        <div class="roll-inner">
+                                        <div class="roll-content">
+                                            <p>Add review</p>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        </div>
+
+                                <div class="point-of-reference">
+                                    <div class="imgwrap">
+                                        <button class="icon" style="color: white;background: transparent;padding: 0;border: none;" onclick="AddToReadBooks('@b.BookId')" ><i class="mdi fa fa-bookmark"></i></button>
+                                        <div class="rollover">
+                                            <div class="roll-inner">
+                                                <div class="roll-content">
+                                                    <p>Read later</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <img src= "@b.PhotoPath">
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h4 class="name">@b.Name </h4>
+                        <span class="regency">by @b.Author  / @b.Type</span>
+
+                    </div>
+                </div>
+      
+}
+
+    </div>
+    </div>
+    </div>
+</section>  
+ 
+<script>
+
+ function AddToReadBooks(Id)
+    {
+        var values={id:Id};
+        $.post("/Account/AddToReadBooks", values, function (result) 
+        {
+            if(result="success")
+                    alert("The book was added");
+            else
+                    alert("Error");
+
+    });
+    }
+    
+     function seeBook(id)
+    {
+        location.href = '@Url.Action("UpdateBook", "Rating" , new {id = "ID"})'.replace("ID",id);
+
+    }
+
+      function addReview(id)
+    {
+         location.href = '@Url.Action("UpdateBookId", "Rating" , new {id = "ID"})'.replace("ID",id);
+
+    }
+</script>
