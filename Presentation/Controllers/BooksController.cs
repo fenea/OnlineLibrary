@@ -96,7 +96,26 @@ namespace Presentation.Controllers
             if(ModelState.IsValid)
             {
 
-                Book book = Book.Create(model.Name, model.Type, model.Author, model.Path, model.PhotoPath, model.Description,DateTime.Now);
+                string FilePath = "Books\\" + model.Name + ".pdf";
+                string PhotoPath = "wwwroot\\images\\books\\" + model.Type + "\\" + model.Name + ".jpg";
+                Console.WriteLine(model.BookFile.FileName);
+
+                if (model.BookFile.Length > 0)
+                {
+                    using (var fileStream = new FileStream(FilePath, FileMode.Create))
+                    {
+                        model.BookFile.CopyTo(fileStream);
+                    }
+                }
+                if (model.PhotoPath.Length > 0)
+                {
+                    using (var fileStream = new FileStream(PhotoPath, FileMode.Create))
+                    {
+                        model.PhotoPath.CopyTo(fileStream);
+                    }
+                }
+
+                Book book = Book.Create(model.Name, model.Type, model.Author, FilePath, PhotoPath, model.Description,DateTime.Now);
                 _bookRepository.AddBook(book);
             }
 
