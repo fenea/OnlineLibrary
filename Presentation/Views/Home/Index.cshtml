@@ -25,7 +25,7 @@
 
             <div class="col-md-4 col-sm-4">
                     <div class="item">
-                        <a class="overlay" asp-area="" asp-controller="Account" asp-action="SeeAddedBooks">
+                        <a class="overlay" asp-area="" asp-controller="Books" asp-action="SeeAddedBooks">
                             <span class="content">
                                 <i class="fa fa-bookmark"></i>
                                 To read
@@ -67,7 +67,7 @@
             </div>
 
             <div class="item">
-                <div class="number">0</div>
+                <div class="number">@Model.BooksDownloaded</div>
                 <div class="text">Downloaded books</div>
             </div>
 
@@ -129,29 +129,17 @@
 
                                 <div class="point-of-reference">
                                     <div class="imgwrap">
-                                        <button class="icon" formtarget="_blank" style="color: white;background: transparent;padding: 0;border: none;" onclick="ReadBook('@b.Name')"><i class="mdi fa fa-download"></i></button>
+                                        <button class="icon" formtarget="_blank" style="color: white;background: transparent;padding: 0;border: none;" onclick="ReadBook('@b.Name')"><i class="mdi fa fa-file-pdf-o"></i></button>
                                         <div class="rollover">
                                             <div class="roll-inner">
                                                 <div class="roll-content">
-                                                    <p>Read now Online</p>
+                                                    <p>Read now</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-                             <div class="point-of-reference">
-                                <div class="imgwrap">
-                                <button  class="icon" style="color: white;background: transparent;padding: 0;border: none;" onclick="addReview('@b.BookId')" ><i class="mdi fa fa-edit"></i></button>
-                                <div class="rollover">
-                                        <div class="roll-inner">
-                                        <div class="roll-content">
-                                            <p>Add review</p>
-                                        </div>
-                                        </div>
-                                        </div>
-                                        </div>
-                                        </div>
 
                                 <div class="point-of-reference">
                                     <div class="imgwrap">
@@ -238,11 +226,11 @@
 
                                 <div class="point-of-reference">
                                     <div class="imgwrap">
-                                        <button class="icon" formtarget="_blank" style="color: white;background: transparent;padding: 0;border: none;" onclick="ReadBook('@b.Name')"><i class="mdi fa fa-download"></i></button>
+                                        <button class="icon" formtarget="_blank" style="color: white;background: transparent;padding: 0;border: none;" onclick="ReadBook('@b.Name')"><i class="mdi fa fa-file-pdf-o"></i></button>
                                         <div class="rollover">
                                             <div class="roll-inner">
                                                 <div class="roll-content">
-                                                    <p>Read now Online</p>
+                                                    <p>Read now </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -307,13 +295,10 @@
  function AddToReadBooks(Id)
     {
         var values={id:Id};
-        $.post("/Account/AddToReadBooks", values, function (result)
-        {
-            if(result="success")
-                    alert("The book was added");
-            else
-                    alert("Error");
-
+        $.post("/Books/AddToReadBooks", values, function (result)
+        {  
+            alert(result.isAdded);
+           
     });
     }
 
@@ -323,12 +308,6 @@
 
     }
 
-    function addReview(id)
-    {
-     data: '{person: ' + JSON.stringify(person) + '}',
-         location.href = '@Url.Action("UpdateBookId", "Rating" , new {id = "ID"})'.replace("ID",id);
-
-    }
 
     function DownloadBook(_name)
     {

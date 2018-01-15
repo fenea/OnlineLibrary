@@ -22,4 +22,7 @@
   <ItemGroup>
     <Compile Remove="Entities\Comment.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
 </Project>

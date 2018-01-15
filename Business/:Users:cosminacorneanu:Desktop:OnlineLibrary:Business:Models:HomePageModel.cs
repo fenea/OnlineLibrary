@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Domain.Entities;
 
-namespace Presentation.Models
+namespace Business.Models
 {
     public class HomePageModel
     {

@@ -1,21 +1,16 @@
-﻿using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
+﻿using System.Linq;
 using Domain.Entities;
 using Domain.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Persistance;
-using Presentation.Models;
+using Domain.Models;
 
-
-
-//nr carti site , cate carti desc per user , cate carti are ptr to read
 
 namespace Presentation.Controllers
 {
 
-    public class HomeController : Microsoft.AspNetCore.Mvc.Controller
+    public class HomeController : Controller
     {
         private IBookRepository _bookRepository;
         private DatabaseContext _db;
@@ -33,34 +28,16 @@ namespace Presentation.Controllers
             var idUser = _userManager.GetUserId(User);
             var currentUser = _db.Users.Find(idUser);
 
-            int totalBooksToReadUser = (_db.BooksToReadUser.Where(user => user.Id == idUser)).Count();
+            int totalBooksToReadUser = _bookRepository.BooksToReadPerUser(idUser);
             int totalBooks = _bookRepository.GetAllBooks().Count();
-            var topBooks = _bookRepository.GetAllBooks().OrderByDescending(b => b.Score).Take(6);
-            var latesteBooks = _bookRepository.GetAllBooks().OrderByDescending(b => b.Added).Take(3);
+            int booksDownloaded = _bookRepository.NrBooksDownloaded(currentUser);
+            var topBooks = _bookRepository.TopBooks(6);
+            var latesteBooks = _bookRepository.LatesteBooks(3);
 
 
-            var model = new HomePageModel { BooksToReadNumber = totalBooksToReadUser, AllBooksNumber = totalBooks, TopBooks = topBooks.ToList(),LatestBooks=latesteBooks.ToList() };
+            var model = new HomePageModel { BooksToReadNumber = totalBooksToReadUser, AllBooksNumber = totalBooks, BooksDownloaded=booksDownloaded,TopBooks = topBooks.ToList(),LatestBooks=latesteBooks.ToList() };
 
             return View(model);
-        }
-
-        public IActionResult About()
-        {
-            ViewData["Message"] = "Your application description page.";
-
-            return View();
-        }
-
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
-
-            return View();
-        }
-
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }

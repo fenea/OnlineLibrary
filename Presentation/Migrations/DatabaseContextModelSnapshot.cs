@@ -57,7 +57,7 @@ namespace Presentation.Migrations
 
                     b.HasIndex("BookId");
 
-                    b.ToTable("BookDownloadedUser");
+                    b.ToTable("BooksDownloadedUser");
                 });
 
             modelBuilder.Entity("Domain.Entities.BookToReadUser", b =>
@@ -114,6 +114,8 @@ namespace Presentation.Migrations
 
                     b.Property<string>("NormalizedUserName")
                         .HasMaxLength(256);
+
+                    b.Property<int>("Nr");
 
                     b.Property<string>("PasswordHash");
 

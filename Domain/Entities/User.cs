@@ -4,16 +4,15 @@ using Microsoft.AspNetCore.Identity;
 
 namespace Domain.Entities
 {
-    public class User : IdentityUser  // name, email, password
+    public class User : IdentityUser  
     {
         public string PhotoPath { get; set; }
 
         public List<BookToReadUser> BookToReadUser { get; set; }
         public List<BookDownloadedUser> BookDownloadedUser { get; set; }
         public List<Rating> Ratings { get; set; }
+        public int Nr { get; set; }
 
-
-        public string Role;
 
         public User()
         {

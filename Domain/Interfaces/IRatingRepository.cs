@@ -1,19 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using Domain.Entities;
+﻿using Domain.Entities;
+using Domain.Models;
 
 namespace Domain.Interfaces
 {
     public interface IRatingRepository
     {
-        
-        IReadOnlyList<Rating> GetAllRatings();
-        Rating GetRatingById(Guid id);
-        void AddRating(Rating rating);
-        void EditRating(Rating rating);
-        void DeleteRating(Guid irating);
-
-
+        bool AddRating(User user,SeeReviewModel model );
+        SeeReviewModel GetRatingsByBookId(string bookId);
 
     }
 }

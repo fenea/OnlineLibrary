@@ -1,5 +1,6 @@
 ﻿@model SeeReviewModel
 
+
 <section id="happyClient" style="margin-top:-70px;">
 
       <div class="container" style="padding:50px;">
@@ -158,8 +159,9 @@
                             count++;
                         }
                     }
-                    
+                </ul>
                 </div>
+
         
      
                  <div class="tab-pane" id="add-comment" style="margin-bottom:10px">
@@ -191,7 +193,7 @@
 
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">
-                <button class="btn btn-info btn-circle text-uppercase"><span class="glyphicon glyphicon-share-alt"></span> Reply</button>
+                <button class="btn btn-info btn-circle text-uppercase" ><span class="glyphicon glyphicon-share-alt"></span> Post</button>
                             </div>
                        
                         </div>            
@@ -204,5 +206,13 @@
   </div>
 </div>
 
+</section>
 
-         
+@if (TempData["error"]!=null)
+{
+<script type="text/javascript">
+window.onload = function(){
+    alert("You already added a comment");
+}
+</script>
+}

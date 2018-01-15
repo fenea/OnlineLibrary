@@ -57,6 +57,7 @@ namespace Presentation
 
          //   services.AddTransient<IDatabaseContext, DatabaseContext>();
             services.AddTransient<IBookRepository, BookRepository>();
+            services.AddTransient<IRatingRepository,RatingRepository>();
 
         }
 

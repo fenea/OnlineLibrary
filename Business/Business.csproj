@@ -9,4 +9,7 @@
     <ProjectReference Include="..\Persistance\Persistance.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Models\BookModel.cs" />
+  </ItemGroup>
 </Project>

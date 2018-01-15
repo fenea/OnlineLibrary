@@ -1,37 +1,55 @@
 ﻿<Properties StartupConfiguration="{9BC46C3F-1D6E-4D56-BC81-C8D86554959C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Business/RatingRepository.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Presentation/Controllers/RatingController.cs">
     <Files>
-      <File FileName="Presentation/Models/SeeReviewModel.cs" Line="19" Column="7" />
-      <File FileName="Presentation/Models/SeeAddedBooks.cs" Line="9" Column="53" />
-      <File FileName="Presentation/Controllers/AccountController.cs" Line="131" Column="1" />
-      <File FileName="Presentation/Controllers/RatingController.cs" Line="28" Column="1" />
-      <File FileName="Presentation/Models/UpdateBookModel.cs" Line="1" Column="1" />
-      <File FileName="Presentation/Controllers/HomeController.cs" Line="38" Column="25" />
-      <File FileName="Presentation/Controllers/BooksController.cs" Line="81" Column="121" />
-      <File FileName="Presentation/Views/Account/SeeAddedBooks.cshtml" Line="120" Column="1" />
-      <File FileName="Presentation/Views/Account/Register.cshtml" Line="1" Column="1" />
-      <File FileName="Presentation/Views/Books/ListBooks.cshtml" Line="1" Column="1" />
-      <File FileName="Presentation/Views/Books/AddBook.cshtml" Line="45" Column="64" />
-      <File FileName="Presentation/Views/Account/Login.cshtml" Line="1" Column="1" />
-      <File FileName="Presentation/Startup.cs" Line="1" Column="1" />
-      <File FileName="Presentation/Views/_ViewStart.cshtml" Line="4" Column="48" />
-      <File FileName="Presentation/Views/Home/Index.cshtml" Line="269" Column="69" />
-      <File FileName="Presentation/Models/HomePageModel.cs" Line="12" Column="38" />
-      <File FileName="Presentation/Views/Rating/SeeRatings.cshtml" Line="1" Column="1" />
-      <File FileName="Presentation/Views/Rating/AddRating.cshtml" Line="1" Column="7" />
+      <File FileName="Presentation/Controllers/AccountController.cs" Line="32" Column="27" />
+      <File FileName="Presentation/Controllers/RatingController.cs" Line="54" Column="31" />
+      <File FileName="Presentation/Controllers/HomeController.cs" Line="38" Column="148" />
+      <File FileName="Presentation/Controllers/BooksController.cs" Line="96" Column="23" />
+      <File FileName="Presentation/Views/Account/Register.cshtml" Line="1" Column="8" />
+      <File FileName="Presentation/Views/Books/AddBook.cshtml" Line="7" Column="28" />
+      <File FileName="Presentation/Views/Account/Login.cshtml" Line="1" Column="9" />
+      <File FileName="Presentation/Startup.cs" Line="33" Column="50" />
+      <File FileName="Presentation/Views/_ViewStart.cshtml" Line="38" Column="15" />
+      <File FileName="Presentation/Views/Home/Index.cshtml" Line="229" Column="213" />
+      <File FileName="Presentation/Views/Rating/SeeRatings.cshtml" Line="187" Column="33" />
+      <File FileName="Presentation/Views/Rating/AddRating.cshtml" Line="1" Column="8" />
       <File FileName="Presentation/wwwroot/css/signin.css" Line="70" Column="42" />
       <File FileName="Presentation/wwwroot/css/template.css" Line="1040" Column="22" />
-      <File FileName="Presentation/Views/Shared/_Layout.cshtml" Line="1" Column="1" />
-      <File FileName="Presentation/Views/Home/About.cshtml" Line="1" Column="1" />
-      <File FileName="Presentation/Models/CreateBookModel.cs" Line="1" Column="1" />
-      <File FileName="Presentation/Models/LoginViewModel.cs" Line="1" Column="1" />
-      <File FileName="Presentation/Views/Home/Contact.cshtml" Line="1" Column="1" />
-      <File FileName="Presentation/Views/Books/RomanceBooks.cshtml" Line="1" Column="1" />
-      <File FileName="Presentation/Views/Books/ThrillerBooks.cshtml" Line="8" Column="21" />
-      <File FileName="Presentation/Views/Books/DramaBooks.cshtml" Line="8" Column="18" />
-      <File FileName="Presentation/Views/Books/ActionBooks.cshtml" Line="8" Column="19" />
-      <File FileName="Business/BookRepository.cs" Line="1" Column="1" />
-      <File FileName="Business/RatingRepository.cs" Line="1" Column="1" />
+      <File FileName="Presentation/Views/Shared/_Layout.cshtml" Line="112" Column="3" />
+      <File FileName="Presentation/Views/Books/RomanceBooks.cshtml" Line="124" Column="6" />
+      <File FileName="Presentation/Views/Books/ThrillerBooks.cshtml" Line="123" Column="6" />
+      <File FileName="Presentation/Views/Books/DramaBooks.cshtml" Line="123" Column="6" />
+      <File FileName="Presentation/Views/Books/ActionBooks.cshtml" Line="122" Column="6" />
+      <File FileName="Business/BookRepository.cs" Line="90" Column="45" />
+      <File FileName="Business/RatingRepository.cs" Line="28" Column="14" />
+      <File FileName="Business/:Users:cosminacorneanu:Desktop:OnlineLibrary:Business:Models:CreateBookModel.cs" Line="12" Column="18" />
+      <File FileName="Business/:Users:cosminacorneanu:Desktop:OnlineLibrary:Business:Models:ErrorViewModel.cs" Line="1" Column="1" />
+      <File FileName="Business/:Users:cosminacorneanu:Desktop:OnlineLibrary:Business:Models:HomePageModel.cs" Line="1" Column="1" />
+      <File FileName="Business/:Users:cosminacorneanu:Desktop:OnlineLibrary:Business:Models:LoginViewModel.cs" Line="9" Column="18" />
+      <File FileName="Business/:Users:cosminacorneanu:Desktop:OnlineLibrary:Business:Models:RegisterViewModel.cs" Line="1" Column="1" />
+      <File FileName="Business/:Users:cosminacorneanu:Desktop:OnlineLibrary:Business:Models:SeeAddedBooks.cs" Line="1" Column="1" />
+      <File FileName="Business/:Users:cosminacorneanu:Desktop:OnlineLibrary:Business:Models:SeeReviewModel.cs" Line="1" Column="1" />
+      <File FileName="Domain/Interfaces/IBookRepository.cs" Line="19" Column="24" />
+      <File FileName="Domain/Models/CreateBookModel.cs" Line="19" Column="41" />
+      <File FileName="Domain/Models/ErrorViewModel.cs" Line="1" Column="1" />
+      <File FileName="Domain/Models/HomePageModel.cs" Line="10" Column="35" />
+      <File FileName="Domain/Models/LoginViewModel.cs" Line="4" Column="17" />
+      <File FileName="Domain/Models/RegisterViewModel.cs" Line="2" Column="1" />
+      <File FileName="Domain/Models/SeeAddedBooks.cs" Line="1" Column="1" />
+      <File FileName="Domain/Models/SeeReviewModel.cs" Line="24" Column="1" />
+      <File FileName="Domain/Interfaces/IRatingRepository.cs" Line="8" Column="13" />
+      <File FileName="Domain/Interfaces/IUserRepository.cs" Line="1" Column="1" />
+      <File FileName="Persistance/DatabaseContext.cs" Line="19" Column="22" />
+      <File FileName="Business/UserRepository.cs" Line="9" Column="35" />
+      <File FileName="Domain/Entities/Rating.cs" Line="2" Column="1" />
+      <File FileName="Domain/Entities/BookDownloadedUser.cs" Line="3" Column="1" />
+      <File FileName="Domain/Entities/User.cs" Line="5" Column="26" />
+      <File FileName="Domain/Entities/Book.cs" Line="3" Column="1" />
+      <File FileName="Domain/Entities/BookToReadUser.cs" Line="3" Column="1" />
+      <File FileName="Presentation/Views/Books/SeeAddedBooks.cshtml" Line="51" Column="180" />
+      <File FileName="Presentation/Views/_ViewImports.cshtml" Line="2" Column="14" />
+      <File FileName="Presentation/Views/Shared/Review.cshtml" Line="16" Column="6" />
+      <File FileName="Presentation/Views/Shared/Reg.cshtml" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

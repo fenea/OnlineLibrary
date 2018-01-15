@@ -1,13 +1,11 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using System;
-using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using Domain.Interfaces;
 using Domain.Entities;
-using Presentation.Models;
-using Microsoft.AspNetCore.Authorization;
+using Domain.Models;
 using Persistance;
-using System.Linq;
+using Domain.Interfaces;
+using System.Diagnostics.Contracts;
+
 
 namespace Presentation.Controllers
 {
@@ -15,17 +13,19 @@ namespace Presentation.Controllers
     {
         private readonly UserManager<User> _userManager;
         private DatabaseContext _db;
-      
+        private IRatingRepository _ratingRepository;
 
 
-        public RatingController( UserManager<User> userManager, DatabaseContext db)
+
+        public RatingController( UserManager<User> userManager, DatabaseContext db,IRatingRepository ratingRepository)
         {
             _userManager = userManager;
+            _ratingRepository = ratingRepository;
             _db = db;
         }
 
 
-
+        //se apeleaza inainte de seeRatings
         public IActionResult UpdateBook(string id)
         {
             TempData["Book"] = id;
@@ -37,108 +37,29 @@ namespace Presentation.Controllers
         public IActionResult SeeRatings()
         {
             string id = (string)TempData["Book"];
-            Book _book = _db.Books.Find(new Guid(id));
-            var ratings = _db.Ratings.Where(book => book.Book == _book);
-
-            if(ratings.Count()==0)
-            {
-                var model = new SeeReviewModel { Rating = new List<Rating>(), User = new List<User>(), Book = _book, Grades = new List<int>() };
-                model.NrOfGradesOneProcent = 0;
-                model.NrOfGradesTwoProcent = 0;
-                model.NrOfGradesThreeProcent = 0;
-                model.NrOfGradesFourProcent = 0;
-                model.NrOfGradesFiveProcent = 0;
-                return View(model);
-            }
-            else
-            {
-                List<User> users = new List<User>();
-                List<int> grades = new List<int>();
-                foreach (Rating r in ratings)
-                {
-                    string idUser = r.UserId;
-                    var user = _db.Users.Find(idUser);
-                    users.Add(user);
-                    grades.Add(r.Grade);
-
-                }
-
-                var model = new SeeReviewModel { Rating = ratings.ToList(), User = users.ToList(), Book = _book,Grades=grades };
-                model.NrOfGradesOneProcent = 100 * (ratings.Where(rating => rating.Grade == 1)).Count() / ratings.Count();
-                model.NrOfGradesTwoProcent = 100 * (ratings.Where(rating => rating.Grade == 2)).Count() / ratings.Count();
-                model.NrOfGradesThreeProcent = 100 * (ratings.Where(rating => rating.Grade == 3)).Count() / ratings.Count();
-                model.NrOfGradesFourProcent = 100 * (ratings.Where(rating => rating.Grade == 4)).Count() / ratings.Count();
-                model.NrOfGradesFiveProcent = 100 * (ratings.Where(rating => rating.Grade == 5)).Count() / ratings.Count();
-                return View(model);
-
-            }
-
-
-            }
-
-        /*
-        public IActionResult SeeRatings(string id)
-        {
-            //string id = (string)TempData["Book"];
-            Book _book = _db.Books.Find(new Guid(id));
-            var ratings = _db.Ratings.Where(book => book.Book == _book);
-
-            List<User> users = new List<User>();
-
-            foreach (Rating r in ratings)
-            {
-                string idUser = r.UserId;
-                var user = _db.Users.Find(idUser);
-                users.Add(user);
-
-            }
-
-            var model = new SeeReviewModel { Rating = ratings.ToList(), User = users.ToList(), Book = _book };
-            int total = 1;
-            if (ratings != null)
-            {
-                total = ratings.Count();
-            }
-            model.NrOfGradesOneProcent = 100 * (ratings.Where(rating => rating.Grade == 1)).Count() / total;
-            model.NrOfGradesTwoProcent = 100 * (ratings.Where(rating => rating.Grade == 2)).Count() / total;
-            model.NrOfGradesThreeProcent = 100 * (ratings.Where(rating => rating.Grade == 3)).Count() / total;
-            model.NrOfGradesFourProcent = 100 * (ratings.Where(rating => rating.Grade == 4)).Count() / total;
-            model.NrOfGradesFiveProcent = 100 * (ratings.Where(rating => rating.Grade == 5)).Count() / total;
-
-
-
+            var model=_ratingRepository.GetRatingsByBookId(id);
             return View(model);
+
         }
-*/
-     [HttpPost]
+
+     
+        [HttpPost]
         public IActionResult AddRatings(SeeReviewModel model)
         {
+            Contract.Ensures(Contract.Result<IActionResult>() != null);
             if (ModelState.IsValid)
             {
                 var idUser = _userManager.GetUserId(User);
                 var user = _db.Users.Find(idUser);
-                Book _book = _db.Books.Find(model.Book.BookId);
-                Rating rating = Rating.Create(_book, user, model._rating.Review, model._rating.Grade);
-          
-
-                _book.Ratings.Add(rating);
-                _db.Books.Update(_book);
-                _db.SaveChanges();
-
-                int score = 0;
-                var ratings = _db.Ratings.Where(book => book.Book == _book);
-                foreach (Rating rate in ratings)
+               
+                if(_ratingRepository.AddRating(user,model)==false)
                 {
-                    score += rate.Grade;
+
+                    TempData["error"] = "You already added a comment";
                 }
-
-                _book.Score = score / ratings.Count();
-
-                _db.Books.Update(_book);
-                _db.SaveChanges();
                 return RedirectToAction("UpdateBook", new { id = model.Book.BookId });
             }
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("UpdateBook", new { id = model.Book.BookId });
 
 
         }

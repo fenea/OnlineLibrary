@@ -35,6 +35,7 @@ namespace Presentation.Migrations
                     LockoutEnd = table.Column<DateTimeOffset>(nullable: true),
                     NormalizedEmail = table.Column<string>(maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(maxLength: 256, nullable: true),
+                    Nr = table.Column<int>(nullable: false),
                     PasswordHash = table.Column<string>(nullable: true),
                     PhoneNumber = table.Column<string>(nullable: true),
                     PhoneNumberConfirmed = table.Column<bool>(nullable: false),
@@ -175,7 +176,7 @@ namespace Presentation.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "BookDownloadedUser",
+                name: "BooksDownloadedUser",
                 columns: table => new
                 {
                     Id = table.Column<string>(nullable: false),
@@ -183,15 +184,15 @@ namespace Presentation.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_BookDownloadedUser", x => new { x.Id, x.BookId });
+                    table.PrimaryKey("PK_BooksDownloadedUser", x => new { x.Id, x.BookId });
                     table.ForeignKey(
-                        name: "FK_BookDownloadedUser_Books_BookId",
+                        name: "FK_BooksDownloadedUser_Books_BookId",
                         column: x => x.BookId,
                         principalTable: "Books",
                         principalColumn: "BookId",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_BookDownloadedUser_AspNetUsers_Id",
+                        name: "FK_BooksDownloadedUser_AspNetUsers_Id",
                         column: x => x.Id,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
@@ -286,8 +287,8 @@ namespace Presentation.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_BookDownloadedUser_BookId",
-                table: "BookDownloadedUser",
+                name: "IX_BooksDownloadedUser_BookId",
+                table: "BooksDownloadedUser",
                 column: "BookId");
 
             migrationBuilder.CreateIndex(
@@ -319,7 +320,7 @@ namespace Presentation.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
-                name: "BookDownloadedUser");
+                name: "BooksDownloadedUser");
 
             migrationBuilder.DropTable(
                 name: "BooksToReadUser");

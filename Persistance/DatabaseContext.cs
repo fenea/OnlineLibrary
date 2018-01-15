@@ -6,16 +6,18 @@ using Microsoft.EntityFrameworkCore.ChangeTracking;
 namespace Persistance
 {
 
-    public class DatabaseContext : IdentityDbContext<User>//, IDatabaseContext
+    public class DatabaseContext : IdentityDbContext<User>
     {
         public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options)
         {
-            // Database.EnsureCreated();
+            
 
         }
-        public DbSet<Domain.Entities.Book> Books { get; set; }
-        public DbSet<Domain.Entities.Rating> Ratings { get; set; }
-        public DbSet<Domain.Entities.BookToReadUser> BooksToReadUser { get; set; }
+        public DbSet<Book> Books { get; set; }
+        public DbSet<Rating> Ratings { get; set; }
+        public DbSet<BookToReadUser> BooksToReadUser { get; set; }
+        public DbSet<BookDownloadedUser> BooksDownloadedUser { get; set; }
+
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

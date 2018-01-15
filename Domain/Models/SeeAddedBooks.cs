@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Domain.Entities;
 
-namespace Presentation.Models
+namespace Domain.Models
 {
     public class SeeAddedBooks
     {

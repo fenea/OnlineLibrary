@@ -11,7 +11,7 @@ using System;
 namespace Presentation.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20180109121616_InitialCreate")]
+    [Migration("20180115122847_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -58,7 +58,7 @@ namespace Presentation.Migrations
 
                     b.HasIndex("BookId");
 
-                    b.ToTable("BookDownloadedUser");
+                    b.ToTable("BooksDownloadedUser");
                 });
 
             modelBuilder.Entity("Domain.Entities.BookToReadUser", b =>
@@ -115,6 +115,8 @@ namespace Presentation.Migrations
 
                     b.Property<string>("NormalizedUserName")
                         .HasMaxLength(256);
+
+                    b.Property<int>("Nr");
 
                     b.Property<string>("PasswordHash");
 

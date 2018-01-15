@@ -20,9 +20,10 @@
                             <div class="content">
                                 
 
+
                              <div class="point-of-reference">
                                 <div class="imgwrap">
-                                <button  class="icon" style="color: white;background: transparent;padding: 0;border: none;" onclick="addbook('@b.BookId')" ><i class="mdi fa fa-download"></i></button>
+                                <button  class="icon" style="color: white;background: transparent;padding: 0;border: none;" onclick="DownloadBook('@b.Name')" ><i class="mdi fa fa-download"></i></button>
                                 <div class="rollover">
                                         <div class="roll-inner">
                                         <div class="roll-content">
@@ -32,6 +33,7 @@
                                         </div>
                                         </div>
                                         </div>
+                                
 
                              <div class="point-of-reference">
                                 <div class="imgwrap">
@@ -46,18 +48,18 @@
                                         </div>
                                         </div>
 
-                             <div class="point-of-reference">
-                                <div class="imgwrap">
-                                <button  class="icon" style="color: white;background: transparent;padding: 0;border: none;" onclick="addReview('@b.BookId')" ><i class="mdi fa fa-edit"></i></button>
-                                <div class="rollover">
-                                        <div class="roll-inner">
-                                        <div class="roll-content">
-                                            <p>Add review</p>
+                                                     <div class="point-of-reference">
+                                    <div class="imgwrap">
+                                        <button class="icon" formtarget="_blank" style="color: white;background: transparent;padding: 0;border: none;" onclick="ReadBook('@b.Name')"><i class="mdi fa fa-file-pdf-o"></i></button>
+                                        <div class="rollover">
+                                            <div class="roll-inner">
+                                                <div class="roll-content">
+                                                    <p>Read now</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                        </div>
-                                        </div>
-                                        </div>
-                                        </div>
+                                    </div>
+                                </div>
 
                                 <div class="point-of-reference">
                                     <div class="imgwrap">
@@ -95,25 +97,29 @@
  function AddToReadBooks(Id)
     {
         var values={id:Id};
-        $.post("/Account/AddToReadBooks", values, function (result) 
-        {
-            if(result="success")
-                    alert("The book was added");
-            else
-                    alert("Error");
-
+        $.post("/Books/AddToReadBooks", values, function (result)
+        {  
+            alert(result.isAdded);
+           
     });
     }
-    
+
      function seeBook(id)
     {
         location.href = '@Url.Action("UpdateBook", "Rating" , new {id = "ID"})'.replace("ID",id);
 
     }
 
-      function addReview(id)
-    {
-         location.href = '@Url.Action("UpdateBookId", "Rating" , new {id = "ID"})'.replace("ID",id);
 
+    function DownloadBook(_name)
+    {
+        location.href = '@Url.Action("Download", "Books" , new {name = "_name"})'.replace("_name",_name);
     }
+
+
+    function ReadBook(_name)
+    {
+        location.href = '@Url.Action("ReadPdf", "Books" , new {name = "_name"})'.replace("_name",_name);
+    }
+
 </script>
