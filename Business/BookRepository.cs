@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.IO;
+using System.Runtime.InteropServices;
 using Domain.Models;
 using Microsoft.AspNetCore.Identity;
 using Domain.Interfaces;
@@ -35,13 +36,29 @@ namespace Business
         
         public void AddBook(CreateBookModel model)
         {
-            string FilePath = "Books\\" + model.Name + ".pdf";
-            string PhotoPath = "wwwroot\\images\\books\\" + model.Type + "\\" + model.Name + ".jpg";
-            string pathToWrite = "../images/books/" + model.Type + "/" + model.Name + ".jpg";
+            
             Console.WriteLine(model.BookFile.FileName);
+            bool isWindows = System.Runtime.InteropServices.RuntimeInformation
+                .IsOSPlatform(OSPlatform.Windows);
+            string FilePath;
+            string PhotoPath;
+            string pathToWrite;
+            if (isWindows == true)
+            {
+                FilePath = "Books\\" + model.Name + ".pdf";
+                PhotoPath = "wwwroot\\images\\books\\" + model.Type + "\\" + model.Name + ".jpg";
+                pathToWrite = "../images/books/" + model.Type + "/" + model.Name + ".jpg";
 
+            }
+            else
+            {
+                FilePath = "Books/" + model.Name + ".pdf";
+                PhotoPath = "wwwroot/images/books/" + model.Type + "/" + model.Name + ".jpg";
+                pathToWrite = "../images/books/" + model.Type + "/" + model.Name + ".jpg";
+            }
             if (model.BookFile.Length > 0)
             {
+   
                 using (var fileStream = new FileStream(FilePath, FileMode.Create))
                 {
                     model.BookFile.CopyTo(fileStream);
