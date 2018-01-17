@@ -183,8 +183,11 @@
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Grade</label>
                              <div class="col-lg-6">
-                            <div class="col-sm-10">                    
-                                @Html.TextBoxFor(t => t._rating.Grade, new { @class = "form-control" })
+                                 <div class="col-sm-10">                   
+                                     @Html.DropDownListFor(t => t._rating.Grade, new SelectList(new int[] { 1,2,3,4,5 }))
+                                     <!--   
+                                         @Html.TextBoxFor(t => t._rating.Grade, new { @class = "form-control" })
+                                    -->
                                  @Html.ValidationMessageFor(t=> t._rating.Review, "", new {@class = "red"})
 
                                 </div>
