@@ -146,10 +146,19 @@ namespace Presentation.Controllers
 
         public IActionResult SeeRecommendations()
         {
+           
             var idUser = _userManager.GetUserId(User);
             var user = _db.Users.Find(idUser);
             var model= _bookRepository.RecommendBooks(user);
-            return View(model);
+            if (model.error != null)
+            {
+                TempData["errorRecommend"] = model.error;
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                return View(model);
+            }
         }
 
     }

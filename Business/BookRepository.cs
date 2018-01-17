@@ -228,58 +228,65 @@ namespace Business
 
         public SeeRecommendations RecommendBooks(User user)
         {
-            List<Book> downloadedbooksUser=GetDownloadedBooksByType(user,null);
-            List<Book> listBooksToRecommend = new List<Book>();
-            string mostDownloadedType = MostDownloadedBookTypeByUser(user);
-
-            if (mostDownloadedType.Equals("Action"))
+            try
             {
-                listBooksToRecommend.AddRange(_databaseService.Books.Where(b=>b.Type=="Action").OrderByDescending(b=>b.Score).Take(5));
-                listBooksToRecommend.Add(GetTopFromEachType("Drama"));
-                listBooksToRecommend.Add(GetTopFromEachType("Romance"));
-                listBooksToRecommend.Add(GetTopFromEachType("Thriller"));
-            }
+                List<Book> downloadedbooksUser = GetDownloadedBooksByType(user, null);
+                List<Book> listBooksToRecommend = new List<Book>();
+                string mostDownloadedType = MostDownloadedBookTypeByUser(user);
 
-            if (mostDownloadedType.Equals("Drama"))
-            {
-                listBooksToRecommend.AddRange(_databaseService.Books.Where(b => b.Type == "Drama").OrderByDescending(b => b.Score).Take(5));
-                listBooksToRecommend.Add(GetTopFromEachType("Action"));
-                listBooksToRecommend.Add(GetTopFromEachType("Romance"));
-                listBooksToRecommend.Add(GetTopFromEachType("Thriller"));
-            }
-
-            if (mostDownloadedType.Equals("Thriller"))
-            {
-                listBooksToRecommend.AddRange(_databaseService.Books.Where(b => b.Type == "Thriller").OrderByDescending(b => b.Score).Take(5));
-                listBooksToRecommend.Add(GetTopFromEachType("Drama"));
-                listBooksToRecommend.Add(GetTopFromEachType("Romance"));
-                listBooksToRecommend.Add(GetTopFromEachType("Action"));
-            }
-
-            if (mostDownloadedType.Equals("Romance"))
-            {
-                listBooksToRecommend.AddRange(_databaseService.Books.Where(b => b.Type == "Romance").OrderByDescending(b => b.Score).Take(5));
-                listBooksToRecommend.Add(GetTopFromEachType("Drama"));
-                listBooksToRecommend.Add(GetTopFromEachType("Action"));
-                listBooksToRecommend.Add(GetTopFromEachType("Thriller"));
-            }
-
-
-            foreach (Book book in listBooksToRecommend.Reverse<Book>())   
-            {
-                foreach (Book bookDownloaded in downloadedbooksUser)
+                if (mostDownloadedType.Equals("Action"))
                 {
-                    if (book.Name.Equals(bookDownloaded.Name))
-                    {
-                        listBooksToRecommend.Remove(book);
+                    listBooksToRecommend.AddRange(_databaseService.Books.Where(b => b.Type == "Action").OrderByDescending(b => b.Score).Take(5));
+                    listBooksToRecommend.Add(GetTopFromEachType("Drama"));
+                    listBooksToRecommend.Add(GetTopFromEachType("Romance"));
+                    listBooksToRecommend.Add(GetTopFromEachType("Thriller"));
+                }
 
+                if (mostDownloadedType.Equals("Drama"))
+                {
+                    listBooksToRecommend.AddRange(_databaseService.Books.Where(b => b.Type == "Drama").OrderByDescending(b => b.Score).Take(5));
+                    listBooksToRecommend.Add(GetTopFromEachType("Action"));
+                    listBooksToRecommend.Add(GetTopFromEachType("Romance"));
+                    listBooksToRecommend.Add(GetTopFromEachType("Thriller"));
+                }
+
+                if (mostDownloadedType.Equals("Thriller"))
+                {
+                    listBooksToRecommend.AddRange(_databaseService.Books.Where(b => b.Type == "Thriller").OrderByDescending(b => b.Score).Take(5));
+                    listBooksToRecommend.Add(GetTopFromEachType("Drama"));
+                    listBooksToRecommend.Add(GetTopFromEachType("Romance"));
+                    listBooksToRecommend.Add(GetTopFromEachType("Action"));
+                }
+
+                if (mostDownloadedType.Equals("Romance"))
+                {
+                    listBooksToRecommend.AddRange(_databaseService.Books.Where(b => b.Type == "Romance").OrderByDescending(b => b.Score).Take(5));
+                    listBooksToRecommend.Add(GetTopFromEachType("Drama"));
+                    listBooksToRecommend.Add(GetTopFromEachType("Action"));
+                    listBooksToRecommend.Add(GetTopFromEachType("Thriller"));
+                }
+
+
+                foreach (Book book in listBooksToRecommend.Reverse<Book>())
+                {
+                    foreach (Book bookDownloaded in downloadedbooksUser)
+                    {
+                        if (book.Name.Equals(bookDownloaded.Name))
+                        {
+                            listBooksToRecommend.Remove(book);
+
+                        }
                     }
                 }
-            }
 
-            var model = new SeeRecommendations { BooksToReadUser = listBooksToRecommend.ToList(),p=user.BookDownloadedUser.Where(b => b.Id == user.Id).Count()};
-            return model;
-          
+                var model = new SeeRecommendations { BooksToReadUser = listBooksToRecommend.ToList(),error=null };
+                return model;
+            }
+            catch
+            {
+                var model = new SeeRecommendations { BooksToReadUser = null,error="Download at least one book in order to see recommendatins"};
+                return model;
+            }
 
         }
 
