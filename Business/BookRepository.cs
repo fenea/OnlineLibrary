@@ -32,11 +32,12 @@ namespace Business
             return _databaseService.Books.FirstOrDefault(t => t.BookId == id);
         }
 
-        /*
+        
         public void AddBook(CreateBookModel model)
         {
             string FilePath = "Books\\" + model.Name + ".pdf";
             string PhotoPath = "wwwroot\\images\\books\\" + model.Type + "\\" + model.Name + ".jpg";
+            string pathToWrite = "../images/books/" + model.Type + "/" + model.Name + ".jpg";
             Console.WriteLine(model.BookFile.FileName);
 
             if (model.BookFile.Length > 0)
@@ -54,19 +55,19 @@ namespace Business
                 }
             }
 
-            Book book = Book.Create(model.Name, model.Type, model.Author, FilePath, PhotoPath, model.Description, DateTime.Now);
+            Book book = Book.Create(model.Name, model.Type, model.Author, FilePath, pathToWrite, model.Description, DateTime.Now);
             _databaseService.Books.Add(book);
             _databaseService.SaveChanges();
 
         }
-        */
-
+        
+        
         public void AddBook(Book book)
         {
             _databaseService.Books.Add(book);
             _databaseService.SaveChanges();
         }
-
+        
         public SeeAddedBooks TypeBooks(string type)
         {
 

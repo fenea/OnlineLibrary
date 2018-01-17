@@ -56,7 +56,7 @@ namespace Presentation.Controllers
         }
 
 
-       /* [HttpPost]
+        [HttpPost]
         public IActionResult AddBook(CreateBookModel model)
         {
 
@@ -67,9 +67,9 @@ namespace Presentation.Controllers
 
             return RedirectToAction("Index", "Home");
 
-        }*/
+        }
 
-
+/*
 
         [HttpPost]
         public IActionResult AddBook(CreateBookModel model)
@@ -85,6 +85,7 @@ namespace Presentation.Controllers
             return RedirectToAction("Index", "Home");
 
         }
+        */
 
 
  

@@ -10,7 +10,7 @@ namespace Domain.Interfaces
     {
         IReadOnlyList<Book> GetAllBooks();
         Book GetBookById(Guid id);
-        // void AddBook(CreateBookModel book);
+        void AddBook(CreateBookModel book);
         void AddBook(Book book);
         SeeAddedBooks TypeBooks(string type);
         int BooksToReadPerUser(string id);
