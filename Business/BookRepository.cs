@@ -6,6 +6,7 @@ using System.Linq;
 using System.IO;
 using Domain.Models;
 using Microsoft.AspNetCore.Identity;
+using Domain.Interfaces;
 
 namespace Business
 {
@@ -113,6 +114,64 @@ namespace Business
                 return ("Book was already added");
             }
         }
+        public List<Book>GetDownloadedBooksByType(User user,string type)
+        {
+            var BookDownloadedByUser=_databaseService.BooksDownloadedUser.Where(u => u.Id == user.Id).ToList();
+            List<Book> books = new List<Book>();
+           
+            foreach(var b in BookDownloadedByUser)
+            {
+                books.Add(_databaseService.Books.First(book => book.BookId == b.BookId));
+            }
+
+            if (type != null)
+            {
+                return books.Where(b => b.Type == type).ToList();
+            }
+            else
+                return books.ToList();
+
+
+        }
+
+
+        public Book GetTopFromEachType(string type)
+        {
+
+            var books = _databaseService.Books.Where(b => b.Type == type).OrderByDescending(b => b.Score).ToList();
+            return books[0];
+        }
+
+        public string MostDownloadedBookTypeByUser(User user)
+        {
+
+
+            List<int> count = new List<int>();
+            List<string> types = new List<string>();
+
+            count.Add(GetDownloadedBooksByType(user, "Action").Count());
+            types.Add("Action");
+            count.Add(GetDownloadedBooksByType(user, "Drama").Count());
+            types.Add("Drama");
+            count.Add(GetDownloadedBooksByType(user, "Thriller").Count());
+            types.Add("Thriller");
+            count.Add(GetDownloadedBooksByType(user, "Romance").Count());
+            types.Add("Romance");
+
+
+            int max = 0;
+            string type = null;
+
+            for (int i = 0; i < count.Count();i++)
+            {
+                if (count[i] > max)
+                {
+                    max = count[i];
+                    type = types[i];
+                }
+            }
+            return type;
+        }
 
         public SeeAddedBooks SeeAddedBooks(string userId)
         {
@@ -167,5 +226,63 @@ namespace Business
         }
 
 
+        public SeeRecommendations RecommendBooks(User user)
+        {
+            List<Book> downloadedbooksUser=GetDownloadedBooksByType(user,null);
+            List<Book> listBooksToRecommend = new List<Book>();
+            string mostDownloadedType = MostDownloadedBookTypeByUser(user);
+
+            if (mostDownloadedType.Equals("Action"))
+            {
+                listBooksToRecommend.AddRange(_databaseService.Books.Where(b=>b.Type=="Action").OrderByDescending(b=>b.Score).Take(5));
+                listBooksToRecommend.Add(GetTopFromEachType("Drama"));
+                listBooksToRecommend.Add(GetTopFromEachType("Romance"));
+                listBooksToRecommend.Add(GetTopFromEachType("Thriller"));
+            }
+
+            if (mostDownloadedType.Equals("Drama"))
+            {
+                listBooksToRecommend.AddRange(_databaseService.Books.Where(b => b.Type == "Drama").OrderByDescending(b => b.Score).Take(5));
+                listBooksToRecommend.Add(GetTopFromEachType("Action"));
+                listBooksToRecommend.Add(GetTopFromEachType("Romance"));
+                listBooksToRecommend.Add(GetTopFromEachType("Thriller"));
+            }
+
+            if (mostDownloadedType.Equals("Thriller"))
+            {
+                listBooksToRecommend.AddRange(_databaseService.Books.Where(b => b.Type == "Thriller").OrderByDescending(b => b.Score).Take(5));
+                listBooksToRecommend.Add(GetTopFromEachType("Drama"));
+                listBooksToRecommend.Add(GetTopFromEachType("Romance"));
+                listBooksToRecommend.Add(GetTopFromEachType("Action"));
+            }
+
+            if (mostDownloadedType.Equals("Romance"))
+            {
+                listBooksToRecommend.AddRange(_databaseService.Books.Where(b => b.Type == "Romance").OrderByDescending(b => b.Score).Take(5));
+                listBooksToRecommend.Add(GetTopFromEachType("Drama"));
+                listBooksToRecommend.Add(GetTopFromEachType("Action"));
+                listBooksToRecommend.Add(GetTopFromEachType("Thriller"));
+            }
+
+
+            foreach (Book book in listBooksToRecommend.Reverse<Book>())   
+            {
+                foreach (Book bookDownloaded in downloadedbooksUser)
+                {
+                    if (book.Name.Equals(bookDownloaded.Name))
+                    {
+                        listBooksToRecommend.Remove(book);
+
+                    }
+                }
+            }
+
+            var model = new SeeRecommendations { BooksToReadUser = listBooksToRecommend.ToList(),p=user.BookDownloadedUser.Where(b => b.Id == user.Id).Count()};
+            return model;
+          
+
+        }
+
+      
     }
 }

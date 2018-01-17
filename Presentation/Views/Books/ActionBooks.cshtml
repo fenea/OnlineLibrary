@@ -1,37 +1,32 @@
 ﻿@model SeeAddedBooks
 
 
-<section id="books">
+<section id="books" style="margin-bottom:-100px;">
     <div class="container">
         <h2 class="sectionHeading">
             <span class="subHeading">Books</span>
             Action
         </h2>
         <div class="sectionContent">
-            <div class="row hoverEffect">
+            
    
 
-@foreach (var b in @Model.BooksToReadUser)
+@{
+                int counter=0;
+
+                foreach (var b in @Model.BooksToReadUser)
 {
-                
+
+                 if (counter%3==0)
+                {
+                     @:<div class="row hoverEffect"> 
+                }
+                    
                 <div class="col-md-4 col-sm-4">
                     <div class="item">
                         <div class="overlay" href="#">
                             <div class="content">
                                 
-
-                                                     <div class="point-of-reference">
-                                    <div class="imgwrap">
-                                        <button class="icon" formtarget="_blank" style="color: white;background: transparent;padding: 0;border: none;" onclick="ReadBook('@b.Name')"><i class="mdi fa fa-file-pdf-o"></i></button>
-                                        <div class="rollover">
-                                            <div class="roll-inner">
-                                                <div class="roll-content">
-                                                    <p>Read now</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
 
                              <div class="point-of-reference">
                                 <div class="imgwrap">
@@ -59,6 +54,19 @@
                                         </div>
                                         </div>
 
+                                <div class="point-of-reference">
+                                    <div class="imgwrap">
+                                        <button class="icon" formtarget="_blank" style="color: white;background: transparent;padding: 0;border: none;" onclick="ReadBook('@b.Name')"><i class="mdi fa fa-file-pdf-o"></i></button>
+                                        <div class="rollover">
+                                            <div class="roll-inner">
+                                                <div class="roll-content">
+                                                    <p>Read now</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
 
                                 <div class="point-of-reference">
                                     <div class="imgwrap">
@@ -66,7 +74,7 @@
                                         <div class="rollover">
                                             <div class="roll-inner">
                                                 <div class="roll-content">
-                                                    <p>Read later</p>
+                                                    <p>Download later</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -74,7 +82,15 @@
                                 </div>
 
                             </div>
+
+                            <div class="articleThumb">
                             <img src= "@b.PhotoPath">
+                             <div class="date">
+                                    <span class="number">@b.Score</span>
+                                    <span class="text">Stars</span>
+                              </div>
+                              </div>
+                            
                         </div>
                     </div>
                     <div class="info">
@@ -83,14 +99,18 @@
 
                     </div>
                 </div>
-      
-}
+         if(counter%3==2)
+        {
+             @:</div>
+        }
+       counter++;
 
+}
+}
     </div>
     </div>
-    </div>
-</section>  
- 
+</section> 
+
 <script>
 
  function AddToReadBooks(Id)

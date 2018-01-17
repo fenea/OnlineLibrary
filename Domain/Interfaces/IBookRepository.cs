@@ -22,6 +22,9 @@ namespace Domain.Interfaces
         void AddBookToDownload(User user, string bookName);
         Book GetBookByName(string bookId);
         int NrBooksDownloaded(User user);
-
+        SeeRecommendations RecommendBooks(User user);
+        List<Book> GetDownloadedBooksByType(User user, string type);
+        string MostDownloadedBookTypeByUser(User user);
+        Book GetTopFromEachType(string type);
     }
 }

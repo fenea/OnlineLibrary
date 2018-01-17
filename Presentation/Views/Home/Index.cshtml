@@ -28,7 +28,7 @@
                         <a class="overlay" asp-area="" asp-controller="Books" asp-action="SeeAddedBooks">
                             <span class="content">
                                 <i class="fa fa-bookmark"></i>
-                                To read
+                                To download
                             </span>
                             <img src="../images/user account/img2.jpg" alt="">
                         </a>
@@ -89,12 +89,20 @@
             Top 6 best rated books
         </h2>
         <div class="sectionContent">
-            <div class="row hoverEffect">
+            
    
 
-@foreach (var b in Model.TopBooks)
+@{
+                int counter=0;
+
+                foreach (var b in Model.TopBooks)
 {
-                
+
+                 if (counter%3==0)
+                {
+                     @:<div class="row hoverEffect"> 
+                }
+                    
                 <div class="col-md-4 col-sm-4">
                     <div class="item">
                         <div class="overlay" href="#">
@@ -147,7 +155,7 @@
                                         <div class="rollover">
                                             <div class="roll-inner">
                                                 <div class="roll-content">
-                                                    <p>Read later</p>
+                                                    <p>Download later</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -172,13 +180,18 @@
 
                     </div>
                 </div>
-      
-}
+         if(counter%3==2)
+        {
+             @:</div>
+        }
+       counter++;
 
-    </div>
+}
+}
     </div>
     </div>
 </section>  
+
 
 <section id="books" style="margin-bottom:-100px;">
     <div class="container">
@@ -189,7 +202,8 @@
         <div class="sectionContent">
             <div class="row hoverEffect">
    
-                
+
+            
 @foreach (var b in Model.LatestBooks)
 {
                  <div class="col-md-4 col-sm-4">
@@ -237,7 +251,6 @@
                                     </div>
                                 </div>
 
-               
 
                                 <div class="point-of-reference">
                                     <div class="imgwrap">
@@ -245,7 +258,7 @@
                                         <div class="rollover">
                                             <div class="roll-inner">
                                                 <div class="roll-content">
-                                                    <p>Read later</p>
+                                                    <p>Download later</p>
                                                 </div>
                                             </div>
                                         </div>

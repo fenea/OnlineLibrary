@@ -94,6 +94,7 @@ namespace Presentation.Controllers
             var idUser = _userManager.GetUserId(User);
             var user = _db.Users.Find(idUser);
             _bookRepository.AddBookToDownload(user, name);
+           
             string fileName = name + ".pdf";
             string fullName ="Books/" + fileName;
             byte[] fileBytes = GetFile(fullName);
@@ -142,6 +143,14 @@ namespace Presentation.Controllers
 
             return View(model);
         } 
+
+        public IActionResult SeeRecommendations()
+        {
+            var idUser = _userManager.GetUserId(User);
+            var user = _db.Users.Find(idUser);
+            var model= _bookRepository.RecommendBooks(user);
+            return View(model);
+        }
 
     }
 }
