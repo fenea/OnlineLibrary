@@ -1,5 +1,2 @@
-Library
-
-
-
-93eae98e4ea5ecb92c610d5302a76814679e3fde : Cheie Sonar Cloud
+Web application for managing a Free Library, anyone can add/download books.
+Made in .NET Core 2.0.
